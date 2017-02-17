@@ -1,0 +1,13 @@
+body {
+  background-color: rgb(76, 0, 78);
+  color: rgb(0, 255, 56);
+}
+
+a {
+  color: rgb(15, 180, 32);
+}
+
+a:hover {
+  color: rgb(0, 255, 56);
+
+}
