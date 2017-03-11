@@ -19,6 +19,14 @@
   }
 
   </style>
+  <script>
+  window.onload = function() {
+    $.get('https://www.nick-e.co.uk/tools/api/youtubechannel?id=UCuX4KZBMpQLToSwJWy-jCBw', function(data) {
+      document.getElementById('latestvideotitle').innerHTML = data.newvid.title;
+      document.getElementById('latestvideoframe').src = data.newvid.embedurl;
+    }
+  }
+  </script>
 </head>
 <body>
 
@@ -50,7 +58,7 @@
     <h1>Latest</h1>
     <p><small id='latestvideotitle'>Loading..</small></p>
     <div class="embed-responsive embed-responsive-16by9">
-      <iframe id='latestvidframe' src="" width="100%" class="embed-responsive-item"></iframe>
+      <iframe id='latestvideoframe' src="" width="100%" class="embed-responsive-item"></iframe>
     </div>
     <h1>Previous Videos</h1>
     <p><small>LEARN TO CODE BUKKIT/SPIGOT!</small></p>
