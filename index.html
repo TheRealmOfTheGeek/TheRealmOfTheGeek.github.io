@@ -15,7 +15,19 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css">
-
+<script>
+   window.onload = function() {
+      $.get('https://www.nick-e.co.uk/tools/api/youtubechannel?id=UCuX4KZBMpQLToSwJWy-jCBw', function(data) {
+      window.onload = function() {
+        document.getElementById('latestvideotitle').innerHTML = data.newvid.title;
+        document.getElementById('latestvideoframe').src = data.newvid.embedurl;
+        document.getElementById('subs').innerHTML = data.channel.stats.subs;
+        document.getElementById('views').innerHTML = data.channel.stats.views;
+        document.getElementById('videos').innerHTML = data.channel.stats.videos;
+       }
+      });
+   }
+    </script>
 </head>
 <body>
 
@@ -43,6 +55,8 @@
   <div class="container text-center">
     <h1>The Realm Of The Geek</h1>
     <p><small>Only a little bit of awesomeness here.<br><a href="http://www.twitter.com/kvizdos" target="_blank">Twitter</a> | <a href="https://www.youtube.com/user/TheRealmOfTheGeek/" target="_blank">YouTube</a> | <a href="https://trello.com/kentonvizdos">Trello</a> | <a href="github.com/kvizdos">GitHub</a></small></p>
+    <center><h4>Currently at</h4><h3> <span id='subs'>Loading..</span></h3><h4> subscribers</h4></center>
+
   </div>
 </div>
 <div class="jumbotron" id="about">
