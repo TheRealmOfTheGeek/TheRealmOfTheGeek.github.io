@@ -19,6 +19,17 @@
   }
 
   </style>
+  <script>
+  window.onload = function() {
+    $.get('https://www.nick-e.co.uk/tools/api/youtubechannel?id=UCuX4KZBMpQLToSwJWy-jCBw', function(data) {
+      document.getElementById('latestvideotitle').innerHTML = data.newvid.title;
+      document.getElementById('latestvideoframe').src = data.newvid.embedurl;
+      document.getElementById('subs').innerHTML = data.channel.stats.subs;
+      document.getElementById('views').innerHTML = data.channel.stats.views;
+      document.getElementById('videos').innerHTML = data.channel.stats.videos;
+    }
+  }
+  </script>
 </head>
 <body>
 
@@ -44,9 +55,14 @@
     </div>
   </div>
 </nav>
-
+  <center><h3>Currently at <span id='subs'>Loading..</span> subscribers, <span id='views'>Loading..</span> and <span id='videos'>Loading..</span> videos</h3></center>
 <div class="jumbotron" id="header">
   <div class="container text-center   ">
+    <h1>Latest</h1>
+    <p><small id='latestvideotitle'>Loading..</small></p>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe id='latestvideoframe' src="" width="100%" class="embed-responsive-item"></iframe>
+    </div>
     <h1>Previous Videos</h1>
     <p><small>LEARN TO CODE BUKKIT/SPIGOT!</small></p>
     <div class="embed-responsive embed-responsive-16by9">
