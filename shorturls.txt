@@ -3,3 +3,6 @@ youtube https://www.youtube.com/user/TheRealmOfTheGeek/
 website http://therotg.com/
 kento http://kentonvizdos.com/
 gear http://astore.amazon.com/kvizdos-20
+nick https://www.nick-e.co.uk/?source=therotg
+remoteapi https://remoteapi.pro/
+patreon https://www.patreon.com/_Kento
