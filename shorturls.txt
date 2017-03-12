@@ -6,3 +6,14 @@ gear http://astore.amazon.com/kvizdos-20
 nick https://www.nick-e.co.uk/?source=therotg
 remoteapi https://remoteapi.pro/
 patreon https://www.patreon.com/_Kento
+fiverr https://www.fiverr.com/realmofgeek/program-a-minecraft-plugin
+twitter https://twitter.com/kvizdos
+freedomh https://www.freedom.tm/via/TheRealmOfTheGeek
+gplus https://plus.google.com/u/0/115085273063965238753
+social http://therotg.com/social/
+github https://github.com/kvizdos
+ncs https://www.youtube.com/user/NoCopyrightSounds
+webgithub https://github.com/TheRealmOfTheGeek/TheRealmOfTheGeek.github.io
+trello https://trello.com/kentonvizdos
+instagram https://www.instagram.com/kentonvizdos/
+flickr https://www.flickr.com/people/139727868@N04/
