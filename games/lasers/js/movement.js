@@ -17,7 +17,7 @@ setInterval(function(){
           speed = speed - 2;
           player.style.top = speed;
       } else {
-        if(($("#player-container").offset().top + 119) > $('#footer').height() - 65) {
+        if(($("#player-container").offset().top + 119) > $('#footer').height() - 10) {
           if(mouseDown == false) {
               speed = speed - 0;
               player.style.top = speed;

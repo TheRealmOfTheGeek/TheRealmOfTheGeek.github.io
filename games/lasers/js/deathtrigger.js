@@ -1,5 +1,6 @@
 var player = document.getElementById('player-container');
 
+// This collision is modified from Stack Overflow
 function collision($div1, $div2) {
       var x1 = $div1.offset().left;
       var y1 = $div1.offset().top;
@@ -17,12 +18,28 @@ function collision($div1, $div2) {
       if (b1 < y2 || y1 > b2 || r1 < x2 || x1 > r2) return false;
       return true;
     }
+
+
 window.setInterval(function(){
 
   if(collision($('#player-container'), $('#laserbeam')) == true) {
-    player.style.top = 0;
-  } else {
-    console.log("you goochie");
+    location.reload();
+  }
+
+  if(collision($('#player-container'), $('.one')) == true) {
+    location.reload();
+  }
+
+  if(collision($('#player-container'), $('.two')) == true) {
+    location.reload();
+  }
+
+  if(collision($('#player-container'), $('.three')) == true) {
+    location.reload();
+  }
+
+  if(collision($('#player-container'), $('.four')) == true) {
+    location.reload();
   }
 
 }, 200);
