@@ -3,83 +3,9 @@
     <title>Lasers - An Original Game By Kenton Vizdos</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style >
 
-    <style>
-      * {
-        overflow: hidden;
-      }
-      #player-container {
-        position: absolute;
-        left: 50%;
-        background-color: red;
-        width: 100px;
-        height: 100px;
-
-      }
-      .player {
-        z-index: 5;
-
-      }
-
-      .laser-shooter {
-        position: relative;
-        z-index: 0;
-        width: 125px;
-        background-color: rgb(198, 136, 0);
-        left: -5px;
-        margin-top: 125px;
-        top: -60px;
-        height: 50px;
-        overflow: visible;
-
-      }
-
-      #laserbeam {
-        position: absolute;
-        z-index: 5;
-
-        width: 100vw;
-        background-color: rgb(250, 0, 0);
-        height: 10px;
-        top: 20px;
-      }
-
-      #prelaserbeam {
-        position: absolute;
-        z-index: 5;
-
-        width: 100vw;
-        background-color: rgba(255, 168, 0, 0.7);
-        height: 10px;
-        top: 20px;
-      }
-
-      .laser {
-        display: none;
-      }
-
-
-      #game-container {
-        width: 99%;
-        height: 98%;
-        max-width: 100000px;
-        padding: 5px;
-        background-color: rgb(191, 188, 205);
-        border: 5px solid black;
-      }
-
-      #footer {
-        margin-top: 20px;
-        height: 100%;
-        width: 100%;
-        background-color: rgb(113, 113, 113);
-        text-align: center;
-        padding-top: 10px;
-      }
-
-      #footer a {
-        color: white;
-      }
     </style>
   </head>
 
@@ -129,14 +55,17 @@
         <div id="laserbeam" class="laser four">
         </div>
       </div>
-      <div id="footer">
-        <a href="http://www.therotg.com/games/">More Games By Me</a>
-      </div>
+      <script src="js/movement.js"></script>
+      <script src="js/deathtrigger.js"></script>
+      <script src="js/laserpicker.js"></script>
+
+    </div>
+
+    <div id="footer">
+      <a href="http://www.therotg.com/games/">More Games By Me</a>
+      <a href="http://s.therotg.com/twitter">Follow Me (@kvizdos)!</a>
     </div>
   </body>
-  <script src="js/movement.js"></script>
-  <script src="js/deathtrigger.js"></script>
-  <script src="js/laserpicker.js"></script>
 
 
 </html>

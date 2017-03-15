@@ -1,0 +1,114 @@
+* {
+  overflow: hidden;
+}
+
+
+#game-container {
+  width: 99%;
+  height: auto;
+  max-width: 100000px;
+  padding: 5px;
+  background-color: rgb(191, 188, 205);
+  border: 5px solid black;
+}
+
+#player-container {
+  position: absolute;
+  left: 50%;
+  background-color: red;
+  width: 100px;
+  height: 100px;
+
+}
+.player {
+  z-index: 5;
+
+}
+
+.laser-shooter {
+  position: relative;
+  z-index: 0;
+  width: 125px;
+  background-color: rgb(198, 136, 0);
+  left: -5px;
+  margin-top: 125px;
+  top: -60px;
+  height: 50px;
+  overflow: visible;
+
+}
+
+#laserbeam {
+  position: absolute;
+  z-index: 5;
+
+  width: 100vw;
+  background-color: rgb(250, 0, 0);
+  height: 10px;
+  top: 20px;
+}
+
+#prelaserbeam {
+  position: absolute;
+  z-index: 5;
+
+  width: 100vw;
+  background-color: rgba(255, 168, 0, 0.7);
+  height: 10px;
+  top: 20px;
+}
+
+.laser {
+  display: none;
+}
+
+
+#footer {
+  margin-top: 20px;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(113, 113, 113);
+  text-align: center;
+  padding-top: 10px;
+}
+
+#footer a {
+  color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+    * {
+      overflow: hidden;
+    }
+    body {
+      padding: 0;
+    }
+    #game-container {
+      height: 100%;
+      margin: 0;
+      margin-bottom: 2%;
+      border: none;
+    }
+    #footer {
+      display: none;
+    }
+
+    .laser-shooter {
+      height: 100px;
+      width: 228px;
+      margin-top: 25%;
+    }
+
+    #laserbeam {
+      height:60px;
+    }
+
+    #prelaserbeam {
+      height: 60px;
+    }
+
+    #player-container {
+      width: 200px;
+      height: 200px;
+    }
+}

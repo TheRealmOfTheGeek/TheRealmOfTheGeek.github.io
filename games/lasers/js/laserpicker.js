@@ -6,13 +6,12 @@ function sleep(ms) {
 
 setInterval(function(){
   var random = Math.floor(Math.random() * $('.laser').length);
+      $('.prelaser').hide().eq(random).show();
 
-  $('.prelaser').hide().eq(random).show();
+      sleep(1500).then(() => {
+        $('.laser').hide().eq(random).show();
 
-  sleep(1500).then(() => {
-    $('.laser').hide().eq(random).show();
-
-  });
+      });
 
 
-}, 1500);
+}, 2000);
