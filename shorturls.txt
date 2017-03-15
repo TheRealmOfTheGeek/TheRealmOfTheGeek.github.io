@@ -17,3 +17,5 @@ webgithub https://github.com/TheRealmOfTheGeek/TheRealmOfTheGeek.github.io
 trello https://trello.com/kentonvizdos
 instagram https://www.instagram.com/kentonvizdos/
 flickr https://www.flickr.com/people/139727868@N04/
+computer http://amzn.to/2h1jrKe
+mainmonitor http://amzn.to/2h0vrdr
