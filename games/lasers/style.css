@@ -5,7 +5,7 @@
 
 #game-container {
   width: 99%;
-  height: auto;
+  height: 90%;
   max-width: 100000px;
   padding: 5px;
   background-color: rgb(191, 188, 205);
@@ -31,7 +31,7 @@
   width: 125px;
   background-color: rgb(198, 136, 0);
   left: -5px;
-  margin-top: 125px;
+  margin-top: 8%;
   top: -60px;
   height: 50px;
   overflow: visible;
