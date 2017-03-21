@@ -28,4 +28,4 @@ gscreen http://amzn.to/2hJYCzX
 lights http://amzn.to/2hPkzgS
 subscribe http://bit.ly/1F7DPiJ
 blockingjs https://developers.google.com/speed/docs/insights/BlockingJS
-cpalette coolors.co
+cpalette http://www.coolors.co
