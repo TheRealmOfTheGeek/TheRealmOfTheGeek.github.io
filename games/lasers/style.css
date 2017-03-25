@@ -76,6 +76,27 @@
   color: white;
 }
 
+.overlay {
+  background-color: white;
+  width: 45%;
+  text-align: center;
+  z-index: 10;
+  position: absolute;
+  left: 5px;
+  top: 35%;
+  left: 28%;
+  border-radius: 15px;
+  border: 2px solid black;
+}
+
+.overlay-btn {
+  margin-bottom: 15px;
+}
+
+.end {
+  display: none;
+}
+
 @media only screen and (max-width: 1000px) {
     * {
       overflow: hidden;

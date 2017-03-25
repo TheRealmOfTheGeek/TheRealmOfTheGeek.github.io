@@ -23,23 +23,23 @@ function collision($div1, $div2) {
 window.setInterval(function(){
 
   if(collision($('#player-container'), $('#laserbeam')) == true) {
-    location.reload();
+    endGame();
   }
 
   if(collision($('#player-container'), $('.one')) == true) {
-    location.reload();
+    endGame();
   }
 
   if(collision($('#player-container'), $('.two')) == true) {
-    location.reload();
+    endGame();
   }
 
   if(collision($('#player-container'), $('.three')) == true) {
-    location.reload();
+    endGame();
   }
 
   if(collision($('#player-container'), $('.four')) == true) {
-    location.reload();
+    endGame();
   }
 
 }, 200);

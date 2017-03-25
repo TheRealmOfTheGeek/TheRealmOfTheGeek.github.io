@@ -4,14 +4,16 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-setInterval(function(){
-  var random = Math.floor(Math.random() * $('.laser').length);
-      $('.prelaser').hide().eq(random).show();
+var laserpickerMech;
 
-      sleep(1500).then(() => {
-        $('.laser').hide().eq(random).show();
+  laserpickerMech = setInterval(function(){
+    var random = Math.floor(Math.random() * $('.laser').length);
+        $('.prelaser').hide().eq(random).show();
 
-      });
+        sleep(1500).then(() => {
+          $('.laser').hide().eq(random).show();
+
+        });
 
 
 }, 2000);
