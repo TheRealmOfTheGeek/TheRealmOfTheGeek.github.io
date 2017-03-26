@@ -7,5 +7,5 @@ function startScore() {
     score = score + 1;
     document.getElementById('livescore').innerHTML = score;
     document.getElementById('livescore-alive').innerHTML = score;
-  }, 2000);
+  }, 3000);
 }
