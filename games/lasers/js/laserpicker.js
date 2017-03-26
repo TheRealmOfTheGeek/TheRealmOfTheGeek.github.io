@@ -32,7 +32,7 @@ function startScore() {
     score = score + 1;
     document.getElementById('livescore').innerHTML = score;
     document.getElementById('livescore-alive').innerHTML = score;
-  }, 1800);
+  }, 2000);
 }
 
 
