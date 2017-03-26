@@ -5,16 +5,22 @@ function sleep(ms) {
 }
 
 var laserpickerMech;
+var score = 0;
 
 function startLasers() {
 laserpickerMech = setInterval(function(){
-  var random = Math.floor(Math.random() * $('.laser').length);
+      var random = Math.floor(Math.random() * $('.laser').length);
       $('.prelaser').hide().eq(random).show();
 
       sleep(1500).then(() => {
         $('.laser').hide().eq(random).show();
+        document.getElementById('livescore-alive').innerHTML = score;
+
       });
+      score = score + 1;
+
     }, 2000);
+
 }
 
 

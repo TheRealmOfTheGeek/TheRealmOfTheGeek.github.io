@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <div id="game-container">
+    <div id="game-container" onmouseleave="mouseOut()">
       <div id="player-container">
         <div class="player"></div>
       </div>
@@ -55,25 +55,24 @@
         <div id="laserbeam" class="laser four">
         </div>
       </div>
-
-      <script src="js/movement.js"></script>
-      <script src="js/deathtrigger.js"></script>
-      <script src="js/laserpicker.js"></script>
+      <p class="scorekeeper">Your current score is: <span id="livescore-alive">0</span></p>
 
     </div>
 
     <div class="overlay start" id="start-window">
       <h3 class="overlay-title">Lasers! - A full JS game.</h3>
-      <p class="overlay-info">Click to go up, your player will automagically go down at the same speed. Click 'start' to start.</p>
+      <p class="overlay-info">Click to go up, your player will automagically go down at the same speed. <br>The orange lasers show where the red laser will be, you can hit the orange lasers, but not the red.Click 'start' to start.</p>
       <button class="overlay-btn" id="start-btn">Start</button>
     </div>
 
     <div class="overlay end" id="end-window">
       <h3 class="overlay-title">YOU DIED!</h3>
-      <p class="overlay-info">You got a score of X (unimplemented)</p>
+      <p class="overlay-info">You got a score of <span id="livescore">0</span></p>
       <button class="overlay-btn" id="end-btn">Replay</button>
     </div>
-
+    <script src="js/movement.js"></script>
+    <script src="js/deathtrigger.js"></script>
+    <script src="js/laserpicker.js"></script>
     <div id="footer">
       <a href="http://www.therotg.com/games/">More Games By Me</a>
       <a href="http://s.therotg.com/twitter">Follow Me (@kvizdos)!</a>

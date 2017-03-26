@@ -5,10 +5,23 @@ var player = document.getElementById('player-container');
 var mouseDown = 0;
 
 document.body.onmousedown = function() {
-  ++mouseDown;
+  mouseDown = 1;
+  console.log(mouseDown);
+
 }
 document.body.onmouseup = function() {
-  --mouseDown;
+  mouseDown = 0;
+  console.log(mouseDown);
+
+}
+
+function mouseOut() {
+  mouseDown = 0;
+  console.log(mouseDown);
+}
+
+function mouseEnter() {
+  mouseDown = 0;
 }
 
 window.onload = function() {
@@ -34,12 +47,12 @@ function startGame() {
   startLasers();
   gameMech = setInterval(function(){
       if($('#player-container').offset().top > 15) {
-          if(mouseDown) {
+          if(mouseDown == 1) {
               speed = speed - 2;
               player.style.top = speed;
           } else {
             if(($("#player-container").offset().top) > $('#game-container').height() - $("#player-container").height()) {
-              if(mouseDown == false) {
+              if(mouseDown == 1) {
                   speed = speed - 0;
                   player.style.top = speed;
               }
@@ -72,6 +85,7 @@ function died() {
 }
 
 function endGame() {
+  document.getElementById('livescore').innerHTML = score;
 
   clearInterval(gameMech);
   clearInterval(laserpickerMech);
