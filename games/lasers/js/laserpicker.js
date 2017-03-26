@@ -6,14 +6,6 @@ function sleep(ms) {
 
 var scoreKeeper;
 var score = 0;
-
-function startScore() {
-  scoreKeeper = setInterval(function(){
-    score = score + 1;
-    document.getElementById('livescore-alive').innerHTML = score;
-  }, 2000);
-}
-
 var laserpickerMech;
 
 function startLasers() {
@@ -29,6 +21,13 @@ laserpickerMech = setInterval(function(){
 
   }, 2000);
 
+}
+
+function startScore() {
+  scoreKeeper = setInterval(function(){
+    score = score + 1;
+    document.getElementById('livescore-alive').innerHTML = score;
+  }, 2000);
 }
 
 function resetLasers() {
