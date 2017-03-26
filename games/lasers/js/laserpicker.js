@@ -17,7 +17,9 @@ laserpickerMech = setInterval(function(){
       score = score + 1;
 
       });
-      if(score != -1) {
+      if(score == -1) {
+        document.getElementById('livescore-alive').innerHTML = "0";
+      } else {
         document.getElementById('livescore-alive').innerHTML = score - 1;
       }
 
