@@ -5,7 +5,6 @@ function sleep(ms) {
 }
 
 var laserpickerMech;
-var score = 0;
 
 function startLasers() {
 laserpickerMech = setInterval(function(){
@@ -14,14 +13,9 @@ laserpickerMech = setInterval(function(){
 
       sleep(1500).then(() => {
         $('.laser').hide().eq(random).show();
-      score = score + 1;
 
       });
-      if(score == -1) {
-        document.getElementById('livescore-alive').innerHTML = "0";
-      } else {
-        document.getElementById('livescore-alive').innerHTML = score - 1;
-      }
+     
 
   }, 2000);
 
