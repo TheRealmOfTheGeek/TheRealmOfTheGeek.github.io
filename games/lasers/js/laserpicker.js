@@ -14,7 +14,7 @@ function startScore() {
     score = score + 1;
     document.getElementById('livescore').innerHTML = score;
     document.getElementById('livescore-alive').innerHTML = score;
-  }, 4000);
+  }, 8000);
 }
 
 var laserpickerMech;
