@@ -95,6 +95,8 @@
 
 .end {
   display: none;
+  background-color: rgb(213, 51, 51);
+  color: white;
 }
 
 @media only screen and (max-width: 1000px) {

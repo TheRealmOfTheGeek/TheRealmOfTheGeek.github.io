@@ -13,9 +13,15 @@ document.body.onmouseup = function() {
 
 window.onload = function() {
   document.getElementById('start-btn').onclick = startGame;
-  document.getElementById('end-btn').onclick = startGame;
+  document.getElementById('end-btn').onclick = died;
 
-  document.getElementById('end-btn').onclick = endGame;
+  var url_loc = window.location + '';
+  var ifdead = url_loc.split("?");
+
+  if(ifdead[1] == "died") {
+    startGame();
+  }
+
 }
 
 var gameMech;
@@ -23,6 +29,9 @@ var gameMech;
 function startGame() {
   document.getElementById('start-window').style.display = "none";
   document.getElementById('end-window').style.display = "none";
+
+
+  startLasers();
   gameMech = setInterval(function(){
       if($('#player-container').offset().top > 15) {
           if(mouseDown) {
@@ -51,7 +60,19 @@ function startGame() {
 
 
 }
+
+function died() {
+  var url_loc = window.location + '';
+  var ifdead = url_loc.split("?");
+  if(ifdead.length > 1) {
+    window.location = window.location;
+  } else {
+    window.location = window.location + "?died";
+  }
+}
+
 function endGame() {
+
   clearInterval(gameMech);
   clearInterval(laserpickerMech);
   document.getElementById('end-window').style.display = "inline";

@@ -6,14 +6,29 @@ function sleep(ms) {
 
 var laserpickerMech;
 
-  laserpickerMech = setInterval(function(){
-    var random = Math.floor(Math.random() * $('.laser').length);
-        $('.prelaser').hide().eq(random).show();
+function startLasers() {
+laserpickerMech = setInterval(function(){
+  var random = Math.floor(Math.random() * $('.laser').length);
+      $('.prelaser').hide().eq(random).show();
 
-        sleep(1500).then(() => {
-          $('.laser').hide().eq(random).show();
+      sleep(1500).then(() => {
+        $('.laser').hide().eq(random).show();
+      });
+    }, 2000);
+}
 
-        });
 
+function resetLasers() {
+  document.getElementsByClassName('laser')[0].style.display = "none";
+  document.getElementsByClassName('laser')[1].style.display = "none";
+  document.getElementsByClassName('laser')[2].style.display = "none";
+  document.getElementsByClassName('laser')[3].style.display = "none";
+  document.getElementsByClassName('laser')[4].style.display = "none";
 
-}, 2000);
+  document.getElementsByClassName('prelaser')[0].style.display = "none";
+  document.getElementsByClassName('prelaser')[1].style.display = "none";
+  document.getElementsByClassName('prelaser')[2].style.display = "none";
+  document.getElementsByClassName('prelaser')[3].style.display = "none";
+  document.getElementsByClassName('prelaser')[4].style.display = "none";
+
+}
