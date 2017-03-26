@@ -1,5 +1,5 @@
-var score = 0;
 var scoreKeeper;
+var score = 0;
 
 function startScore() {
       console.log("GAME STARTED");
