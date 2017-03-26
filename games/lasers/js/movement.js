@@ -85,7 +85,7 @@ function died() {
 }
 
 function endGame() {
-  document.getElementById('livescore').innerHTML = score - 1;
+  document.getElementById('livescore').innerHTML = score;
 
   clearInterval(gameMech);
   clearInterval(laserpickerMech);
