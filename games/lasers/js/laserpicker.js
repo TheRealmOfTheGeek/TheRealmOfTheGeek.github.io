@@ -22,6 +22,20 @@ laserpickerMech = setInterval(function(){
 }
 
 
+var scoreKeeper;
+var score = 0;
+
+function startScore() {
+      console.log("GAME STARTED");
+
+  scoreKeeper = setInterval(function(){
+    score = score + 1;
+    document.getElementById('livescore').innerHTML = score;
+    document.getElementById('livescore-alive').innerHTML = score;
+  }, 1800);
+}
+
+
 function resetLasers() {
   document.getElementsByClassName('laser')[0].style.display = "none";
   document.getElementsByClassName('laser')[1].style.display = "none";
