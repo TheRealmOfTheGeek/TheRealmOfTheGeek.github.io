@@ -14,10 +14,11 @@ laserpickerMech = setInterval(function(){
 
       sleep(1500).then(() => {
         $('.laser').hide().eq(random).show();
-        document.getElementById('livescore-alive').innerHTML = score;
+      score = score + 1;
 
       });
-      score = score + 1;
+          document.getElementById('livescore-alive').innerHTML = score;
+
 
     }, 2000);
 
