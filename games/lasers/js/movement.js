@@ -43,8 +43,9 @@ function startGame() {
   document.getElementById('start-window').style.display = "none";
   document.getElementById('end-window').style.display = "none";
 
-  startScore();
   startLasers();
+  startScore();
+
   gameMech = setInterval(function(){
       if($('#player-container').offset().top > 15) {
           if(mouseDown == 1) {
