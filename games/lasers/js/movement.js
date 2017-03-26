@@ -90,3 +90,4 @@ function endGame() {
   clearInterval(gameMech);
   clearInterval(laserpickerMech);
   document.getElementById('end-window').style.display = "inline";
+}

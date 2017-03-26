@@ -1,3 +1,5 @@
+laserpicker.js
+
 var laser = Math.floor(Math.random() * 6) + 1;
 var laserinuse = 0;
 function sleep(ms) {
@@ -17,10 +19,13 @@ laserpickerMech = setInterval(function(){
       score = score + 1;
 
       });
-          document.getElementById('livescore-alive').innerHTML = score;
+      if(score == -1) {
+        document.getElementById('livescore-alive').innerHTML = "0";
+      } else {
+        document.getElementById('livescore-alive').innerHTML = score - 1;
+      }
 
-
-    }, 2000);
+  }, 2000);
 
 }
 
