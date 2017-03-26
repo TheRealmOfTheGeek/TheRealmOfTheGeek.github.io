@@ -1,4 +1,4 @@
-var speed = 10;
+var speed = 11;
 var move = false;
 
 var player = document.getElementById('player-container');
