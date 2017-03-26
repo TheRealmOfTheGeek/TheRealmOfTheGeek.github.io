@@ -8,13 +8,10 @@ var scoreKeeper;
 var score = 0;
 
 function startScore() {
-      console.log("GAME STARTED");
-
   scoreKeeper = setInterval(function(){
     score = score + 1;
-    document.getElementById('livescore').innerHTML = score;
     document.getElementById('livescore-alive').innerHTML = score;
-  }, 8000);
+  }, 2000);
 }
 
 var laserpickerMech;
@@ -35,6 +32,8 @@ laserpickerMech = setInterval(function(){
 }
 
 function resetLasers() {
+  document.getElementById('livescore').innerHTML = score;
+
   document.getElementsByClassName('laser')[0].style.display = "none";
   document.getElementsByClassName('laser')[1].style.display = "none";
   document.getElementsByClassName('laser')[2].style.display = "none";
