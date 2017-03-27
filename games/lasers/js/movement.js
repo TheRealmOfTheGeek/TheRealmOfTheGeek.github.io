@@ -93,14 +93,13 @@ function endGame() {
   localStorage.setItem("newhighscore", score);
   var newhs = localStorage.getItem("newhighscore");
 
+  document.getElementById('livescore').innerHTML = score;
+
   if(score > hs) {
     document.getElementById('hs_death').innerHTML = "Your <strong>new</strong> highscore is " + score;
-    sleep(5000).then(() => {
-      localStorage.setItem("highscore", score);
-    });
+    localStorage.setItem("highscore", score);
   }
 
-  document.getElementById('livescore').innerHTML = score;
   gameOver = 1;
   clearInterval(gameMech);
   clearInterval(laserpickerMech);
