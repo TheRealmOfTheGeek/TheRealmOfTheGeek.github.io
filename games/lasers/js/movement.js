@@ -4,6 +4,8 @@ var move = false;
 var player = document.getElementById('player-container');
 var mouseDown = 0;
 
+
+
 document.body.onmousedown = function() {
   mouseDown = 1;
   console.log(mouseDown);
@@ -83,10 +85,23 @@ function died() {
     window.location = window.location + "?died";
   }
 }
-
+var gameOver = 0;
 function endGame() {
-  document.getElementById('livescore').innerHTML = score;
+  var hs = localStorage.getItem("highscore");
+  document.getElementById('hs_death').innerHTML = "Your highscore is " + hs;
 
+  localStorage.setItem("newhighscore", score);
+  var newhs = localStorage.getItem("newhighscore");
+
+  if(score > hs) {
+    document.getElementById('hs_death').innerHTML = "Your <strong>new</strong> highscore is " + score;
+    sleep(5000).then(() => {
+      localStorage.setItem("highscore", score);
+    });
+  }
+
+  document.getElementById('livescore').innerHTML = score;
+  gameOver = 1;
   clearInterval(gameMech);
   clearInterval(laserpickerMech);
   document.getElementById('end-window').style.display = "inline";

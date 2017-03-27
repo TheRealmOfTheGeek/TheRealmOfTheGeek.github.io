@@ -1,5 +1,5 @@
 var laser = Math.floor(Math.random() * 6) + 1;
-var laserinuse = 0;
+var lastlaser = 0;
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -9,16 +9,29 @@ var score = 0;
 
 function startLasers() {
 laserpickerMech = setInterval(function(){
-      var random = Math.floor(Math.random() * $('.laser').length);
-      $('.prelaser').hide().eq(random).show();
+  if(laser == lastlaser) {
+        var random = Math.floor(Math.random() * $('.laser').length);
+        $('.prelaser').hide().eq(random).show();
 
-      sleep(1500).then(() => {
-        $('.laser').hide().eq(random).show();
-        
-      });
-      score = score + 1;
+        sleep(1500).then(() => {
+          $('.laser').hide().eq(random).show();
+          score = score + 1;
+          document.getElementById('livescore-alive').innerHTML = score;
+        });
+      } else {
+var random = Math.floor(Math.random() * $('.laser').length);
+        $('.prelaser').hide().eq(random).show();
 
-        document.getElementById('livescore-alive').innerHTML = score;
+        sleep(1500).then(() => {
+          if(gameOver == 1) {
+            return;
+          } else {
+          $('.laser').hide().eq(random).show();
+          score = score + 1;
+          document.getElementById('livescore-alive').innerHTML = score;
+          }
+        });
+      }
       
 
   }, 2000);
