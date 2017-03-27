@@ -5,7 +5,7 @@ function setupLasers(amount) {
 
   var amtLasers = (document.getElementById('game-container').clientHeight / 125);
 
-  var lasers = Math.floor(amtLasers) - 1;
+  var lasers = Math.floor(amtLasers) / 2;
   console.log(lasers)
   for (i = 0; i < lasers; i++) {
     var shooter = document.createElement('div');
