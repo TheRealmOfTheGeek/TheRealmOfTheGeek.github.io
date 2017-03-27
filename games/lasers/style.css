@@ -127,6 +127,10 @@
   background-color: rgb(214, 65, 65);
 }
 
+#tweet-btn {
+  background-color: #169DE7;
+}
+
 @media only screen and (max-width: 1000px) {
     * {
       overflow: hidden;

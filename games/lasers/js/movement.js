@@ -105,4 +105,6 @@ function endGame() {
   clearInterval(gameMech);
   clearInterval(laserpickerMech);
   document.getElementById('end-window').style.display = "inline";
+  var tweet = document.getElementById('tweetr');
+  tweet.href = "https://twitter.com/intent/tweet?text=I just did great in the %23LasersGame%21 I dodged " + score + " lasers%21%21 try your skills and tweet your score%21 lasers.therotg.com";
 }
