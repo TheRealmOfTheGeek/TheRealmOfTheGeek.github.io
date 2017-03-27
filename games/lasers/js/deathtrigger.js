@@ -21,7 +21,7 @@ function collision($div1, $div2) {
 
 
 window.setInterval(function(){
-
+/*
   if(collision($('#player-container'), $('#laserbeam')) == true) {
     endGame();
   }
@@ -41,5 +41,14 @@ window.setInterval(function(){
   if(collision($('#player-container'), $('.four')) == true) {
     endGame();
   }
+  */
+  var slides = document.getElementsByClassName("laser");
+  for(var i = 0; i < slides.length; i++)
+  {
+    if(collision($('#player-container'), $(slides[i])) == true) {
+      endGame();
+    }
+  }
+
 
 }, 200);

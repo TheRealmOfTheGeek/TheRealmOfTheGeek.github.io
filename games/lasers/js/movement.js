@@ -1,4 +1,4 @@
-var speed = 11;
+var speed = 10;
 var move = false;
 
 var player = document.getElementById('player-container');
@@ -27,8 +27,11 @@ function mouseEnter() {
 }
 
 window.onload = function() {
+
   document.getElementById('start-btn').onclick = startGame;
   document.getElementById('end-btn').onclick = died;
+
+  setupLasers();
 
   var url_loc = window.location + '';
   var ifdead = url_loc.split("?");
@@ -36,6 +39,7 @@ window.onload = function() {
   if(ifdead[1] == "died") {
     startGame();
   }
+
 
 }
 
@@ -45,6 +49,7 @@ function startGame() {
   document.getElementById('start-window').style.display = "none";
   document.getElementById('end-window').style.display = "none";
 
+  setupLasers();
 
   startLasers();
   gameMech = setInterval(function(){

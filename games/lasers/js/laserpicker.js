@@ -14,12 +14,16 @@ laserpickerMech = setInterval(function(){
         $('.prelaser').hide().eq(random).show();
 
         sleep(1500).then(() => {
+          if(gameOver == 1) {
+            return;
+          } else {
           $('.laser').hide().eq(random).show();
           score = score + 1;
           document.getElementById('livescore-alive').innerHTML = score;
+        } 
         });
       } else {
-var random = Math.floor(Math.random() * $('.laser').length);
+        var random = Math.floor(Math.random() * $('.laser').length);
         $('.prelaser').hide().eq(random).show();
 
         sleep(1500).then(() => {
@@ -32,7 +36,7 @@ var random = Math.floor(Math.random() * $('.laser').length);
           }
         });
       }
-      
+
 
   }, 2000);
 
