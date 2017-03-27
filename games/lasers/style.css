@@ -1,5 +1,4 @@
 * {
-  overflow: hidden;
   user-select: none;
 -moz-user-select: none;
 }
@@ -13,6 +12,7 @@
   background-color: rgb(191, 188, 205);
   border: 5px solid black;
   padding: 1px;
+  overflow: hidden;
 }
 
 #player-container {
@@ -33,21 +33,21 @@
   z-index: 0;
   width: 125px;
   background-color: rgb(198, 136, 0);
-  left: -5px;
-  margin-top: 7%;
-  top: -90px;
+  left: -1px;
+  top: -30px;
+  margin-top: 5vw;
   height: 50px;
-  overflow: visible;
+  overflow: none;
 }
 
 #laserbeam {
   position: absolute;
   z-index: 5;
-
   width: 100vw;
-  background-color: rgb(250, 0, 0);
+  background-color: #E90022;
   height: 10px;
   top: 20px;
+  display: none;
 }
 
 #prelaserbeam {
