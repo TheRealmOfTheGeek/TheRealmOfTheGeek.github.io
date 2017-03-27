@@ -3,7 +3,7 @@ var m = document.getElementsByClassName('laser-shooter').currentStyle;
 // Shooter + Margin
 function setupLasers(amount) {
 
-  var amtLasers = document.getElementById('game-container').clientHeight / 175;
+  var amtLasers = (document.getElementById('game-container').clientHeight / 125) / 2;
 
   var lasers = Math.floor(amtLasers) - 1;
   console.log(lasers)
