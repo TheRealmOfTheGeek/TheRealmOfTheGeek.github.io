@@ -1,5 +1,5 @@
 function setupLasers() {
-  var height = document.getElementById('game-container').clientHeight / 6
+  var height = document.getElementById('game-container').clientHeight / 6;
   document.getElementById('laser-shooter').style.height = height;
 }
 
