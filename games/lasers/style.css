@@ -42,7 +42,7 @@
 
 #laserbeam {
   position: absolute;
-  z-index: 5;
+  z-index: 3;
   width: 100vw;
   background-color: #E90022;
   height: 10px;
