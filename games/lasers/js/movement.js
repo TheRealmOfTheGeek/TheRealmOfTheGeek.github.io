@@ -31,7 +31,7 @@ window.onload = function() {
   document.getElementById('start-btn').onclick = startGame;
   document.getElementById('end-btn').onclick = died;
 
-  setupLasers();
+  setupLasers(1);
 
   var url_loc = window.location + '';
   var ifdead = url_loc.split("?");
@@ -48,8 +48,6 @@ var gameMech;
 function startGame() {
   document.getElementById('start-window').style.display = "none";
   document.getElementById('end-window').style.display = "none";
-
-  setupLasers(1);
 
   startLasers();
   gameMech = setInterval(function(){
