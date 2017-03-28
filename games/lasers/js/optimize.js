@@ -1,3 +1,9 @@
+function setupLasers(amount) {
+  var height = document.getElementById('game-container').clientHeight / 6
+  document.getElementById('laser-shooter').style.height = height;
+}
+/*
+
 // get margin
 var m = document.getElementsByClassName('laser-shooter').currentStyle;
 // Shooter + Margin
