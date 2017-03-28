@@ -6,6 +6,8 @@ function setupLasers() {
   {
     $(lasrs[i]).height == height;
   }
+  
+  console.log("test version 1.0");
 }
 
 
