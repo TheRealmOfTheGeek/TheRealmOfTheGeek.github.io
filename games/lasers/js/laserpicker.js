@@ -17,10 +17,11 @@ laserpickerMech = setInterval(function(){
           if(gameOver == 1) {
             return;
           } else {
-          $('.laser').hide().eq(random).show();
-          score = score + 1;
-          document.getElementById('livescore-alive').innerHTML = score;
-        } 
+            $('.laser').hide().eq(random).show();
+            $('.prelaser').hide();
+            score = score + 1;
+            document.getElementById('livescore-alive').innerHTML = score;
+          } 
         });
       } else {
         var random = Math.floor(Math.random() * $('.laser').length);
@@ -30,9 +31,9 @@ laserpickerMech = setInterval(function(){
           if(gameOver == 1) {
             return;
           } else {
-          $('.laser').hide().eq(random).show();
-          score = score + 1;
-          document.getElementById('livescore-alive').innerHTML = score;
+            $('.laser').hide().eq(random).show();
+            score = score + 1;
+            document.getElementById('livescore-alive').innerHTML = score;
           }
         });
       }
