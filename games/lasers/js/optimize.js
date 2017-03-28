@@ -22,7 +22,6 @@ function setupLasers(amount) {
     prelaser.className = 'prelaser';
     prelaser.id = 'prelaserbeam';
 
-    // The variable iDiv is still good... Just append to it.
     shooter.appendChild(prelaser);
     shooter.appendChild(laser);
   }
