@@ -49,7 +49,7 @@ function startGame() {
   document.getElementById('start-window').style.display = "none";
   document.getElementById('end-window').style.display = "none";
 
-  setupLasers();
+  setupLasers(1);
 
   startLasers();
   gameMech = setInterval(function(){
