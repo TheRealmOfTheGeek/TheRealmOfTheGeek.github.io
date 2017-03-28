@@ -31,7 +31,6 @@ window.onload = function() {
   document.getElementById('start-btn').onclick = startGame;
   document.getElementById('end-btn').onclick = died;
 
-  setupLasers(1);
 
   var url_loc = window.location + '';
   var ifdead = url_loc.split("?");
@@ -39,6 +38,9 @@ window.onload = function() {
   if(ifdead[1] == "died") {
     startGame();
   }
+  
+    setupLasers();
+
 
 
 }
