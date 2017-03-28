@@ -53,7 +53,7 @@ function startGame() {
 
   startLasers();
   gameMech = setInterval(function(){
-      if($('#player-container').offset().top > 15) {
+      if($('#player-container').offset().top > 25) {
           if(mouseDown == 1) {
               speed = speed - 2;
               player.style.top = speed;
