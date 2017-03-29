@@ -6,6 +6,8 @@
     <script>
       window.onload = function() {
         $.get('https://www.nick-e.co.uk/tools/api/youtubechannel?id=UCuX4KZBMpQLToSwJWy-jCBw', function(data) {
+          var subs = data.channel.stats.subs;
+          console.log('Kento has ' + subs + ' subs!');
           document.getElementById('ksubs').innerHTML = "(" + data.channel.stats.subs + ")";
         });
       }
