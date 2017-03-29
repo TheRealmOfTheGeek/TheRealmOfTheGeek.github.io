@@ -30,3 +30,5 @@ subscribe http://bit.ly/1F7DPiJ
 blockingjs https://developers.google.com/speed/docs/insights/BlockingJS
 cpalette http://www.coolors.co
 jekyll https://jekyllrb.com/
+sso https://simpleshare.online/?ref=rotg
+lasers http://therotg.com/games/lasers/
