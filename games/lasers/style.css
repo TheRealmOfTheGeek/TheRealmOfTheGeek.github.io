@@ -3,6 +3,9 @@
 -moz-user-select: none;
 }
 
+div#footer a {
+    margin: 4px 8px;
+}
 
 #game-container {
   width: 98.5%;
