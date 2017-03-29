@@ -3,13 +3,13 @@
     <title>Lasers - An Original Game By Kenton Vizdos</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
-  <script>
-    $.get('https://www.nick-e.co.uk/tools/api/youtubechannel?id=UCuX4KZBMpQLToSwJWy-jCBw', function(data) {
+    <script>
       window.onload = function() {
-      document.getElementById('ksubs').innerHTML = "(" + data.channel.stats.subs + ")";
+        $.get('https://www.nick-e.co.uk/tools/api/youtubechannel?id=UCuX4KZBMpQLToSwJWy-jCBw', function(data) {
+          document.getElementById('ksubs').innerHTML = "(" + data.channel.stats.subs + ")";
+        });
       }
-    });
-  </script>
+    </script>
     <style >
 
     </style>
