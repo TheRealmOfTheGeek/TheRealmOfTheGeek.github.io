@@ -4,13 +4,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script>
-      window.onload = function() {
+     function updatesubs() {
         $.get('https://www.nick-e.co.uk/tools/api/youtubechannel?id=UCuX4KZBMpQLToSwJWy-jCBw', function(data) {
           var subs = data.channel.stats.subs;
           console.log('Kento has ' + subs + ' subs!');
           document.getElementById('ksubs').innerHTML = "(" + data.channel.stats.subs + ")";
         });
       }
+      setTimeout(updatesubs, 1000);
+      setInterval(updatesubs, 20000);
     </script>
     <style >
 
