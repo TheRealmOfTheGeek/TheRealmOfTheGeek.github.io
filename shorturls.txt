@@ -33,3 +33,4 @@ jekyll https://jekyllrb.com/
 sso https://simpleshare.online/?ref=rotg
 lasers http://therotg.com/games/lasers/
 games http://therotg.com/games/
+snake http://www.kentonvizdos.com/games/Snake/
