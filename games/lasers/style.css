@@ -71,7 +71,7 @@ div#footer a {
 
 #footer {
   margin-top: 20px;
-  height: 100%;
+  max-height: 100%;
   width: 100%;
   background-color: rgb(113, 113, 113);
   text-align: center;
