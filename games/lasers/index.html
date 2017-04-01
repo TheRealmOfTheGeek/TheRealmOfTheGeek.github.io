@@ -4,8 +4,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script>
+      var sentscore = false;
      function sendscore(s, t) {
-       $.get('https:/www.nck-e.co.uk/tools/api/jslasers-scores?score=' + s + '&time=' + t, function(data) {});
+       if (!sentscore) {
+         $.get('https:/www.nck-e.co.uk/tools/api/jslasers-scores?score=' + s + '&time=' + t, function(data) {});
+       }
+       sentscore = true;
      } 
      function updatesubs() {
         $.get('https://www.nick-e.co.uk/tools/api/youtubechannel?id=UCuX4KZBMpQLToSwJWy-jCBw', function(data) {
