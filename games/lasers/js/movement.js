@@ -1,6 +1,8 @@
 var speed = 10;
 var move = false;
 
+var timestart = 0;
+
 var player = document.getElementById('player-container');
 var mouseDown = 0;
 
@@ -50,7 +52,7 @@ var gameMech;
 function startGame() {
   document.getElementById('start-window').style.display = "none";
   document.getElementById('end-window').style.display = "none";
-
+  starttime = Math.round((new Date()).getTime() / 1000)
   startLasers();
   gameMech = setInterval(function(){
       if($('#player-container').offset().top > 25) {
@@ -99,7 +101,9 @@ function endGame() {
   var newhs = localStorage.getItem("newhighscore");
 
   document.getElementById('livescore').innerHTML = score;
-
+  
+  sendscore(score, Math.round((new Date()).getTime() / 1000) - starttime);
+  
   if(score > hs) {
     document.getElementById('hs_death').innerHTML = "Your <strong>new</strong> highscore is " + score;
     localStorage.setItem("highscore", score);
