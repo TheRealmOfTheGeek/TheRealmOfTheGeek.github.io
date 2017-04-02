@@ -15,14 +15,13 @@ div#footer a {
   border: 5px solid black;
   padding: 1px;
   overflow: hidden;
-  height: 99%;
 }
 
 #player-container {
   position: absolute;
   left: 50%;
   background-color: red;
-  width: 125px;
+  width: 75px;
   height: 11.25%;
 
 }
@@ -34,25 +33,23 @@ div#footer a {
 .laser-shooter {
   position: relative;
   z-index: 0;
-  width: 250px;
+  width: 125px;
   background-color: rgb(198, 136, 0);
   left: -1px;
   top: -4%;
-  margin-top: 15%;
-  margin-bottom: 20%;
-  height: 100px;
+  margin-top: 19%;
+  height: 50px;
   overflow: none;
 }
 
 #laserbeam {
-  display: none;
   position: absolute;
   z-index: 5;
   width: 100vw;
   background-color: #E90022;
-  height: 25%;
-  top: 35px;
-
+  height: 10px;
+  top: 20px;
+  display: none;
 }
 
 #prelaserbeam {
@@ -61,8 +58,8 @@ div#footer a {
 
   width: 100vw;
   background-color: #fcc920;
-  height: 25%;
-  top: 35px;
+  height: 10px;
+  top: 20px;
   display: none;
 }
 
@@ -72,7 +69,14 @@ div#footer a {
 
 
 #footer {
-  display: none;
+  margin-top: 10px;
+  max-height: 100%;
+  width: 100%;
+  background-color: rgb(113, 113, 113);
+  text-align: center;
+  padding-top: 10px;
+  height: 100%;
+  overflow: hidden;
 
 }
 
@@ -81,30 +85,27 @@ div#footer a {
 }
 
 .overlay {
-  font-size: 28px;
   background-color: white;
-  width: 75%;
+  width: 55%;
   text-align: center;
   z-index: 10;
   position: absolute;
-  top: 30%;
-  left: 14%;
+  left: 5px;
+  top: 25%;
+  left: 24%;
   border-radius: 15px;
   border: 2px solid black;
+  padding: 5px;
 }
 
 .overlay-btn {
   margin-bottom: 15px;
-  font-size: 28px;
-
 }
 
 .end {
   display: none;
   background-color: rgb(213, 51, 51);
   color: white;
-  font-size: 28px;
-
 }
 
 .scorekeeper {
@@ -117,16 +118,12 @@ div#footer a {
   padding: 5px;
   padding-right: 25px;
   border: 2px solid black;
-  font-size: 28px;
-
 }
 
 .overlay-btn {
-  font-size: 38px;
-
+  font-size: 18px;
   border-radius: 8px;
   border: 2px solid black;
-
 }
 #start-btn {
   background-color: rgb(18, 236, 53);
