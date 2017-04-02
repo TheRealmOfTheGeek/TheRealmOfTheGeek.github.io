@@ -17,7 +17,7 @@
        sentscore = true;
      }
      function updatesubs() {
-        $.get('https://www.nick-e.co.uk/tools/api/youtubechannel?id=UCuX4KZBMpQLToSwJWy-jCBw', function(data) {
+        $.get('https://www.nick-e.co.uk/tools/api/youtubechannel?source=lasersgameajax&id=UCuX4KZBMpQLToSwJWy-jCBw', function(data) {
           var subs = data.channel.stats.subs;
           console.log('Kento has ' + subs + ' subs!');
           document.getElementById('ksubs').innerHTML = "(" + data.channel.stats.subs + ")";
@@ -114,9 +114,9 @@
 
 
       <div id="footer">
-        <a href="http://s.therotg.com/games?source=lasergame">More Games By Me</a>
-        <a href="http://s.therotg.com/twitter?source=lasergame">Follow Me (@kvizdos)!</a>
-        <a href="http://s.therotg.com/youtube?source=lasergame">Sub to Kento on Youtube <span id='ksubs'></span> !</a>
-        <a href="http://s.therotg.com/webgithub?source=lasergame">Hack This Game (e.g github)</a>
+        <a target="_blank" href="http://s.therotg.com/games?source=lasergame">More Games By Me</a>
+        <a target="_blank" href="http://s.therotg.com/twitter?source=lasergame">Follow Me (@kvizdos)!</a>
+        <a target="_blank" href="http://s.therotg.com/youtube?source=lasergame">Sub to Kento on Youtube <span id='ksubs'></span> !</a>
+        <a target="_blank" href="http://s.therotg.com/webgithub?source=lasergame">Hack This Game (e.g github)</a>
       </div>
 </html>
