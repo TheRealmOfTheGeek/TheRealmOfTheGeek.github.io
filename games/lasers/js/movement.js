@@ -6,8 +6,6 @@ var timestart = 0;
 var player = document.getElementById('player-container');
 var mouseDown = 0;
 
-
-
 document.body.onmousedown = function() {
   mouseDown = 1;
   console.log(mouseDown);
@@ -18,6 +16,7 @@ document.body.onmouseup = function() {
   console.log(mouseDown);
 
 }
+
 
 function mouseOut() {
   mouseDown = 0;
@@ -40,7 +39,7 @@ window.onload = function() {
   if(ifdead[1] == "died") {
     startGame();
   }
-  
+
     setupLasers();
 
 
@@ -81,6 +80,16 @@ function startGame() {
   }, 5);
 
 
+  $(document.body).bind('touchstart', function(){
+    mouseDown = 1;
+    console.log(mouseDown);
+  });
+
+  $(document.body).bind('touchend', function(){
+    mouseDown = 0;
+    console.log(mouseDown);
+  });
+
 }
 
 function died() {
@@ -101,9 +110,9 @@ function endGame() {
   var newhs = localStorage.getItem("newhighscore");
 
   document.getElementById('livescore').innerHTML = score;
-  
+
   sendscore(score, Math.round((new Date()).getTime() / 1000) - starttime);
-  
+
   if(score > hs) {
     document.getElementById('hs_death').innerHTML = "Your <strong>new</strong> highscore is " + score;
     localStorage.setItem("highscore", score);

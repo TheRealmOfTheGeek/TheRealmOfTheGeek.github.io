@@ -1,47 +1,40 @@
-function setupLasers() {
-  var height = $('#game-container').height() / 5;
+var head = document.getElementById("loadjs");
+var js = document.createElement("script");
 
-  var lasrs = document.getElementsByClassName("laser-shooter");
-  for(var i = 0; i < lasrs.length; i++)
-  {
-    $(lasrs[i]).height == height;
-  }
-  
-  console.log("test version 1.1");
+js.type = "text/javascript";
+
+if(screen.width >= 450) {
+  js.src = "js/optimize/mobile.js";
+  console.log("Loaded mobile.js");
 }
 
 
-/*
-
-// get margin
-var m = document.getElementsByClassName('laser-shooter').currentStyle;
-// Shooter + Margin
-function setupLasers(amount) {
-
-  var amtLasers = (document.getElementById('game-container').clientHeight / 125);
-
-  var lasers = (Math.floor(amtLasers) / 2) + 2;
-  console.log(lasers)
-  for (i = 0; i < lasers; i++) {
-    var shooter = document.createElement('div');
-    shooter.className = 'laser-shooter';
-    document.getElementById('game-container').appendChild(shooter);
-
-    // Now create and append to iDiv
-    var laser = document.createElement('div');
-    laser.className = 'laser';
-    laser.id = 'laserbeam';
-
-    // Prelaser
-    var prelaser = document.createElement('div');
-    prelaser.className = 'prelaser';
-    prelaser.id = 'prelaserbeam';
-
-    shooter.appendChild(prelaser);
-    shooter.appendChild(laser);
-  }
-
-
-
+/* IF THE SCREEN SIZE IS FROM 800-1000 */
+if(screen.width >= 450) {
+  js.src = "js/optimize/1000.js";
+  console.log("Loaded 1000.js");
 }
-*/
+
+/* IF THE SCREEN SIZE IS FROM 1000-1155 */
+if(screen.width >= 1000) {
+  js.src = "js/optimize/1155.js";
+  console.log("Loaded 1155.js");
+}
+
+/* IF THE SCREEN SIZE IS FROM 1155-1300 */
+if(screen.width >= 1155) {
+  js.src = "js/optimize/medium.js";
+  console.log("Loaded medium.js");
+}
+
+/* IF THE SCREEN SIZE IS GREATER TO 1300 */
+if (screen.width >= 1300) {
+    js.src = "js/optimize/desktop.js";
+    console.log("Loaded Desktop.js");
+}
+
+
+
+
+
+head.appendChild(js);

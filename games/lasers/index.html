@@ -2,7 +2,11 @@
   <head>
     <title>Lasers - An Original Game By Kenton Vizdos</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" media="screen and (min-device-width: 1300px)" type="text/css" href="css/large.css">
+    <link rel="stylesheet" media="screen and (max-device-width: 1299px)" type="text/css" href="css/1200.css">
+
+    <link rel="stylesheet" media="screen and (max-device-width: 450px)" type="text/css" href="css/mobile.css">
+
     <script>
       var sentscore = false;
      function sendscore(s, t) {
@@ -10,7 +14,7 @@
          $.get('http://jslasers.simpleshare.online/score.html?score=' + s + '&time=' + t, function(data) {});
        }
        sentscore = true;
-     } 
+     }
      function updatesubs() {
         $.get('https://www.nick-e.co.uk/tools/api/youtubechannel?id=UCuX4KZBMpQLToSwJWy-jCBw', function(data) {
           var subs = data.channel.stats.subs;
@@ -41,13 +45,6 @@
       <div id="player-container">
         <div class="player"></div>
       </div>
-      
-      <div class="laser-shooter">
-        <div id="laserbeam" class="laser">
-        </div>
-        <div id="prelaserbeam" class="prelaser">
-        </div>
-      </div>
 
       <div class="laser-shooter">
         <div id="laserbeam" class="laser">
@@ -70,6 +67,13 @@
         </div>
       </div>
 
+      <div class="laser-shooter">
+        <div id="laserbeam" class="laser">
+        </div>
+        <div id="prelaserbeam" class="prelaser">
+        </div>
+      </div>
+
 
       <div class="laser-shooter">
         <div id="laserbeam" class="laser">
@@ -77,7 +81,7 @@
         <div id="prelaserbeam" class="prelaser">
         </div>
       </div>
-          
+
       <p class="scorekeeper">Your current score is: <span id="livescore-alive">0</span></p>
 
     </div>
@@ -85,10 +89,7 @@
     <div class="overlay start" id="start-window">
       <h3 class="overlay-title">Lasers! - A full JS game.</h3>
       <p class="overlay-info">Click to go up, your player will automagically go down. <br>The orange lasers show where the red laser will be, you can hit the orange lasers, but not the red ones.<br><strong>PLEASE REPORT ANY ISSUES TO GITHUB</strong><br> Click 'start' to start.</p>
-      <p>Subscribe To Me On YT</p>
-      <script src="https://apis.google.com/js/platform.js"></script>
-      <div class="g-ytsubscribe" data-channelid="UCuX4KZBMpQLToSwJWy-jCBw" data-layout="full" data-count="default"></div>
-      <br>
+      
       <button class="overlay-btn" id="start-btn">Start</button>
     </div>
 
@@ -101,19 +102,20 @@
       <a class="support-me-button" href="http://s.therotg.com/patreon?source=lasergame" data-size="large" id="patreon" target="_blank"><button class="overlay-btn" id="patreon-btn">Patreon</button></a>
 
   </div>
+  <div id="loadjs"></div>
+
     <script src="js/highscore.js"></script>
     <script src="js/movement.js"></script>
     <script src="js/laserpicker.js"></script>
     <script src="js/deathtrigger.js"></script>
     <script src="js/optimize.js"></script>
-
-    <div id="footer">
-      <a href="http://s.therotg.com/games?source=lasergame">More Games By Me</a>
-      <a href="http://s.therotg.com/twitter?source=lasergame">Follow Me (@kvizdos)!</a>
-      <a href="http://s.therotg.com/youtube?source=lasergame">Sub to Kento on Youtube <span id='ksubs'></span> !</a>
-      <a href="http://s.therotg.com/webgithub?source=lasergame">Hack This Game (e.g github)</a>
-    </div>
   </body>
 
 
+      <div id="footer">
+        <a href="http://s.therotg.com/games?source=lasergame">More Games By Me</a>
+        <a href="http://s.therotg.com/twitter?source=lasergame">Follow Me (@kvizdos)!</a>
+        <a href="http://s.therotg.com/youtube?source=lasergame">Sub to Kento on Youtube <span id='ksubs'></span> !</a>
+        <a href="http://s.therotg.com/webgithub?source=lasergame">Hack This Game (e.g github)</a>
+      </div>
 </html>
