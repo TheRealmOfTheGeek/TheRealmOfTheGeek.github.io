@@ -31,7 +31,7 @@ window.onload = function() {
 
   document.getElementById('start-btn').onclick = startGame;
   document.getElementById('end-btn').onclick = died;
-  document.getElementById('tweets').style.display = "none";
+  document.getElementById('tweets').style.display = "block";
 
   var url_loc = window.location + '';
   var ifdead = url_loc.split("?");
@@ -49,6 +49,7 @@ window.onload = function() {
 var gameMech;
 
 function startGame() {
+  document.getElementById('tweets').style.display = "none";
   document.getElementById('start-window').style.display = "none";
   document.getElementById('end-window').style.display = "none";
   starttime = Math.round((new Date()).getTime() / 1000);
