@@ -31,7 +31,7 @@ secondmonitor http://amzn.to/2h0EJWz
 snake https://kentonvizdos.com/games/Snake/
 social https://therotg.com/social/
 sso https://simpleshare.online/ref/rotg
-status http://status.therotg.com/
+status https://status.therotg.com/
 subscribe http://bit.ly/1F7DPiJ
 trello https://trello.com/kentonvizdos
 twitter https://twitter.com/kvizdos
