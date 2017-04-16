@@ -20,6 +20,6 @@ $meta = '
 		<meta name="author" content="' . $author . ', ' . $email . '">
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="' . $url . '">
-		<meta property="og:image" content="https://www.nick-e.co.uk/tools/api/webimg?getfull=true&url=' . rawurlencode($url) . '" />
+		<meta property="og:image" content="https://www.nick-e.co.uk/tools/api/webimg?getsmall=true&url=' . rawurlencode($url) . '" />
 ';
 ?>
