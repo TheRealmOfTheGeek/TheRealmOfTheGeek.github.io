@@ -2,6 +2,7 @@
 <?php
 $reqs = shell_exec('cat /home/ubuntu/web/access.log');
 $u = shell_exec("cat /home/ubuntu/web/access.log | awk '{print $1}' | sort | uniq | wc -l");
+$u = str_replace("\n","",$u);
 $top = shell_exec("cat /home/ubuntu/web/access.log | awk '{print $5}' | sort | uniq -c | sort -rh");
 $d = explode("\n",$reqs);
 echo "Unique Visitors: " . $u . "\n";
