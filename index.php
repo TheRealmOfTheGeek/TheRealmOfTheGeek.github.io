@@ -191,7 +191,7 @@ include 'includes/rotg.php';
 </div>
 
 <footer class="container-fluid text-center">
-  <p>(c) Kenton Vizdos 2017</p>
+  <p>(c) Kenton Vizdos <?php echo $year; ?></p>
 </footer>
 
 </body>
