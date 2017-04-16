@@ -10,7 +10,6 @@ $author = 'Kenton Vizdos';
 $logo = 'https://therotg.com/static/logo.jpg';
 $url = $_SERVER['REQUEST_SCHEME'] . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 $meta = '
-		<meta charset="UTF-8">
 		<meta name="language" content="en">
 		
 		<link rel="canonical" href="' . $url . '">
