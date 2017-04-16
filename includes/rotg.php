@@ -1,5 +1,9 @@
 <?php
 header('Server: ROTGServer');
+if (isset($_GET['debug'])) {
+	error_reporting(E_ALL);
+	ini_set('display_errors', 1);
+}
 $year = date('Y');
 $email = 'contact@therotg.com';
 $author = 'Kenton Vizdos';
