@@ -11,8 +11,8 @@ include 'includes/rotg.php';
   <link rel="stylesheet" href="../style.css">
   <?php echo $meta; ?>
   <script src="static/jquery.js"></script>
-  <script src="static/bootstrap.js"></script>
   <script src="static/rotg.js"></script>
+  <script src="static/bootstrap.js"></script>
   <style>
   * {
     margin: 0;
