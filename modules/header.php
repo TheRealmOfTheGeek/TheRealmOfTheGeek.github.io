@@ -1,4 +1,5 @@
 <?php 
+  include 'includes/rotg.php';
 
   echo
   '

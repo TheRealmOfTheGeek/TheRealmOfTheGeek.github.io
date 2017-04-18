@@ -1,6 +1,4 @@
-<?php
-include 'includes/rotg.php';
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
