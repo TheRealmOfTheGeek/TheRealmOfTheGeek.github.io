@@ -1,5 +1,5 @@
 <?php 
-  include 'includes/rotg.php';
+ 
   var page = basename(__FILE__, '.php');
 
   echo

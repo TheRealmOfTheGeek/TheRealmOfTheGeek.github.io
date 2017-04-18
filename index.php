@@ -1,8 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <?php require "modules/header.php"; ?>
+	<?php include "includes/rotg.php" ?>
+	<?php include "modules/header.php" ?>
 </head>
 <body>
 
