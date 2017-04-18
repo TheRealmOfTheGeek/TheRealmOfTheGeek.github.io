@@ -2,8 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>TheROTG.com</title>
-  <?php include="modules/header.php"; ?>
+  <?php require "modules/header.php"; ?>
 </head>
 <body>
 
