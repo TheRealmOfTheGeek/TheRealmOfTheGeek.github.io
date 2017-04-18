@@ -39,5 +39,9 @@
     });
   </script>
   ';
+  var file = basename(__FILE__, '.php');
+  echo '<script>console.log("Loaded '.file.' Successfully.");</script>'
+
+
 
 ?>
