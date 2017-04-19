@@ -10,9 +10,11 @@ echo "Unique Visitors: " . $u . "\n";
 echo "Total Requests: " . count($d) . "\n";
 echo "Top Pages:\n" . $top . "\n";
 foreach($d as $r) {
-  $parts = explode(" ", $r);
-  $parts[0] = substr(md5($parts[0]), 0, 8);
-  echo implode(" ", $parts) . "\n";
+  if (str_replace(" ", "", $r) != '') {
+    $parts = explode(" ", $r);
+    $parts[0] = substr(md5($parts[0]), 0, 8);
+    echo implode(" ", $parts) . "\n";
+  }
 }
 
 ?>
