@@ -3,7 +3,7 @@ $i = json_decode(file_get_contents('https://api.nick.tools/ipinfo?ip=' . $_SERVE
 $org = $i['org'];
 if (stripos($org, 'GitHub') !== false) {
   echo "Starting the pull!!!\n";
-//echo shell_exec('bash /home/ubuntu/web/pull.sh');
+echo shell_exec('bash /home/ubuntu/web/pull.sh');
 //echo shell_exec('bash /home/ubuntu/web/restart.sh');
 echo "\n The Server has updated from github successfully!";
 } else {
