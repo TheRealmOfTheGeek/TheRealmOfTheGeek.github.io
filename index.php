@@ -181,5 +181,6 @@
 	<iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=13&l=ez&f=ifr&linkID=a68b9b74aed948723432129314c882b3&t=kvizdos-20&tracking_id=kvizdos-20" width="468" height="60" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe></footer>
 	-->
 	<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=4ce8f35d-b2a1-464d-8555-05ba5c6b73a9"></script>
+</footer>
 </body>
 </html>
