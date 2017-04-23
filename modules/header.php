@@ -1,4 +1,3 @@
-<head>
   <?php 
 	$page = basename(__FILE__, '.php');
  if($page == "index") { $page == "home" }
@@ -37,4 +36,3 @@
       enable_page_level_ads: true
     });
   </script>
-</head>
