@@ -177,8 +177,7 @@
 </div>
 
 <footer class="container-fluid text-center">
-<iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=48&l=ur1&category=electronics&f=ifr&linkID=3bd4d28a1b2349e0e143b58e31f2eb99&t=kvizdos-20&tracking_id=kvizdos-20" width="728" height="90" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>  <p>(c) Kenton Vizdos <?php echo $year; ?></p>
-</footer>
+<iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=13&l=ez&f=ifr&linkID=a68b9b74aed948723432129314c882b3&t=kvizdos-20&tracking_id=kvizdos-20" width="468" height="60" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe></footer>
 
 </body>
 </html>
