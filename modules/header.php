@@ -2,7 +2,7 @@
 	$page = basename(__FILE__, '.php');
  if($page == "index") { $page == "home" }
 	echo "<title>".$page." | TheROTG.com</title>";	
-  ?>
+  echo '
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="static/bootstrap.css">
@@ -36,3 +36,5 @@
       enable_page_level_ads: true
     });
   </script>
+  ':
+?>
