@@ -5,12 +5,12 @@
   echo '
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="static/bootstrap.css">
+  <link rel="stylesheet" href="../static/bootstrap.css">
   <link rel="stylesheet" href="../style.css">
   <?php echo $meta; ?>
-  <script src="static/jquery.js"></script>
-  <script src="static/rotg.js"></script>
-  <script src="static/bootstrap.js"></script>
+  <script src="../static/jquery.js"></script>
+  <script src="../static/rotg.js"></script>
+  <script src="../static/bootstrap.js"></script>
   <style>
   * {
     margin: 0;
