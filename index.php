@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include "modules/header.php"; ?>
+<head>
+	<?php 
+		include 'modules/header.php'; 
+	?>
+</head>
 <body>
 
 <nav class="navbar navbar-inverse">
