@@ -14,6 +14,7 @@
 
 	<link rel="apple-touch-icon" sizes="128x128" href="../static/logo.jpg">
 	<link rel="apple-touch-icon-precomposed" sizes="128x128" href="../static/logo.jpg">
+	<link rel="favicon" href="../static/logo.jpg">
   <style>
   * {
     margin: 0;
