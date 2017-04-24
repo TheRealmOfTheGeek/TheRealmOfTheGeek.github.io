@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title><?php echo $page ?></title>
+<title>TheROTG.com</title>
 
   <link rel="stylesheet" href="../static/bootstrap.css">
   <link rel="stylesheet" href="../style.css">
