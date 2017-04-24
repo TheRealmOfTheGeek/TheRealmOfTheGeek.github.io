@@ -1,5 +1,5 @@
 <?php 
-	$page = $_SERVER["PHP_SELF"];
+	$page = basename($_SERVER["PHP_SELF"], ".php");
  if($page == "index") { $page == "home"; }
   echo "<title>$page | TheROTG</title>";
 ?>  
