@@ -1,11 +1,10 @@
 <?php 
 if($page == "index") { $page == "home" }
-$uc = ucfirst($page);
 ?>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	
-<title><?php echo $uc; ?> | TheROTG</title>  
+<title><?php echo $page; ?> | TheROTG</title>  
 
   <link rel="stylesheet" href="../static/bootstrap.css">
   <link rel="stylesheet" href="../style.css">
