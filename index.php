@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<?php 
-		var $page = __FILE__;
+		$page = __FILE__;
 		include("modules/header.php"); 
 	?>
 </head>
