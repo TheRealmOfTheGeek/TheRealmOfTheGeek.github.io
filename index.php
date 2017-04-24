@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<?php 
-		include_once "modules/header.php"; 
+		include("modules/header.php"); 
 	?>
 </head>
 	
