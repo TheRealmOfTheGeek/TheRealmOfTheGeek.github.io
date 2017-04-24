@@ -126,6 +126,6 @@
   </div>
 </div>
 
-<?php include("../modules/footer.php"); ?>
+<?php include("modules/footer.php"); ?>
 </body>
 </html>
