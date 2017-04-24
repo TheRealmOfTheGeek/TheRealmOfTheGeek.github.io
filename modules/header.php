@@ -2,7 +2,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	
-<title><?php echo $page; ?> | TheROTG</title>  
+<title><?php echo ucfirst($page); ?> | TheROTG</title>  
 
   <link rel="stylesheet" href="../static/bootstrap.css">
   <link rel="stylesheet" href="../style.css">
