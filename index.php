@@ -4,6 +4,7 @@
 	<?php 
 		$page = basename(__FILE__, ".php");
 		include("modules/header.php"); 
+	
 	?>
 </head>
 	
