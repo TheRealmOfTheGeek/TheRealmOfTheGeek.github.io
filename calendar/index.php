@@ -10,7 +10,7 @@
 	
 <body>
 
-<?php include("modules/navbar.php"); ?>
+<?php include("../modules/navbar.php"); ?>
 
 <div class="jumbotron" id="header">
   <div class="container text-center">
