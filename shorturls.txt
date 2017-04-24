@@ -1,4 +1,5 @@
  https://therotg.com/
+amazon http://amzn.to/2paY7Vs
 blockingjs https://developers.google.com/speed/docs/insights/BlockingJS
 camera http://amzn.to/2i4Mrgm
 computer http://amzn.to/2h1jrKe
