@@ -7,10 +7,11 @@
 	?> | TheROTG</title>  
 
   <link rel="stylesheet" href="../static/bootstrap.css">
-  <link rel="stylesheet" href="../style.css">
-  <script src="../static/jquery.js"></script>
+  <!--<link rel="stylesheet" href="../style.css"> -->
+ 
+  <!--<script src="../static/jquery.js"></script> -->
   <script src="../static/rotg.js"></script>
-  <script src="../static/bootstrap.js"></script>
+  <!-- <script src="../static/bootstrap.js"></script> -->
 
 	<link rel="apple-touch-icon" sizes="128x128" href="../static/logo.jpg">
 	<link rel="apple-touch-icon-precomposed" sizes="128x128" href="../static/logo.png">
