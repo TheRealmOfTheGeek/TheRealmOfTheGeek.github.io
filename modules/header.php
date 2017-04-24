@@ -1,9 +1,8 @@
-<?php 
-	$page = basename($_SERVER['PHP_SELF'], ".php");
-	echo "<title>".$page." | TheROTG</title>";
-?>  
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<title><?php $page ?></title>  
 
   <link rel="stylesheet" href="../static/bootstrap.css">
   <link rel="stylesheet" href="../style.css">
