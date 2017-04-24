@@ -4,7 +4,7 @@
 	<?php 
 		$page = basename(__FILE__, ".php");
 		if($page == "index") { $page == "home" }
-		ucfirst($page);
+		$page == ucfirst($page);
 		include("modules/header.php"); 
 	?>
 </head>
