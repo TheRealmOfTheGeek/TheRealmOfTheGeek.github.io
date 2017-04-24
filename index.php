@@ -3,6 +3,8 @@
 <head>
 	<?php 
 		$page = basename(__FILE__, ".php");
+		if($page == "index") { $page == "home" }
+		ucfirst($page);
 		include("modules/header.php"); 
 	?>
 </head>
