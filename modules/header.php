@@ -3,10 +3,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	
 <title><?php
-	$active = $page."";
-	if($page == "index") { $active = "home" }
 	echo ucfirst($page); 
-	
 	?> | TheROTG</title>  
 
   <link rel="stylesheet" href="../static/bootstrap.css">
