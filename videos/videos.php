@@ -29,9 +29,7 @@
   </div>
 </div>
 
-<footer class="container-fluid text-center">
-  <p>(c) Kenton Vizdos 2017</p>
-</footer>
+<?php include("../modules/footer.php"); ?>
 
 </body>
 </html>
