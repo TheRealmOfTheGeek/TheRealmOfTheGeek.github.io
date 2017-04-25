@@ -5,7 +5,7 @@
 $file = fopen("supporters.txt","r");
 
 while(! feof($file))
-  {
+  /*{
   var info = explode(" ||| ", fgets($file));
   
   var user = info[0];
@@ -14,6 +14,7 @@ while(! feof($file))
     
   echo "'s said <br />";
   }
+  */
 
 fclose($file);
 
