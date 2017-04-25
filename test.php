@@ -1,8 +1,8 @@
 <html>
 <body>
 <?php
-  /*
   $file = fopen("supporters.txt","r");
+  /*
 
   while(! feof($file))
     {
