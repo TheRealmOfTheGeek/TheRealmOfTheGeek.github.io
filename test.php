@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <body>
 
@@ -12,10 +11,8 @@ while(! feof($file))
   var user = info[0];
   var msg = info[1];
   var dt = info[2];
-  
-
     
-  echo user. "'s said <br />";
+  echo "'s said <br />";
   }
 
 fclose($file);
