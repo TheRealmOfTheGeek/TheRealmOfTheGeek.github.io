@@ -2,10 +2,9 @@
 <body>
 <?php
   $file = fopen("supporters.txt","r");
-  /*
 
-  while(! feof($file))
-    {
+  while(! feof($file)) {
+    /*
     var info = explode(" ||| ", fgets($file));
 
     var user = info[0];
@@ -13,10 +12,11 @@
     var dt = info[2];
 
     echo "'s said <br />";
+    */
     }
 
   fclose($file);
-  */
+  
   ?>
 
 
