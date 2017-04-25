@@ -1,8 +1,7 @@
 <html>
 <body>
 <?php
-  $file = fopen("supporters.txt","r");
-  $handle = fopen("inputfile.txt", "r");
+  $handle = fopen("supporters.txt", "r");
     if ($handle) {
         while (($line = fgets($handle)) !== false) {
           var info = explode(" ||| ", fgets($file));
