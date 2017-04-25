@@ -15,7 +15,7 @@ while(! feof($file))
   
 
     
-  echo user. "'s said ".msg." on ".dt."<br />";
+  echo user. "'s said <br />";
   }
 
 fclose($file);
