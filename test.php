@@ -7,16 +7,20 @@ $file = fopen("supporters.txt","r");
 
 while(! feof($file))
   {
-  echo fgets($file). "<br />";
+  var info = explode(" ||| ", fgets($file));
+  
+  var user = info[0];
+  var msg = info[1];
+  var dt = info[2];
+  
+
+    
+  echo user. "'s said ".msg." on ".dt."<br />";
   }
 
 fclose($file);
 
 ?>
-
-<h2>Convert a string written in JSON format, into a JavaScript object.</h2>
-
-<p id="demo"></p>
 
 </body>
 </html>
