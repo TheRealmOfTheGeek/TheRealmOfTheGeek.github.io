@@ -48,7 +48,6 @@ window.onload = function() {
 var gameMech;
 
 function startGame() {
-  document.getElementById('tweets').style.display = "none";
   document.getElementById('start-window').style.display = "none";
   document.getElementById('end-window').style.display = "none";
   starttime = Math.round((new Date()).getTime() / 1000);
