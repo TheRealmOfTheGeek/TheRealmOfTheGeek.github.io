@@ -31,7 +31,6 @@ window.onload = function() {
 
   document.getElementById('start-btn').onclick = startGame;
   document.getElementById('end-btn').onclick = died;
-  document.getElementById('tweets').style.display = "block";
 
   var url_loc = window.location + '';
   var ifdead = url_loc.split("?");
