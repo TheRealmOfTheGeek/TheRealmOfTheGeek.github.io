@@ -12,8 +12,8 @@ function showsignin() {
   <script>
     function onSuccess(googleUser) {
       console.log("Logged in as: " + googleUser.getBasicProfile().getName());
-	  getElement("i").value = googleUser.getAuthResponse().id_token;
-	  getElement("s").click();
+	  document.getElementById("i").value = googleUser.getAuthResponse().id_token;
+	  document.getElementById("s").click();
     }
     function onFailure(error) {
       alert("Error!");
