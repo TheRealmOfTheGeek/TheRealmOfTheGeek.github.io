@@ -5,10 +5,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
   </head>
   <body ng-app="" ng-init="title='Coding Forum'">
-    <div id="header">
-      <h1 id="title" ng-bind="title"></h1>
-      <small class="rightnav"><a href="login.php">Login / Register</a></small>
-    </div>
+    <?php include "modules/header.php"; ?>
 
     <div id="posts">
       <div id="ask">
