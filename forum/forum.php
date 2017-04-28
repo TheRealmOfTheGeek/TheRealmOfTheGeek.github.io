@@ -1,10 +1,10 @@
-<html>
+<html ng-app="" ng-init="title='Coding Forum'">
   <head>
-    <title>Coding Forums</title>
+    <title ng-bind="title"></title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
   </head>
-  <body ng-app="" ng-init="title='Coding Forum'">
+  <body>
     <?php include "modules/header.php"; ?>
 
     <div id="posts">
