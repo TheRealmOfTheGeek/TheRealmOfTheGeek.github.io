@@ -1,8 +1,4 @@
-<div id="header">
-      <h1 id="title" ng-bind="title"></h1>
-      <input class="rightnav" type="text" placeholder="Search.." />
-      <small class="rightnav"><a href="login.php">Login / Register</a></small>
-      <script>
+<script>
   (function() {
     var cx = '003950137451284587692:mwg_k-ywuom';
     var gcse = document.createElement('script');
@@ -13,5 +9,10 @@
     s.parentNode.insertBefore(gcse, s);
   })();
 </script>
-<gcse:search></gcse:search>
+<div id="header">
+      <h1 id="title" ng-bind="title"></h1>
+      <gcse:search></gcse:search>
+
+      <small class="rightnav"><a href="login.php">Login / Register</a></small>
+      
 </div>
