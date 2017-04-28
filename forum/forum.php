@@ -8,7 +8,6 @@
     <?php include "modules/header.php"; ?>
 
     <div id="posts">
-          <?php include "modules/search.php"; ?>
 
       <div id="ask">
 
