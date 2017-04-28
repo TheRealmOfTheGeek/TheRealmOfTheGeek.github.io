@@ -11,8 +11,7 @@
 </script>
 <div id="header">
       <h1 id="title" ng-bind="title"></h1>
-      <gcse:search></gcse:search>
-
       <small class="rightnav"><a href="login.php">Login / Register</a></small>
-      
+            <gcse:search></gcse:search>
+
 </div>
