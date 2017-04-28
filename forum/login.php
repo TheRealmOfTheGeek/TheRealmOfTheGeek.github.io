@@ -14,11 +14,6 @@ function showsignin() {
     function onFailure(error) {
       alert("Error!");
     }
-	function logout() {
-		var auth2 = gapi.auth2.getAuthInstance();
-		auth2.signOut().then(function () {
-		});
-	}
     function renderButton() {
 		' . "
       gapi.signin2.render('my-signin2', {
