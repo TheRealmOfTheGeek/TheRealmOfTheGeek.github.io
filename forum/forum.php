@@ -16,7 +16,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
   </head>
   <body>
-    <?php include "modules/header.php"; ?>
+    <?php include "modules/header.php"; showheader(); ?>
 
     <div id="posts">
 
