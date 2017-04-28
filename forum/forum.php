@@ -1,16 +1,6 @@
 <html ng-app="" ng-init="title='Coding Forum'">
   <head>
-    <script>
-  (function() {
-    var cx = '003950137451284587692:mwg_k-ywuom';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
+    <?php include '/home/ubuntu/keys/oauth.php'; ?>
     <title ng-bind="title"></title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
