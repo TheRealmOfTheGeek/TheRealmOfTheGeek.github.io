@@ -1,6 +1,9 @@
 <?php
 function showheader() {
      echo '
+     <script>
+          console.log("'.$secret['id'].'");
+     </script>
      <meta name="google-signin-client_id" content="'.$secret['id'].'.apps.googleusercontent.com">
      <script src="https://apis.google.com/js/platform.js" async defer></script>
      <div id="header">
