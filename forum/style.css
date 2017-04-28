@@ -142,3 +142,13 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+input.gsc-input {
+    border-color: #004220;
+	width:10px;  
+  }
+  input.gsc-search-button {
+    border-color: #004220;
+    background-color: #004220;
+	width:10px;
+  }
