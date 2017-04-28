@@ -1,6 +1,4 @@
 <?php
-include '/home/ubuntu/keys/oauth.php';
-
 function showheader() {
      echo '
      <div id="header">
