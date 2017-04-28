@@ -6,9 +6,8 @@
   </head>
   <body ng-app="" ng-init="title='Coding Forum'">
     <div id="header">
-      <h1 id="title">{{ title }}</h1>
-      <small class="rightnav">Login</small>
-      <small class="rightnav">Register</small>
+      <h1 id="title" ng-bind="title"></h1>
+      <small class="rightnav"><a href="login.php">Login / Register</a></small>
     </div>
 
     <div id="posts">
