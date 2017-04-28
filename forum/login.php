@@ -1,5 +1,7 @@
 <?php
 include '/home/ubuntu/keys/oauth.php';
+require '/home/ubuntu/composer/vendor/autoload.php';
+use Google\ApiClient;
 function showsignin() {
 	global $secret;
 	echo '
