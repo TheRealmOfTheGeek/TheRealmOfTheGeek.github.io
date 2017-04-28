@@ -1,7 +1,10 @@
 <?php
 include '/home/ubuntu/keys/oauth.php';
 function showsignin() {
-	echo '<div id="my-signin2"></div>
+	global $secret;
+	echo '
+<meta name="google-signin-client_id" content="' . $secret['id'] . '.apps.googleusercontent.com">
+<div id="my-signin2"></div>
   <script>
     function onSuccess(googleUser) {
       console.log("Logged in as: " + googleUser.getBasicProfile().getName());
