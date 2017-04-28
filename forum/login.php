@@ -20,9 +20,6 @@ function showsignin() {
     }
     function renderButton() {
 		' . "
-      gapi.auth2.init({
-      	client_id: '" . $secret['id'] . ".apps.googleusercontent.com'
-      });
       gapi.signin2.render('my-signin2', {
         'scope': 'profile email',
         'width': 240,
