@@ -1,7 +1,5 @@
 <?php
-include '/home/ubuntu/keys/oauth.php';
-require '/home/ubuntu/composer/vendor/autoload.php';
-use Google\ApiClient;
+
 function showsignin() {
 	global $secret;
 	echo '
@@ -48,7 +46,7 @@ if (isset($_POST['idt'])) {
 	$client = new Google_Client(['client_id' => $cid . '.apps.googleusercontent.com']);
 	$payload = $client->verifyIdToken($id_token);
 	if ($payload) {
-	  print_r($payload);
+		// RIGHT HERE, ME!
 	} else {
 	  http_response_code(400);
 	  echo "Failed to login!";
