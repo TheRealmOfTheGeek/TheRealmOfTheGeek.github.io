@@ -3,7 +3,11 @@ include '/home/ubuntu/keys/oauth.php';
 function showsignin() {
 	global $secret;
 	echo '
+<html>
+<head>
 <meta name="google-signin-client_id" content="' . $secret['id'] . '.apps.googleusercontent.com">
+</head>
+<body>
 <div id="my-signin2"></div>
   <script>
     function onSuccess(googleUser) {
@@ -32,7 +36,9 @@ function showsignin() {
 		<input id="i" type="text" name="idt" hidden>
 		<input id="s" type="submit" hidden>
 	</form>
-  <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>';
+  <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+</body>
+</html>';
 }
 $cid = $secret['id'];
 if (isset($_POST['idt'])) {
