@@ -1,3 +1,8 @@
+<?php
+include '/home/ubuntu/keys/oauth.php';
+require '/home/ubuntu/composer/vendor/autoload.php';
+use Google\ApiClient;
+?>
 <html ng-app="" ng-init="title='Coding Forum'">
   <head>
     <?php include '/home/ubuntu/keys/oauth.php'; ?>
