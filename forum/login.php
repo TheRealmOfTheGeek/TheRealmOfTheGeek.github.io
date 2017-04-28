@@ -42,7 +42,7 @@ function showsignin() {
 $cid = $secret['id'];
 if (isset($_POST['idt'])) {
 	$id_token = $_POST['idt'];
-	$client = new Google_Client(['client_id' => $cid]);
+	$client = new Google_Client(['client_id' => $cid . '.apps.googleusercontent.com']);
 	$payload = $client->verifyIdToken($id_token);
 	if ($payload) {
 	  print_r($payload);
