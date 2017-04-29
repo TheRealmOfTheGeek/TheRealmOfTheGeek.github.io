@@ -22,7 +22,11 @@
   font-size: 1em;
 }
 
-
+#options {
+      position: relative;
+      margin-left: 43%;
+      margin-top: 20px;
+    }
 #ask {
   display: inline-block;
   width: 80%;
@@ -142,4 +146,3 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
