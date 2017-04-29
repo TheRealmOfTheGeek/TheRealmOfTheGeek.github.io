@@ -11,6 +11,18 @@ function userexists($e) {
 	]);
 	return $result['Item'] != null;
 }
+function getuser($e) {
+	global $db;
+	$result = $db->getItem([
+		'TableName' => 'users',
+		'Key' => [
+			'Users' => [
+				'S' => $e
+			]
+		]
+	]);
+	return $result['Item'];
+}
 function createaccount($e, $info) {
 	global $db;
 	$i = [];
@@ -79,10 +91,11 @@ if (isset($_POST['idt'])) {
 	$payload = $client->verifyIdToken($id_token);
 	if ($payload) {
 		if (userexists($payload['email'])) {
-			echo 'You exist!';
+			echo 'You exist!<br>';
+			echo '<pre>' . print_r(getuser($payload['email']), true) . '</pre>';
 			//loginemail($payload['email']);
 		} else {
-			echo 'Creating account';
+			echo 'Creating account<br>';
 			createaccount($payload['email'], ['name' => $payload['name'], 'picture' => $payload['picture'], 'lang' => $payload['locale']]);
 		}
 	} else {
