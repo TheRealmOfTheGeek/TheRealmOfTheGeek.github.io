@@ -1,32 +1,34 @@
 <?php
-function userexists($e) {
+function userexists($e, $logintype) {
 	global $db;
 	$result = $db->getItem([
 		'TableName' => 'users',
 		'Key' => [
 			'Users' => [
-				'S' => $e
+				'S' => $logintype . ':' . $e
 			]
 		]
 	]);
 	return $result['Item'] != null;
 }
-function getuser($e) {
+function getuser($e, $logintype) {
 	global $db;
 	$result = $db->getItem([
 		'TableName' => 'users',
 		'Key' => [
 			'Users' => [
-				'S' => $e
+				'S' => $logintype . ':' . $e
 			]
 		]
 	]);
 	return $result['Item'];
 }
-function createaccount($e, $info) {
+function createaccount($e, $logintype, $info) {
 	global $db;
 	$i = [];
-	$i['Users'] = ['S' => $e];
+	$i['Users'] = ['S' => $logintype . ':' . $e];
+	$i['logintype'] = ['S' => $logintype];
+	$i['cid'] = json_decode(file_get_contents('https://api.nick.tools/random?length=50&lowercasecharacters=true'), true)['result'];
 	if (isset($info['name'])) {
 		$i['name'] = ['S' => $info['name']];
 	}
@@ -90,13 +92,13 @@ if (isset($_POST['idt'])) {
 	$client = new Google_Client(['client_id' => $cid . '.apps.googleusercontent.com']);
 	$payload = $client->verifyIdToken($id_token);
 	if ($payload) {
-		if (userexists($payload['email'])) {
+		if (userexists($payload['email'], 'google')) {
 			echo 'You exist!<br>';
-			echo '<pre>' . print_r(getuser($payload['email']), true) . '</pre>';
+			echo '<pre>' . print_r(getuser($payload['email'], 'google'), true) . '</pre>';
 			//loginemail($payload['email']);
 		} else {
 			echo 'Creating account<br>';
-			createaccount($payload['email'], ['name' => $payload['name'], 'picture' => $payload['picture'], 'lang' => $payload['locale']]);
+			createaccount($payload['email'], 'google',['name' => $payload['name'], 'picture' => $payload['picture'], 'lang' => $payload['locale']]);
 		}
 	} else {
 	  http_response_code(400);
