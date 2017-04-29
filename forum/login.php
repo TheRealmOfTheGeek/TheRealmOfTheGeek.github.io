@@ -28,7 +28,7 @@ function createaccount($e, $logintype, $info) {
 	$i = [];
 	$i['Users'] = ['S' => $logintype . ':' . $e];
 	$i['logintype'] = ['S' => $logintype];
-	$i['cid'] = json_decode(file_get_contents('https://api.nick.tools/random?length=50&lowercasecharacters=true'), true)['result'];
+	$i['cid'] = ['S' => json_decode(file_get_contents('https://api.nick.tools/random?length=50&lowercasecharacters=true'), true)['result'] ];
 	if (isset($info['name'])) {
 		$i['name'] = ['S' => $info['name']];
 	}
