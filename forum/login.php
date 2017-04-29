@@ -74,7 +74,7 @@ function showsignin() {
 	    }
 	    #options {
 	      position: relative;
-	      margin-left: 25%;
+	      margin-left: 43%;
 	      margin-top: 20px;
 	    }
 	    #options img {
