@@ -12,8 +12,9 @@ $db = new DynamoDbClient([
       'secret' => $creds['secret'],
    ]
 ]);
-$sub = '/forum/';
+$sub = '/forum';
 $url = substr(explode("?",$_SERVER['REQUEST_URI'])[0],strlen($sub));
+//$url = '/' . ltrim($url, '/');
 if ($url == '/') {
   echo '
 <html ng-app="" ng-init="title=\'Coding Forum\'">
