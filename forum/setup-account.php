@@ -28,7 +28,7 @@ if (isset($_GET['id'])) {
       border-radius: 10px 0px 0px 10px;
       margin-top: 20px;
       margin-left: 20px;
-      height:485px;
+      height:auto;
     }
 
     #su .title {
