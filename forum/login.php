@@ -85,8 +85,10 @@ function showsignin() {
 	    <h1 class="head">LOGIN / REGISTER WITH:</h1>
 
 	    <div id="options">
-<div id="my-signin2"></div>
-</div>
+				<img src="https://cdn.discordapp.com/attachments/290181928781611009/307958710125461514/empty.png">
+				<div id="my-signin2"></div>
+				<img src="https://cdn.discordapp.com/attachments/290181928781611009/307958710125461514/empty.png">
+			</div>
   <script>
     function onSuccess(googleUser) {
       console.log("Logged in as: " + googleUser.getBasicProfile().getName());
