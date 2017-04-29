@@ -29,6 +29,7 @@ function createaccount($e, $logintype, $info) {
 	$i['Users'] = ['S' => $logintype . ':' . $e];
 	$i['logintype'] = ['S' => $logintype];
 	$i['email'] = ['S' => $e];
+	$i['setup'] = ['BOOL' => false];
 	$i['cid'] = ['S' => json_decode(file_get_contents('https://api.nick.tools/random?length=50&lowercasecharacters=true'), true)['result'] ];
 	if (isset($info['name'])) {
 		$i['name'] = ['S' => $info['name']];
@@ -94,8 +95,12 @@ if (isset($_POST['idt'])) {
 	$payload = $client->verifyIdToken($id_token);
 	if ($payload) {
 		if (userexists($payload['email'], 'google')) {
+			$info = getuser($payload['email'], 'google');
+			if (!isset($info['setup']['BOOL']) || !$info['setup']['BOOL']) {
+		  	go('/account/setup?id=' . $info['cid']['S']);
+			}
 			echo 'You exist!<br>';
-			echo '<pre>' . print_r(getuser($payload['email'], 'google'), true) . '</pre>';
+			echo '<pre>' . print_r($info, true) . '</pre>';
 			//loginemail($payload['email']);
 		} else {
 			echo 'Creating account<br>';
