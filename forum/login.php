@@ -14,7 +14,7 @@ function userexists($e) {
 function createaccount($e, $info) {
 	global $db;
 	$i = [];
-	$i['users'] = ['S' => $e];
+	$i['Users'] = ['S' => $e];
 	if (isset($info['name'])) {
 		$i['name'] = ['S' => $info['name']];
 	}
