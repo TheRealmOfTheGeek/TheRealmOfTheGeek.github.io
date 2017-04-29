@@ -46,7 +46,11 @@ if (isset($_POST['idt'])) {
 	$client = new Google_Client(['client_id' => $cid . '.apps.googleusercontent.com']);
 	$payload = $client->verifyIdToken($id_token);
 	if ($payload) {
-		// RIGHT HERE, ME!
+		if (userexists($payload['email'])) {
+			loginemail($payload['email']);
+		} else {
+			createaccount($payload['email']);
+		}
 	} else {
 	  http_response_code(400);
 	  echo "Failed to login!";
