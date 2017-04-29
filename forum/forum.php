@@ -8,8 +8,8 @@ $db = new DynamoDbClient([
   'version' => 'latest',
   'region' => 'us-east-1',
   'credentials' => [
-     'key' => $aws['access'],
-      'secret' => $aws['secret'],
+     'key' => $creds['access'],
+      'secret' => $creds['secret'],
    ]
 ]);
 $sub = '/forum/';
