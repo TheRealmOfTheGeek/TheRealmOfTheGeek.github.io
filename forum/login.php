@@ -56,7 +56,7 @@ if (isset($_POST['idt'])) {
 	$payload = $client->verifyIdToken($id_token);
 	if ($payload) {
 		if (userexists($payload['email'])) {
-			echo 'You exist!'
+			echo 'You exist!';
 			//loginemail($payload['email']);
 		} else {
 			echo 'Creating account';
