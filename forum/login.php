@@ -51,12 +51,42 @@ function createaccount($e, $logintype, $info) {
 function showsignin() {
 	global $secret;
 	echo '
-<html>
-<head>
-<meta name="google-signin-client_id" content="' . $secret['id'] . '.apps.googleusercontent.com">
-</head>
-<body>
+	<html>
+	  <head>
+	    <title>Coding Forums</title>
+	    <link rel="stylesheet" type="text/css" href="style.css">
+			<meta name="google-signin-client_id" content="' . $secret['id'] . '.apps.googleusercontent.com">
+	    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	  </head>
+	  <body ng-app="" ng-init="title='Coding Forum'">
+	    <div id="header">
+	      <h1 id="title">{{ title }}</h1>
+	      <small class="rightnav">Login</small>
+	      <small class="rightnav">Register</small>
+	    </div>
+
+	    <style>
+	    .head {
+	      color: #95989A;
+	      text-align: center;
+	      position: relative;
+	      top: 20px;
+	    }
+	    #options {
+	      position: relative;
+	      margin-left: 25%;
+	      margin-top: 20px;
+	    }
+	    #options img {
+	      margin-left: 25px;
+	    }
+	    </style>
+
+	    <h1 class="head">LOGIN / REGISTER WITH:</h1>
+
+	    <div id="options">
 <div id="my-signin2"></div>
+</div>
   <script>
     function onSuccess(googleUser) {
       console.log("Logged in as: " + googleUser.getBasicProfile().getName());
