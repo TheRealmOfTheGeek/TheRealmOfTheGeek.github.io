@@ -54,7 +54,7 @@ function showsignin() {
 	<html>
 	  <head>
 	    <title>Coding Forums</title>
-	    <link rel="stylesheet" type="text/css" href="style.css">
+	    <link rel="stylesheet" type="text/css" href="/forum/style.css">
 			<meta name="google-signin-client_id" content="' . $secret['id'] . '.apps.googleusercontent.com">
 	    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 	  </head>
