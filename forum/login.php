@@ -3,7 +3,7 @@ function userexists($e) {
 	global $db;
 	$result = $db->getItem([
 		'TableName' => 'users',
-		'Item' => [
+		'Key' => [
 			'S' => $e
 		]
 	]);
