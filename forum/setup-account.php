@@ -1,7 +1,7 @@
 <?php
 function getinfo($id) {
   global $db;
-  $result = $db->scanItem([
+  $result = $db->scan([
     'TableName' => 'users',
     'ConsistentRead' => true,
     'ScanFilter' => [
