@@ -50,22 +50,27 @@ if (isset($_GET['id'])) {
     <div id="su">
       <h2>Username</h2>
       <div class="title">
-        <input type="textbox" placeholder="Username" id="username" name="username" required="yes" />
+        <input type="textbox" placeholder="Username" id="username" name="username" required />
       </div>
-
+      
+      <h2>Name</h2>
+      <div class="title">
+        <input type="textbox" placeholder="Name" id="name" name="name" required />
+      </div>
+      
       <h2>Email</h2>
       <div class="title">
-        <input type="email" placeholder="Email" id="email" name="email" required="yes" />
+        <input type="email" placeholder="Email" id="email" name="email" required />
       </div>
 
-      <h2>Password</h2>
+      <h2>Birthday</h2>
       <div class="title">
-        <input type="password" placeholder="Password" id="password" name="password" required="yes" />
+        <input type="date" placeholder="Birthday" id="bday" name="bday" required />
       </div>
-
-      <h2>Repeat Password</h2>
+      
+      <h2>Website</h2>
       <div class="title">
-        <input type="password" placeholder="Repeat Password" id="password" name="repassword" required="yes" />
+        <input type="textbox" placeholder="Website" id="website" name="website" />
       </div>
 
       <input type="submit" />
