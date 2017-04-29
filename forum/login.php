@@ -4,7 +4,9 @@ function userexists($e) {
 	$result = $db->getItem([
 		'TableName' => 'users',
 		'Key' => [
-			'S' => $e
+			'email' => [
+				'S' => $e
+			]
 		]
 	]);
 	return $result['Item'] != null;
