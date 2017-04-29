@@ -19,7 +19,7 @@ $url = substr(explode("?",$_SERVER['REQUEST_URI'])[0],strlen($sub));
 function go($url) {
     if (substr($url, 0, 4) != 'http' && substr($url, 0, 1) == '/') {
         if ($_SERVER['HTTP_HOST'] == 'therotg.com') {
-            $url = 'https://' . $_SERVER['HTTP_HOST'] . $url;
+            $url = 'https://' . $_SERVER['HTTP_HOST'] . '/forum' . $url;
         } else {
             $url = 'http://' . $_SERVER['HTTP_HOST'] . $url;
         }
@@ -32,7 +32,7 @@ if ($url == '/') {
 <html ng-app="" ng-init="title=\'Coding Forum\'">
   <head>
     <title ng-bind="title"></title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="/forum/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
   </head>
   <body>

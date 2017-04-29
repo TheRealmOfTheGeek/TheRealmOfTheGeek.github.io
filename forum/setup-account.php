@@ -1,7 +1,19 @@
+<?php
+function getinfo($id) {
+  return [];
+}
+if (isset($_GET['id'])) {
+  $id = $_GET['id'];
+  $info = getinfo($id);
+} else {
+  go('/account/login');
+}
+?>
+
 <html>
   <head>
     <title>Coding Forums</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="/forum/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
   </head>
   <body ng-app="" ng-init="title='Coding Forum'">

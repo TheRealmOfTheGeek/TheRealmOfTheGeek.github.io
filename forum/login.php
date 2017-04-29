@@ -45,7 +45,7 @@ function createaccount($e, $logintype, $info) {
 	]);
 	//echo 'Success!<br>';
 	//echo '<pre>' . print_r($i, true) . '</pre>';
-  go('/forum/account/setup?id=' . $i['cid']['S']);
+  go('/account/setup?id=' . $i['cid']['S']);
 }
 function showsignin() {
 	global $secret;
