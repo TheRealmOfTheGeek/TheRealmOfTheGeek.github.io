@@ -1,5 +1,14 @@
 <?php
-
+function userexists($e) {
+	global $db;
+	$result = $db->getItem([
+		'Table' => 'users',
+		'Item' => [
+			'S' => $e
+		]
+	]);
+	return $result['Item'] != null;
+}
 function showsignin() {
 	global $secret;
 	echo '
@@ -47,9 +56,11 @@ if (isset($_POST['idt'])) {
 	$payload = $client->verifyIdToken($id_token);
 	if ($payload) {
 		if (userexists($payload['email'])) {
-			loginemail($payload['email']);
+			echo 'You exist!'
+			//loginemail($payload['email']);
 		} else {
-			createaccount($payload['email']);
+			echo 'Creating account';
+			//createaccount($payload['email']);
 		}
 	} else {
 	  http_response_code(400);

@@ -99,8 +99,10 @@ if ($url == '/') {
   </body>
 </html>
 ';
-} else if ($url == '/login') {
+} else if ($url == '/account/login') {
   include 'login.php';
+} else if ($url == '/account/setup') {
+  include 'setup-account.php';
 } else {
   echo ' Page not found! URL: ' . $url;
 }
