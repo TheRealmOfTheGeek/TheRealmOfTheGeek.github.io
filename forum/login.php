@@ -4,7 +4,7 @@ function userexists($e) {
 	$result = $db->getItem([
 		'TableName' => 'users',
 		'Key' => [
-			'email' => [
+			'users' => [
 				'S' => $e
 			]
 		]
