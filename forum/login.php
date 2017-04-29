@@ -48,8 +48,13 @@ function createaccount($e, $logintype, $info) {
 	//echo '<pre>' . print_r($i, true) . '</pre>';
   go('/account/setup?id=' . $i['cid']['S']);
 }
+$provider = new \Discord\OAuth\Discord([
+	'clientId'     => $dsecret['id'],
+	'clientSecret' => $dsecret['secret'],
+	'redirectUri'  => 'https://therotg.com/forum/account/login',
+]);
 function showsignin() {
-	global $secret;
+	global $secret, $provider;
 	echo '
 	<html>
 	  <head>
@@ -85,7 +90,7 @@ function showsignin() {
 	    <h1 class="head">LOGIN / REGISTER WITH:</h1>
 
 	    <div id="options">
-				<img src="https://cdn.discordapp.com/attachments/290181928781611009/307958710125461514/empty.png">
+				<a href="' . $provider->getAuthorizationUrl() . '"><img style="height: 50px; width: 240px;" src="https://d1mt9jmphk9kik.cloudfront.net/nelsonteam/image1489005201.png"></a>
 				<div id="my-signin2"></div>
 				<img src="https://cdn.discordapp.com/attachments/290181928781611009/307958710125461514/empty.png">
 			</div>
@@ -120,8 +125,17 @@ function showsignin() {
 </body>
 </html>';
 }
-$cid = $secret['id'];
-if (isset($_POST['idt'])) {
+if (isset($_GET['code'])) {
+	$token = $provider->getAccessToken('authorization_code', [
+		'code' => $_GET['code'],
+	]);
+
+	// Get the user object.
+	$user = $provider->getResourceOwner($token);
+  print_r($user);
+
+} else if (isset($_POST['idt'])) {
+  $cid = $secret['id'];
 	$id_token = $_POST['idt'];
 	$client = new Google_Client(['client_id' => $cid . '.apps.googleusercontent.com']);
 	$payload = $client->verifyIdToken($id_token);
