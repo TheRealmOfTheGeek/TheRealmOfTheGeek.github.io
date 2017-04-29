@@ -16,6 +16,17 @@ $db = new DynamoDbClient([
 $sub = '/forum';
 $url = substr(explode("?",$_SERVER['REQUEST_URI'])[0],strlen($sub));
 //$url = '/' . ltrim($url, '/');
+function go($url) {
+    if (substr($url, 0, 4) != 'http' && substr($url, 0, 1) == '/') {
+        if ($_SERVER['HTTP_HOST'] == 'therotg.com') {
+            $url = 'https://' . $_SERVER['HTTP_HOST'] . $url;
+        } else {
+            $url = 'http://' . $_SERVER['HTTP_HOST'] . $url;
+        }
+    }
+    header('Location: ' . $url);
+    exit();
+}
 if ($url == '/') {
   echo '
 <html ng-app="" ng-init="title=\'Coding Forum\'">

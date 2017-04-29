@@ -28,6 +28,7 @@ function createaccount($e, $logintype, $info) {
 	$i = [];
 	$i['Users'] = ['S' => $logintype . ':' . $e];
 	$i['logintype'] = ['S' => $logintype];
+	$i['email'] = ['S' => $e];
 	$i['cid'] = ['S' => json_decode(file_get_contents('https://api.nick.tools/random?length=50&lowercasecharacters=true'), true)['result'] ];
 	if (isset($info['name'])) {
 		$i['name'] = ['S' => $info['name']];
@@ -42,9 +43,9 @@ function createaccount($e, $logintype, $info) {
 		'TableName' => 'users',
 		'Item' => $i
 	]);
-	echo 'Success!<br>';
-	echo '<pre>' . print_r($i, true) . '</pre>';
-
+	//echo 'Success!<br>';
+	//echo '<pre>' . print_r($i, true) . '</pre>';
+  go('/forum/account/setup?id=' . $i['cid']['S']);
 }
 function showsignin() {
 	global $secret;
