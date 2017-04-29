@@ -58,7 +58,7 @@ function showsignin() {
 			<meta name="google-signin-client_id" content="' . $secret['id'] . '.apps.googleusercontent.com">
 	    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 	  </head>
-	  <body ng-app="" ng-init="title='Coding Forum'">
+	  <body ng-app="" ng-init="title=\'Coding Forum\'">
 	    <div id="header">
 	      <h1 id="title">{{ title }}</h1>
 	      <small class="rightnav">Login</small>
