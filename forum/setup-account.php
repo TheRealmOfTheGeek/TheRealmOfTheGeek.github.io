@@ -5,6 +5,9 @@ function getinfo($id) {
 if (isset($_GET['id'])) {
   $id = $_GET['id'];
   $info = getinfo($id);
+} else if (isset($_POST['id'])) {
+  $id = $_POST['id'];
+  $info = getinfo($id);
 } else {
   go('/account/login');
 }
@@ -48,35 +51,37 @@ if (isset($_GET['id'])) {
       padding-left: 5px;
     }
     </style>
-
+    <?php if (isset($_POST['id'])) { print_r($_POST); }?>
     <div id="su">
-      <h2>Username</h2>
-      <div class="title">
-        <input type="textbox" placeholder="Username" id="username" name="username" required />
-      </div>
-      
-      <h2>Name</h2>
-      <div class="title">
-        <input type="textbox" placeholder="Name" id="name" name="name" required />
-      </div>
-      
-      <h2>Email</h2>
-      <div class="title">
-        <input type="email" placeholder="Email" id="email" name="email" required />
-      </div>
+      <form action="setup" method="POST">
+        <input type="text" value="<?php echo $id; ?>" name="id" />
+        <h2>Username</h2>
+        <div class="title">
+          <input type="textbox" placeholder="Username" id="username" name="username" required />
+        </div>
 
-      <h2>Birthday</h2>
-      <div class="title">
-        <input type="date" placeholder="Birthday" id="bday" name="bday" required />
-      </div>
-      
-      <h2>Website</h2>
-      <div class="title">
-        <input type="textbox" placeholder="Website" id="website" name="website" />
-      </div>
+        <h2>Name</h2>
+        <div class="title">
+          <input type="textbox" placeholder="Name" id="name" name="name" required />
+        </div>
 
-      <input type="submit" />
+        <h2>Email</h2>
+        <div class="title">
+          <input type="email" placeholder="Email" id="email" name="email" required />
+        </div>
 
+        <h2>Birthday</h2>
+        <div class="title">
+          <input type="date" placeholder="Birthday" id="bday" name="bday" required />
+        </div>
+
+        <h2>Website</h2>
+        <div class="title">
+          <input type="textbox" placeholder="Website" id="website" name="website" />
+        </div>
+
+        <input type="submit" />
+      </form>
     </div>
 
     <div id="ad" class="right">
