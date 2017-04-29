@@ -26,7 +26,7 @@ function createaccount($e, $info) {
 	}
 	$result = $db->putItem([
 		'TableName' => 'users',
-		'Item' => $i;
+		'Item' => $i
 	]);
 	echo 'Success!<br>';
 	echo '<pre>' . print_r($i, true) . '</pre>';
