@@ -15,7 +15,7 @@ function getinfo($id) {
       ]
     ]
   ]);
-  return (count($result['Items']) > 0 ) $result['Items'][0] : [];
+  return (count($result['Items']) > 0 ) ? $result['Items'][0] : [];
 }
 if (isset($_GET['id'])) {
   $id = $_GET['id'];
