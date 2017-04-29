@@ -2,6 +2,7 @@
 include '/home/ubuntu/keys/oauth.php';
 include '/home/ubuntu/keys/aws.php';
 require '/home/ubuntu/composer/vendor/autoload.php';
+include 'modules/header.php';
 use Google\ApiClient;
 use Aws\DynamoDb\DynamoDbClient;
 $db = new DynamoDbClient([
