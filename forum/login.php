@@ -11,6 +11,27 @@ function userexists($e) {
 	]);
 	return $result['Item'] != null;
 }
+function createaccount($e, $info) {
+	global $db;
+	$i = [];
+	$i['users'] = ['S' => $e];
+	if (isset($info['name'])) {
+		$i['name'] = ['S' => $info['name']];
+	}
+	if (isset($info['lang'])) {
+		$i['lang'] = ['S' => $info['lang']];
+	}
+	if (isset($info['picture'])) {
+		$i['picture'] = ['S' => $info['picture']];
+	}
+	$result = $db->putItem([
+		'TableName' => 'users',
+		'Item' => $i;
+	]);
+	echo 'Success!<br>';
+	echo '<pre>' . print_r($i, true) . '</pre>';
+
+}
 function showsignin() {
 	global $secret;
 	echo '
@@ -62,7 +83,7 @@ if (isset($_POST['idt'])) {
 			//loginemail($payload['email']);
 		} else {
 			echo 'Creating account';
-			//createaccount($payload['email']);
+			createaccount($payload['email'], ['name' => $payload['name'], 'picture' => $payload['picture'], 'lang' => $payload['locale']]);
 		}
 	} else {
 	  http_response_code(400);
