@@ -1,17 +1,31 @@
 <?php
 include '/home/ubuntu/keys/oauth.php';
+include '/home/ubuntu/keys/aws.php';
 require '/home/ubuntu/composer/vendor/autoload.php';
 use Google\ApiClient;
-?>
-<html ng-app="" ng-init="title='Coding Forum'">
+use Aws\DynamoDb\DynamoDbClient;
+$db = new DynamoDbClient([
+  'version' => 'latest',
+  'region' => 'us-east-1',
+  'credentials' => [
+     'key' => $aws['access'],
+      'secret' => $aws['secret'],
+   ]
+]);
+$sub = '/forum/';
+$url = substr(explode("?",$_SERVER['REQUEST_URI'])[0],strlen($sub));
+if ($url == '/') {
+  echo '
+<html ng-app="" ng-init="title=\'Coding Forum\'">
   <head>
-    <?php include '/home/ubuntu/keys/oauth.php'; ?>
     <title ng-bind="title"></title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
   </head>
   <body>
-    <?php include "modules/header.php"; showheader(); ?>
+    ';
+    showheader();
+    echo '
 
     <div id="posts">
 
@@ -82,3 +96,9 @@ use Google\ApiClient;
     </div>
   </body>
 </html>
+';
+} else if ($url == '/login') {
+  include 'login.php';
+} else {
+  echo ' Page not found! URL: ' . $url;
+}
