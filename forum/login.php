@@ -60,9 +60,9 @@ function showsignin() {
 	  </head>
 	  <body ng-app="" ng-init="title=\'Coding Forum\'">
 	    <div id="header">
-	      <h1 id="title">{{ title }}</h1>
-	      <small class="rightnav">Login</small>
-	      <small class="rightnav">Register</small>
+	      ';
+				showheader();
+				echo '
 	    </div>
 
 	    <style>
