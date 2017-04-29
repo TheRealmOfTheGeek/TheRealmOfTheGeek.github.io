@@ -1,6 +1,21 @@
 <?php
 function getinfo($id) {
-  return [];
+  global $db;
+  $result = $db->scanItem([
+    'TableName' => 'users',
+    'ConsistentRead' => true,
+    'ScanFilter' => [
+      'cid' => [
+        'AttributeValueList' => [
+          [
+            'S' => $id
+          ]
+        ],
+        'ComparisonOperator' => 'EQ',
+      ]
+    ]
+  ]);
+  return (count($result['Items']) > 0 ) $result['Items'][0] : [];
 }
 if (isset($_GET['id'])) {
   $id = $_GET['id'];
@@ -52,9 +67,15 @@ if (isset($_GET['id'])) {
     }
     </style>
     <?php if (isset($_POST['id'])) { print_r($_POST); }?>
+    <?php if ($info == []) {
+      echo '
+        ID is not valid!
+      ';
+    } else {
+      echo '
     <div id="su">
       <form action="setup" method="POST">
-        <input type="text" value="<?php echo $id; ?>" name="id" />
+        <input type="text" value="' . $id . '" name="id" hidden />
         <h2>Username</h2>
         <div class="title">
           <input type="textbox" placeholder="Username" id="username" name="username" required />
@@ -83,6 +104,8 @@ if (isset($_GET['id'])) {
         <input type="submit" />
       </form>
     </div>
+    ';
+  } ?>
 
     <div id="ad" class="right">
       <p>adz</p>
