@@ -6,7 +6,7 @@ require '/home/ubuntu/composer/vendor/autoload.php';
 include 'modules/header.php';
 use Google\ApiClient;
 use Aws\DynamoDb\DynamoDbClient;
-use Discord\OAuth\Discord;
+use \Discord\OAuth\Discord;
 $db = new DynamoDbClient([
   'version' => 'latest',
   'region' => 'us-east-1',

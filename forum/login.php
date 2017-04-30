@@ -48,7 +48,7 @@ function createaccount($e, $logintype, $info) {
 	//echo '<pre>' . print_r($i, true) . '</pre>';
   go('/account/setup?id=' . $i['cid']['S']);
 }
-$provider = new \Discord\OAuth\Discord([
+$provider = new Discord([
 	'clientId'     => $dsecret['id'],
 	'clientSecret' => $dsecret['secret'],
 	'redirectUri'  => 'https://therotg.com/forum/account/login',
