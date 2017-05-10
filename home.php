@@ -28,13 +28,14 @@
 <div id="plugins">
 <div class="container-fluid bg-3 text-center" id="main">
 	<h2>Websites I've Made</h2><br>
-	<h4>a Community Project is a website I made for someone without payment, because they needed it</h4>
+	<p>a Community Project is a website I made for someone without payment, because they needed it</p>
 	<div class="row">
-		<p><strong><a href="https://www.kentonvizdos.com">www.KentonVizdos.com</a></strong> - My personal portfolio website</p>
 		<hr>
-		<p><strong><a href="#">www.TheROTG.com</a></strong> - This is the site you're on, its for all of my YouTube stuff.</p>
+		<h4><strong><a href="https://www.kentonvizdos.com">www.KentonVizdos.com</a></strong> - My personal portfolio website</h4>
 		<hr>
-		<p><strong>Frosted Spinner (Unreleased)</strong> - This is a Community Project for Frosted Fricks who does channel reviews. He requested I make a new spinner, so I decided I would.</p>
+		<h4><strong><a href="#">www.TheROTG.com</a></strong> - This is the site you're on, its for all of my YouTube stuff.</h4>
+		<hr>
+		<h4><strong>Frosted Spinner (Unreleased)</strong> - This is a Community Project for Frosted Fricks who does channel reviews. He requested I make a new spinner, so I decided I would.</h4>
 		<hr>
 	</div>
   <h2>Plugins</h2><br>
