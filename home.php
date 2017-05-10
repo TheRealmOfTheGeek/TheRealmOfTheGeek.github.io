@@ -25,52 +25,51 @@
   </div>
 </div>
 
-<h2>Websites I've Made</h2><br>
-<h4>Community Project is a website I made for someone without payment, because they needed it</h4>
-<div class="row">
-
-
-	<div class="table-responsive">
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Website</th>
-				<th>Description</th>
-        <th>Release Date</th>
-        <th>Dev Stage</th>
-				<th>Is it a community project?</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>www.KentonVizdos.com</td>
-        <td>This is my main portfolio site</td>
-        <td>UNKNOWN</td>
-				<td>Complete</td>
-				<td>No.</td>
-      </tr>
-			<tr>
-        <td>www.TheROTG.com</td>
-        <td>TheROTG.com is the site for all of my YouTube stuffs</td>
-        <td>UNKNOWN</td>
-				<td>Complete</td>
-				<td>No.</td>
-      </tr>
-			<tr>
-        <td>Frosted Spinner</td>
-        <td>The Frosted Spinner is made for Frosted Fricks, because he said he needed a new, custom spinner, so I decided to make it for him.</td>
-        <td>N/A</td>
-				<td>Unreleased</td>
-				<td>Yep!</td>
-      </tr>
-    </tbody>
-  </table>
-  </div>
-
-</div>
-
 <div id="plugins">
 <div class="container-fluid bg-3 text-center" id="main">
+	<h2>Websites I've Made</h2><br>
+	<h4>Community Project is a website I made for someone without payment, because they needed it</h4>
+	<div class="row">
+
+
+		<div class="table-responsive">
+	  <table class="table">
+	    <thead>
+	      <tr>
+	        <th>Website</th>
+					<th>Description</th>
+	        <th>Release Date</th>
+	        <th>Dev Stage</th>
+					<th>Is it a community project?</th>
+	      </tr>
+	    </thead>
+	    <tbody>
+	      <tr>
+	        <td>www.KentonVizdos.com</td>
+	        <td>This is my main portfolio site</td>
+	        <td>UNKNOWN</td>
+					<td>Complete</td>
+					<td>No.</td>
+	      </tr>
+				<tr>
+	        <td>www.TheROTG.com</td>
+	        <td>TheROTG.com is the site for all of my YouTube stuffs</td>
+	        <td>UNKNOWN</td>
+					<td>Complete</td>
+					<td>No.</td>
+	      </tr>
+				<tr>
+	        <td>Frosted Spinner</td>
+	        <td>The Frosted Spinner is made for Frosted Fricks, because he said he needed a new, custom spinner, so I decided to make it for him.</td>
+	        <td>N/A</td>
+					<td>Unreleased</td>
+					<td>Yep!</td>
+	      </tr>
+	    </tbody>
+	  </table>
+	  </div>
+
+	</div>
   <h2>Plugins</h2><br>
   <div class="row">
     <div class="col-sm-3" id="ecr">
@@ -130,6 +129,7 @@
       </div>
     </div>
   </div>
+
   <h2>Games</h2><br>
   <div class="row">
     <div class="col-sm-3" id="ecr">
