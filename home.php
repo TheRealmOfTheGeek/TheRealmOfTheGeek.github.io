@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<?php 
+	<?php
 		$page = basename(__FILE__, ".php");
-		include("modules/header.php"); 
-	
+		include("modules/header.php");
+
 	?>
 </head>
-	
+
 <body>
 
 <?php include("modules/navbar.php"); ?>
@@ -24,6 +24,51 @@
     <p><small>The Realm of The Geek, Also Known As Kento, is a teenaged YouTube programmer that mainly focuses on creating helpful, inspiring coding tutorials. He also does LiveCoding, while practicing Scrum and Agile methods like TDD, Mob Programming, Pair Programming, and more. He has been programming for years, and knowledgable in Java, Bukkit API, HTML/CSS, Bootstrap, JQuery, JavaScript, PHP, and more. The videos are always on a strict schedule of daily at 7am. If you would like to watch some of these, please visit yt.therotg.com!</small></p>
   </div>
 </div>
+
+<h2>Websites I've Made</h2><br>
+<h4>Community Project is a website I made for someone without payment, because they needed it</h4>
+<div class="row">
+
+
+	<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Website</th>
+				<th>Description</th>
+        <th>Release Date</th>
+        <th>Dev Stage</th>
+				<th>Is it a community project?</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>www.KentonVizdos.com</td>
+        <td>This is my main portfolio site</td>
+        <td>UNKNOWN</td>
+				<td>Complete</td>
+				<td>No.</td>
+      </tr>
+			<tr>
+        <td>www.TheROTG.com</td>
+        <td>TheROTG.com is the site for all of my YouTube stuffs</td>
+        <td>UNKNOWN</td>
+				<td>Complete</td>
+				<td>No.</td>
+      </tr>
+			<tr>
+        <td>Frosted Spinner</td>
+        <td>The Frosted Spinner is made for Frosted Fricks, because he said he needed a new, custom spinner, so I decided to make it for him.</td>
+        <td>N/A</td>
+				<td>Unreleased</td>
+				<td>Yep!</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+</div>
+
 <div id="plugins">
 <div class="container-fluid bg-3 text-center" id="main">
   <h2>Plugins</h2><br>
