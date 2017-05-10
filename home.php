@@ -28,47 +28,14 @@
 <div id="plugins">
 <div class="container-fluid bg-3 text-center" id="main">
 	<h2>Websites I've Made</h2><br>
-	<h4>Community Project is a website I made for someone without payment, because they needed it</h4>
+	<h4>a Community Project is a website I made for someone without payment, because they needed it</h4>
 	<div class="row">
-
-
-		<div class="table-responsive">
-	  <table class="table">
-	    <thead>
-	      <tr>
-	        <th>Website</th>
-					<th>Description</th>
-	        <th>Release Date</th>
-	        <th>Dev Stage</th>
-					<th>Is it a community project?</th>
-	      </tr>
-	    </thead>
-	    <tbody>
-	      <tr>
-	        <td>www.KentonVizdos.com</td>
-	        <td>This is my main portfolio site</td>
-	        <td>UNKNOWN</td>
-					<td>Complete</td>
-					<td>No.</td>
-	      </tr>
-				<tr>
-	        <td>www.TheROTG.com</td>
-	        <td>TheROTG.com is the site for all of my YouTube stuffs</td>
-	        <td>UNKNOWN</td>
-					<td>Complete</td>
-					<td>No.</td>
-	      </tr>
-				<tr>
-	        <td>Frosted Spinner</td>
-	        <td>The Frosted Spinner is made for Frosted Fricks, because he said he needed a new, custom spinner, so I decided to make it for him.</td>
-	        <td>N/A</td>
-					<td>Unreleased</td>
-					<td>Yep!</td>
-	      </tr>
-	    </tbody>
-	  </table>
-	  </div>
-
+		<h3>www.KentonVizdos.com - My personal portfolio website</h3><br>
+		<hr>
+		<h3>www.TheROTG.com - This is the site you're on, its for all of my YouTube stuff.</h3><br>
+		<hr>
+		<h3>Frosted Spinner (Unreleased) - This is a Community Project for Frosted Fricks who does channel reviews. He requested I make a new spinner, so I decided I would.</h3><br>
+		<hr>
 	</div>
   <h2>Plugins</h2><br>
   <div class="row">
