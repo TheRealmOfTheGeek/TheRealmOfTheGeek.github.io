@@ -30,11 +30,11 @@
 	<h2>Websites I've Made</h2><br>
 	<h4>a Community Project is a website I made for someone without payment, because they needed it</h4>
 	<div class="row">
-		<h3>www.KentonVizdos.com - My personal portfolio website</h3><br>
+		<p><strong><a href="https://www.kentonvizdos.com">www.KentonVizdos.com</a></strong> - My personal portfolio website</p>
 		<hr>
-		<h3>www.TheROTG.com - This is the site you're on, its for all of my YouTube stuff.</h3><br>
+		<p><strong><a href="#">www.TheROTG.com</a></strong> - This is the site you're on, its for all of my YouTube stuff.</p>
 		<hr>
-		<h3>Frosted Spinner (Unreleased) - This is a Community Project for Frosted Fricks who does channel reviews. He requested I make a new spinner, so I decided I would.</h3><br>
+		<p><strong>Frosted Spinner (Unreleased)</strong> - This is a Community Project for Frosted Fricks who does channel reviews. He requested I make a new spinner, so I decided I would.</p>
 		<hr>
 	</div>
   <h2>Plugins</h2><br>
