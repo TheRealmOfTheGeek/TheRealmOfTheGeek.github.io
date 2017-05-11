@@ -1,5 +1,5 @@
 
-var users = [ 'Delete Me and add real people pls!' ];
+var users = [];
 
 $(document).ready(function() {
 
