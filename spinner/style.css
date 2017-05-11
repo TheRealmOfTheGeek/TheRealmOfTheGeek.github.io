@@ -1,0 +1,135 @@
+@font-face {
+    font-family: "Frosty";
+    src: url('fonts/header/FEASFBRG.TTF') format("truetype");
+}
+
+body {
+  background-color: #38E8FF;
+}
+#header {
+  text-align: center;
+  line-height: 2px;
+  position: relative;
+  top: 25px;
+  color: white;
+}
+#header h1 {
+  font-family: "Frosty", Verdana, Tahoma;
+  text-shadow:
+     -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+       2px 2px 0 #000;
+  font-size: 75px;
+  font-style: oblique;
+}
+
+#container {
+  width: 100%;
+}
+
+#sidebar {
+  width: 340px;
+  height: 82%;
+  background-color: white;
+  border: 5px solid black;
+  position: relative;
+  top: 20px;
+  margin: 15px;
+}
+
+#sidebar #time {
+  position: relative;
+  text-align: center;
+  font-size: 164px;
+  line-height: 0px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.topbar {
+  position: absolute;
+  margin: 0;
+  background-color: #F2FDFF;
+  height: auto;
+  width: 100%;
+  padding-bottom: 12px;
+}
+
+.topbar p {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 2px;
+}
+
+.topbar input {
+  font-size: 24px;
+  width: 100%;
+}
+
+.bottombar {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+
+.bottombar button {
+  font-size: 48px;
+  margin: 0;
+  width: 100%;
+  background-color: lime;
+  border: 0;
+}
+
+
+#spinner {
+
+  text-transform: uppercase;
+  background-color: blue;
+  background-repeat: no-repeat;
+  background-size:cover;
+
+  width: 500px;
+  height: 500px;
+
+  border: 5px solid cyan;
+  border-radius: 50%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+#btn-spin {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translate(-50%);
+
+  padding: 10px 20px 10px 20px;
+  font-size: 48px;
+  border: 5px solid cyan;
+  background-color: blue;
+  color: cyan;
+
+}
+
+.canvasForeground, .canvasWheel, .canvasSelector { display:none; }
+
+table {
+  position: absolute;
+  top: 130px;
+}
+tr {
+  color: black;
+}
