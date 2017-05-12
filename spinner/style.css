@@ -97,8 +97,8 @@ body {
   background-repeat: no-repeat;
   background-size:cover;
 
-  width: 500px;
-  height: 500px;
+  width: 35%;
+  height: 70%;
 
   border: 5px solid cyan;
   border-radius: 50%;
@@ -129,7 +129,13 @@ body {
 table {
   position: absolute;
   top: 130px;
+  width: 100%;
+  padding: 0;
 }
 tr {
+  left: 0;
+  border: 3px solid #a3c6ff;
   color: black;
+  background-color: #c1d9ff;
+  width: 100%;
 }
