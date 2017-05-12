@@ -35,12 +35,6 @@ $(document).ready(function() {
 
 });
 
-function deleteRow(r) {
-    var i = r.parentNode.parentNode.rowIndex;
-
-    document.getElementById("usrTable").deleteRow(i);
-}
-
 function addUser() {
   var usr = document.getElementById("userInput").value;
   var form = document.getElementById("form");
