@@ -93,7 +93,7 @@ SPINWHEEL.wheelOfDestiny = (function(targetId, list, customTheme){
 		appHeight = targetDiv.offsetHeight;
         appRadius = appWidth/2;
         wheelRadius = appRadius - (appRadius/10);
-        pegSize = (appRadius/20);
+        pegSize = (appRadius/30);
         sliceSize = 360/list.length;
 		// setup the canvas parameters and pre-renders
 		// Main
@@ -121,7 +121,7 @@ SPINWHEEL.wheelOfDestiny = (function(targetId, list, customTheme){
         clearCanvasBlank(wheel.canvas, wheel.context);
         drawEllipse (wheel.context, appRadius, appRadius, wheelRadius, wheelRadius, theme.WheelColour);
         var fillStyle = '#f00';
-        wheel.context.font = (wheelRadius/10)*2 +"pt " + theme.Font;
+        wheel.context.font = (wheelRadius/10)*list.length*-1 +"pt " + theme.Font;
         wheel.context.textBaseline = 'middle';
         for (var i=0;i<list.length;i++) {
             wheel.context.save();
