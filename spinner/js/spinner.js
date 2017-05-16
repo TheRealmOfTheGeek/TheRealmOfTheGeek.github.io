@@ -156,6 +156,7 @@ SPINWHEEL.wheelOfDestiny = (function(targetId, list, customTheme){
 
 
     var tick = new Audio('sfx/tick.wav');
+    var end = new Audio('sfx/ding.wav');
 
     // Animation drawing
     var animateWheel = function() {
@@ -184,6 +185,8 @@ SPINWHEEL.wheelOfDestiny = (function(targetId, list, customTheme){
         if (spinAngle >= spinAngleEnd) {
             clearInterval(startTick);
             clearInterval(intervalHandle);
+            end.play();
+
             setPointer();
             drawStage();
             highlightWinner((spinAngle-spinReverseAngle));
