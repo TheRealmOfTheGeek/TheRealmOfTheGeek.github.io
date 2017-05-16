@@ -105,8 +105,13 @@ body {
   background-repeat: no-repeat;
   background-size:cover;
 
+<<<<<<< HEAD
   width: 500px;
   height: 500px;
+=======
+  width: 40vw;
+  height: 40vw;
+>>>>>>> 7565d7fc358b66cb6194c9621e277876cc1b7bd5
 
   border: 5px solid cyan;
   border-radius: 50%;

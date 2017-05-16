@@ -1,6 +1,7 @@
 var t = 30;
 
 var sTime = "";
+var cd = new Audio('321.wav');
 
 $(document).ready(function() {
 
@@ -13,6 +14,9 @@ $(document).ready(function() {
 
     sTime = setInterval(function() {
         if(t != 0) {
+          if(t == 3) {
+            cd.play();
+          }
 
           document.getElementById('time').innerHTML = t + "";
           t = t-1;
