@@ -1,7 +1,8 @@
 var t = 30;
 
 var sTime = "";
-var cd = new Audio('321.wav');
+var cd = new Audio('sfx/321.wav');
+var end = new Audio('sfx/end.wav');
 
 $(document).ready(function() {
 
@@ -14,7 +15,7 @@ $(document).ready(function() {
 
     sTime = setInterval(function() {
         if(t != 0) {
-          if(t == 3) {
+          if(t == 3 || t == 2 || t == 1) {
             cd.play();
           }
 
@@ -22,12 +23,14 @@ $(document).ready(function() {
           t = t-1;
         } else {
           t = 30;
+          end.play();
           document.getElementById('time').innerHTML = t + "";
-          alert("The response time is up, please pick a new user");
 
           clearInterval(sTime);
           $("#start").show();
           $("#end").hide();
+          alert("The response time is up, please pick a new user");
+
         }
 
     }, 1000);

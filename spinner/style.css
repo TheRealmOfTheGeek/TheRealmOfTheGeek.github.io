@@ -105,16 +105,16 @@ body {
   background-repeat: no-repeat;
   background-size:cover;
 
-  width: 500px;
-  height: 500px;
+  width: 38vw;
+  height: 38vw;
 
   border: 5px solid cyan;
   border-radius: 50%;
   color: white;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -47%);
 }
 
 

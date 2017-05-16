@@ -155,7 +155,7 @@ SPINWHEEL.wheelOfDestiny = (function(targetId, list, customTheme){
     };
 
 
-    var tick = new Audio('tick.wav');
+    var tick = new Audio('sfx/tick.wav');
 
     // Animation drawing
     var animateWheel = function() {
@@ -535,8 +535,11 @@ SPINWHEEL.wheelOfDestiny = (function(targetId, list, customTheme){
 
 
 
+function isOdd(num) { return num % 2;}
 
 function recreateWheel() {
+
+
 		// set size
 	 	$('#spinner').css({"width":$('#settings-size-x').val()+'px', "height":$('#settings-size-y').val()+'px' });
 		// set css
@@ -585,7 +588,7 @@ function recreateWheel() {
 
 $(document).ready( function () {
   recreateWheel();
-  $('#btn-spin').click(function() {
+  $('#spinner').click(function() {
 		mainWheel.Start();
 	});
 

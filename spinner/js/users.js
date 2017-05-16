@@ -1,7 +1,12 @@
 
-var users = [ 'Delete Me and add real people pls!' ];
+function checkEven(val){
+     return (val%2 == 0);
+}
+var users = [ 'Delete Me and add real people pls!', 'Spin Again!' ];
 
 $(document).ready(function() {
+
+
 
   for (i = 0; i < users.length; i++) {
      var table = document.getElementById("myTable");
@@ -53,6 +58,7 @@ function addUser() {
 
 
   users.push(usr+"");
+
 
   var table = document.getElementById("myTable");
       var row = table.insertRow(0);
