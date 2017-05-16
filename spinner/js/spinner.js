@@ -39,6 +39,7 @@ SPINWHEEL.wheelOfDestiny = (function(targetId, list, customTheme){
     var canvases = [{"name":'canvasMain'}, {"name":'canvasWheel'}, {"name":'canvasForeground'},{"name":'canvasSelector'}];
     var fps = 14; // anything faster than 14 is unnoticable
     var intervalHandle = null; // animation handle
+    var startTick = null;
 
     var spinAngle = 5; // starting offset
     var spinAngleEnd = -1; // target
@@ -154,6 +155,7 @@ SPINWHEEL.wheelOfDestiny = (function(targetId, list, customTheme){
     };
 
 
+    var tick = new Audio('tick.wav');
 
     // Animation drawing
     var animateWheel = function() {
@@ -164,6 +166,8 @@ SPINWHEEL.wheelOfDestiny = (function(targetId, list, customTheme){
             spinAlt =0.15;
             spinReverseAngle = -1;
             intervalHandle = setInterval(function(){animateWheel();}, 1000/fps);
+            startTick = setInterval(function(){}, 25000/fps);
+
             return;
         }
         // check for the last rotation
@@ -178,6 +182,7 @@ SPINWHEEL.wheelOfDestiny = (function(targetId, list, customTheme){
             spinReverseAngle+=spinRate;
         }
         if (spinAngle >= spinAngleEnd) {
+            clearInterval(startTick);
             clearInterval(intervalHandle);
             setPointer();
             drawStage();
@@ -211,6 +216,7 @@ SPINWHEEL.wheelOfDestiny = (function(targetId, list, customTheme){
         var distanceFromPeg = angle % sliceSize;
         // slow enough to animate
         var offset = sliceSize;
+
         if (spinRate<8) {
             switch (Math.round(distanceFromPeg) ) {
                 case 0:
@@ -258,13 +264,15 @@ SPINWHEEL.wheelOfDestiny = (function(targetId, list, customTheme){
                 // the pointer angle is not fully "bent" nor "unbent"
                 // the remaining angular distance is less than one "slice" taking into account peg size, else the pointer can bounce back and cover a previous peg.
                 spinReverseAngle = 0;
+
             }
 
         } else {
             // flicking at speed
             if ( (distanceFromPeg <= (spinRate) ) ||
                  (distanceFromPeg >= (sliceSize - spinRate) ) ){
-                pointAngle = 50;
+                   tick.play();
+                   pointAngle = 50;
             } else {
                 pointAngle = 35;
             }
