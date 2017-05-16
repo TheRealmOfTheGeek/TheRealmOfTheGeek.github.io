@@ -15,7 +15,7 @@ $(document).ready(function() {
 
     sTime = setInterval(function() {
         if(t != 0) {
-          if(t == 3 || t == 2 || t == 1) {
+          if(t <= 5) {
             cd.play();
           }
 
