@@ -3,7 +3,7 @@ $(document).ready(function(){
     $("#favicon").attr("href","logo.png");
   } else {
     $("#favicon").attr("href","dev.png");
-    document.getElementById("hd").innerHTML = "(DEV-STAGE) Frosted Spinner";
+    document.getElementById("hd").innerHTML = "(DEV) Frosted Spinner";
   }
 
 });
