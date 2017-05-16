@@ -517,11 +517,7 @@ SPINWHEEL.wheelOfDestiny = (function(targetId, list, customTheme){
 });
 
 
-/*
 
-THIS IS NOW MY CODE!
-
-*/
 
 
 

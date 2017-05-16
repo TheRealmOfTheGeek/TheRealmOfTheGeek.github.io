@@ -1,11 +1,17 @@
 var t = 30;
 
+var sTime = "";
+
 $(document).ready(function() {
+
+
   $("#start").click(function() {
-    alert("TIMER STARTED! !! Do NOT click the start button again !!");
+    $("#start").hide();
+    $("#end").show();
+    alert("TIMER STARTED! (it will take a second for 30 to go to 29)");
     clicked = 1;
 
-    var sTime = setInterval(function() {
+    sTime = setInterval(function() {
         if(t != 0) {
 
           document.getElementById('time').innerHTML = t + "";
@@ -16,9 +22,22 @@ $(document).ready(function() {
           alert("The response time is up, please pick a new user");
 
           clearInterval(sTime);
+          $("#start").show();
+          $("#end").hide();
         }
 
     }, 1000);
 
   });
+
+  $("#end").click(function() {
+    clearInterval(sTime);
+
+    $("#start").show();
+    $("#end").hide();
+    t = 30;
+
+
+  });
+
 });

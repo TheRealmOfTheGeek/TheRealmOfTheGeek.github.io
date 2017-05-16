@@ -85,8 +85,16 @@ body {
   font-size: 48px;
   margin: 0;
   width: 100%;
-  background-color: lime;
   border: 0;
+}
+
+.bottombar #start {
+  background-color: lime;
+}
+
+.bottombar #end {
+  background-color: red;
+  display: none;
 }
 
 
@@ -97,8 +105,8 @@ body {
   background-repeat: no-repeat;
   background-size:cover;
 
-  width: 35%;
-  height: 70%;
+  width: 500px;
+  height: 500px;
 
   border: 5px solid cyan;
   border-radius: 50%;
@@ -125,17 +133,11 @@ body {
 }
 
 .canvasForeground, .canvasWheel, .canvasSelector { display:none; }
-/* ur awesome ;D */
+
 table {
   position: absolute;
-    top: 140px;
-  width: 100%;
-  padding: 0;
+  top: 130px;
 }
 tr {
-  left: 0;
-  border: 3px solid #a3c6ff;
   color: black;
-  background-color: #c1d9ff;
-  width: 100%;
 }
