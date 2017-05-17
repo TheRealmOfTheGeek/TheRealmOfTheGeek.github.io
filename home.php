@@ -12,7 +12,7 @@
     background-image: url('banner.jpg');
 
     /* Full height */
-    height: 100%;
+    height: 645px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
