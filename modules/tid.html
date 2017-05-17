@@ -47,12 +47,13 @@
   <div ng-app="" ng-init="websites=[
   {name:'KentonVizdos.com',desc:'My personal portfolio website',link:'https://kentonvizdos.com'},
   {name:'TheROTG.com',desc:'This is the site you are on, its for all of my YouTube stuff.',link:'https://therotg.com'},
-  {name:'Frosted Spinner',desc:'This is a Community Project for Frosted Fricks who does channel reviews. He requested I make a new spinner, so I decided I would.',link:'https://therotg.com/spinner/'}]">
+  {name:'Frosted Spinner',desc:'This is a Community Project for Frosted Fricks who does channel reviews. He requested I make a new spinner, so I decided I would.',link:'https://therotg.com/spinner/'}
+  ]">
   <div id="container">
-    <div class="col-sm-3" id="website" ng-repeat="x in websites">
-        <h2>{{ x.name }}</h2>
-        <p>{{ x.desc }}</p>
-        <a href="{{ x.link }}">Visit</a>
+    <div id="website" ng-repeat="ws in websites">
+        <h2>{{ ws.name }}</h2>
+        <p>{{ ws.desc }}</p>
+        <a href="{{ ws.link }}">Visit</a>
     </div>
   </div>
   </div>
