@@ -4,7 +4,9 @@
 }
 
 body {
-  background-color: #38E8FF;
+  background-image: url("bg.jpg");
+  background-repeat: repeat;
+  /* background-color: #38E8FF; */
 }
 #header {
   text-align: center;
