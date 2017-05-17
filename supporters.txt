@@ -1,2 +1,0 @@
-john doe ||| john does message ||| supporter since date
-test doh ||| test dohs message ||| supporter since XX
