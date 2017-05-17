@@ -1,11 +1,10 @@
-<script src="../static/navbar.js"></script>
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header navbar">
 
       <a class="navbar-brand" href="../home.php">TheROTG.com</a>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
+    <div class="collapse navbar-collapse" id="myNavbar" data-spy="affix" data-offset-top="645">
       <ul class="nav navbar-nav">
         <li><a href="../home.php#about">About</a></li>
         <li><a href="../home.php#plugins">Projects</a></li>

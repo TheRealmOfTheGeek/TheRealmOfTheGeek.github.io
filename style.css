@@ -1,4 +1,12 @@
-.navbar{margin-bottom:0;border-radius:0}footer{background-color:#f2f2f2;padding:25px}
+.navbar{
+  margin-bottom:0;border-radius:0
+}
+
+#myNavbar.affix {
+    position: fixed;
+    top: 80px;
+}
+footer{background-color:#f2f2f2;padding:25px}
 #header{
   color:white;
 
