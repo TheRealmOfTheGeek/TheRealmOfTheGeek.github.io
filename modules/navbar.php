@@ -20,6 +20,14 @@
 </style>
 <div class="nav-wrapper collapse navbar-collapse">
 <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="645">
+  <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">ROTG</a>
+    </div>
   <ul class="nav navbar-nav">
     <li><a href="../home.php#about">About</a></li>
     <li><a href="../home.php#plugins">Projects</a></li>
