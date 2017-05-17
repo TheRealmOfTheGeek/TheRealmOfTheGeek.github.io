@@ -37,7 +37,7 @@
 <div class="jumbotron" id="roow">
   <div class="container text-left">
     <h1>About me</h1>
-    <p><small>I am Kenton, Also Known As Kento. I am a teenaged YouTube programmer that mainly focuses on creating helpful, inspiring coding tutorials. I also do LiveCoding, while practicing Scrum and Agile methods like TDD, Mob Programming, Pair Programming, and more. I has been programming for years, and knowledgable in Java, Bukkit API, HTML/CSS, Bootstrap, JQuery, JavaScript, PHP, and more. The videos are always on a strict schedule of daily at 7am. If you would like to watch some of these, please visit https://yt.therotg.com!<br><br></small></p>
+    <p><small>I am Kenton, Also Known As Kento. I am a teenaged YouTube programmer that mainly focuses on creating helpful, inspiring coding tutorials. I also do LiveCoding, while practicing Scrum and Agile methods like TDD, Mob Programming, Pair Programming, and more. I have been programming for years, and knowledgeable in Java, Bukkit API, HTML/CSS, Bootstrap, JQuery, JavaScript, PHP, and more. The videos are always on a strict schedule of daily at 7am. If you would like to watch some of these, please visit https://yt.therotg.com!<br><br></small></p>
   </div>
 </div>
 
@@ -50,7 +50,7 @@
 <div class="jumbotron" id="roow">
   <div class="container text-left">
     <h1>FREELANCE / Hire Me</h1>
-      <p>So, you want a Spigot / Bukkit plugin, right? Well, you've come to the right place. I can create anything* for $10 flat, cheaper than any other creator here, AND IN TWO DAYS**!. Other than doing three packages, I have decided to just do $10 for anything* you can possibly imagine. The reason these are so cheap, is because everyone else is overpriced</p>
+      <p>So, you want a Spigot / Bukkit plugin, right? Well, you've come to the right place. I can create anything* for $10 flat, cheaper than any other creator here, AND IN TWO DAYS**!. Other than doing three packages, I have decided to just do $10 for anything* you can possibly imagine. The reason these are so cheap is because everyone else is overpriced</p>
       <a href="http://s.therotg.com/fiverr?source=rotgwebsite"><button class="button btn-lg orange">Get in touch</button></a><br><br>
   </div>
 </div>
