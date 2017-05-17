@@ -9,7 +9,7 @@ function isScrolledIntoView(elem)
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
 
-document.getElementsByTagName("body").addEventListener("scroll", scrollFunc);
+document.body.addEventListener("scroll", scrollFunc);
 
 function scrollFunc() {
   if(isScrolledIntoView("#header")) {
