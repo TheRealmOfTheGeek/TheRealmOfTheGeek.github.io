@@ -26,18 +26,23 @@ footer{background-color:#4f4f4f;
 }
 #header a{color:white;   font-family: hacks;}
 
-#roow {
+.roow {
   text-align:center;
   align-items:baseline;
   top:0;
   color:white;
   display:flex;
   background-color: #3d3d3d;
+  font-family: terminus;
+
 }
 
-#roow:nth-of-type(odd) {
+.roow p {
+  font-size: 18px;
+}
+
+.roow:nth-of-type(odd) {
   background-color: #303030;
-  font-family: terminus;
 }
 
   .jumbotron{margin-bottom:0}

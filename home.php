@@ -34,20 +34,20 @@
 </div>
 <?php include("modules/navbar.php"); ?>
 
-<div class="jumbotron" id="roow">
+<div class="roow" id="about">
   <div class="container text-left">
     <h1>About me</h1>
-    <p><small>I am Kenton, Also Known As Kento. I am a teenaged YouTube programmer that mainly focuses on creating helpful, inspiring coding tutorials. I also do LiveCoding, while practicing Scrum and Agile methods like TDD, Mob Programming, Pair Programming, and more. I have been programming for years, and knowledgeable in Java, Bukkit API, HTML/CSS, Bootstrap, JQuery, JavaScript, PHP, and more. The videos are always on a strict schedule of daily at 7am. If you would like to watch some of these, please visit https://yt.therotg.com!<br><br></small></p>
+    <p>I am Kenton, Also Known As Kento. I am a teenaged YouTube programmer that mainly focuses on creating helpful, inspiring coding tutorials. I also do LiveCoding, while practicing Scrum and Agile methods like TDD, Mob Programming, Pair Programming, and more. I have been programming for years, and knowledgeable in Java, Bukkit API, HTML/CSS, Bootstrap, JQuery, JavaScript, PHP, and more. The videos are always on a strict schedule of daily at 7am. If you would like to watch some of these, please visit https://yt.therotg.com!<br><br></p>
   </div>
 </div>
 
-<div class="jumbotron" id="roow">
+<div class="roow" id="projects">
 <div class="container-fluid bg-3 text-center" id="main">
 	<?php include("modules/tid.html"); ?>
 </div>
 </div>
 
-<div class="jumbotron" id="roow">
+<div class="roow" id="hire">
   <div class="container text-left">
     <h1>FREELANCE / Hire Me</h1>
       <p>So, you want a Spigot / Bukkit plugin, right? Well, you've come to the right place. I can create anything* for $10 flat, cheaper than any other creator here, AND IN TWO DAYS**!. Other than doing three packages, I have decided to just do $10 for anything* you can possibly imagine. The reason these are so cheap is because everyone else is overpriced</p>
@@ -55,7 +55,7 @@
   </div>
 </div>
 
-<div class="jumbotron" id="roow">
+<div class="roow" id="contact">
   <div class="container text-left">
     <h1>Contact Kento</h1>
     <p>You Can Get In Touch With Me In Multiple Ways:<br><small>email: contact@therotg.com<br>DM me on Twitter: <a href="http://s.therotg.com/twitter?source=rotgwebsite">@kvizdos</a></small></p>

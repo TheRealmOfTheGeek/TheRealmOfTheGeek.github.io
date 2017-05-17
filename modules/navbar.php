@@ -20,30 +20,14 @@
     min-height:50px;
 }
 </style>
-<!--
-<div class="nav-wrapper collapse navbar-collapse">
-<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="645">
-  <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">theROTG</a>
-    </div>
-  <ul class="nav navbar-nav">
-
-  </ul>
-</nav>
-</div>
--->
+<script src="../static/nav.js"></script>
 
 <div class="nav-wrapper">
 
 <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="745">
   <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" id="navPatty">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -52,11 +36,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="../home.php#about">About</a></li>
-        <li><a href="../home.php#plugins">Projects</a></li>
-        <li><a href="../home.php#gig">Hire Me</a></li>
-        <li><a href="../home.php#gig">Contact</a></li>
-        <li><a href="../games">Fun Games</a></li>
+        <li class="nav-about"><a href="../home.php#about">About</a></li>
+        <li class="nav-projects"><a href="../home.php#projects">Projects</a></li>
+        <li class="nav-hire"><a href="../home.php#hire">Hire Me</a></li>
+        <li class="nav-contact"><a href="../home.php#contact">Contact</a></li>
       </ul>
 
     </div>
