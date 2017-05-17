@@ -29,7 +29,7 @@
 <div class="jumbotron" id="header">
   <div class="container text-center" id="header-txt">
     <h1>The Realm Of The Geek</h1>
-    <p style="color:#ff6e00"><small>Only a little bit of awesomeness here.</p><br><a href="http://s.therotg.com/twitter?source=rotgwebsite" target="_blank">Twitter</a> | <a href="http://s.therotg.com/youtube?source=rotgwebsite" target="_blank">YouTube</a> | <a href="http://s.therotg.com/trello?source=rotgwebsite">Trello</a> | <a href="http://s.therotg.com/github?source=rotgwebsite">GitHub</a></small>
+    <p style="color:#ff6e00; font-family:'hacks';"><small>Only a little bit of awesomeness here.</p><br><a href="http://s.therotg.com/twitter?source=rotgwebsite" target="_blank">Twitter</a> | <a href="http://s.therotg.com/youtube?source=rotgwebsite" target="_blank">YouTube</a> | <a href="http://s.therotg.com/trello?source=rotgwebsite">Trello</a> | <a href="http://s.therotg.com/github?source=rotgwebsite">GitHub</a></small>
   </div>
 </div>
 <?php include("modules/navbar.php"); ?>
