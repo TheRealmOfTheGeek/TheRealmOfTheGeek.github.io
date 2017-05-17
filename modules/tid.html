@@ -3,13 +3,19 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 
   <style>
+
   #container {
     max-width: 10000px;
     width: 100%;
     text-align: center;
-
+    background: black;
   }
-    #website {
+  h1 {
+    text-align: center;
+    font-family: Avenir;
+    color: white;
+  }
+    #module {
       display: inline-block;
       vertical-align: top;
       position: relative;
@@ -17,15 +23,16 @@
 
       margin: 10px;
       margin-top: 0;
+      margin-bottom: 18px;
       background-color: #00870b;
       width: 265px;
       height: 275px;
     }
-    #website p {
+    #module p {
       position: relative;
       padding-top: 10px;
     }
-    #website h2 {
+    #module h2 {
       text-align: center;
       background-color: #370059;
       width: 100%;
@@ -36,7 +43,7 @@
       margin: 0;
       left: 0;
     }
-    #website a {
+    #module a {
       position: absolute;
       bottom: 0;
       left: 0;
@@ -48,18 +55,45 @@
     }
   </style>
 </head>
-
-  <div ng-app="" ng-init="websites=[
+  <div ng-app="" ng-init="
+  websites=[
   {name:'KentonVizdos.com',desc:'My personal portfolio website',link:'https://kentonvizdos.com'},
   {name:'TheROTG.com',desc:'This is the site you are on, its for all of my YouTube stuff.',link:'https://therotg.com'},
-  {name:'Frosted Spinner',desc:'This is a Community Project for Frosted Fricks who does channel reviews. He requested I make a new spinner, so I decided I would.',link:'https://therotg.com/spinner/'}
+  ];
+  games=[
+  {name:'Frosted Spinner',desc:'This is a Community Project for Frosted Fricks who does channel reviews. He requested I make a new spinner, so I decided I would.',link:'https://therotg.com/spinner/'},
+  {name:'Lasers!',desc:'A %100 Original game made by Kento. It is a SUPER simple, but odly difficult game.',link:'https://therotg.com/games/lasers/'},
+  {name:'Snake',desc:'Just a regular ol snake game',link:'https://therotg.com/games/snake/'}
+  ];
+  plugins=[
+  {name:'EULA Compliant Perks',desc:'The #1 Permissions Plugin For All Donators.',link:'https://www.spigotmc.org/resources/eula-compliant-perks.35134/'},
+  {name:'SimplePolls',desc:'The easiest way to create votes in Minecraft!',link:'https://www.spigotmc.org/resources/simple-polls.29441/'},
+  {name:'You Legit?',desc:'Ultimate Hacker Protetion For Staff',link:'https://www.spigotmc.org/resources/you-legit.30043/'},
+  {name:'Packets Free-dom',desc:'Such Customization! Many Wow!',link:'https://www.spigotmc.org/resources/packets-free-dom.29448/'},
+  {name:'AdminTools Revamped',desc:'Smore commands for your admins',link:'https://www.spigotmc.org/resources/admintools-revamped.26331/'}
   ]">
   <div id="container">
-    <div id="website" ng-repeat="ws in websites">
+    <h1>Websites</h1>
+    <div id="module" ng-repeat="ws in websites">
         <h2>{{ ws.name }}</h2>
         <p>{{ ws.desc }}</p>
         <a href="{{ ws.link }}">Visit</a>
     </div>
+
+    <h1>Games</h1>
+    <div id="module" ng-repeat="gm in games">
+        <h2>{{ gm.name }}</h2>
+        <p>{{ gm.desc }}</p>
+        <a href="{{ gm.link }}">Play!</a>
+    </div>
+
+    <h1>Plugins</h1>
+    <div id="module" ng-repeat="pl in plugins">
+        <h2>{{ pl.name }}</h2>
+        <p>{{ pl.desc }}</p>
+        <a href="{{ pl.link }}">Learn More</a>
+    </div>
+
   </div>
   </div>
 </html>
