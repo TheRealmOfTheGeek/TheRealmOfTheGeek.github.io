@@ -37,7 +37,7 @@
 <div class="jumbotron" id="about">
   <div class="container text-left">
     <h1>About The Realm of The Geek</h1>
-    <p><small>The Realm of The Geek, Also Known As Kento, is a teenaged YouTube programmer that mainly focuses on creating helpful, inspiring coding tutorials. He also does LiveCoding, while practicing Scrum and Agile methods like TDD, Mob Programming, Pair Programming, and more. He has been programming for years, and knowledgable in Java, Bukkit API, HTML/CSS, Bootstrap, JQuery, JavaScript, PHP, and more. The videos are always on a strict schedule of daily at 7am. If you would like to watch some of these, please visit yt.therotg.com!</small></p>
+    <p><small>The Realm of The Geek, Also Known As Kento, is a teenaged YouTube programmer that mainly focuses on creating helpful, inspiring coding tutorials. He also does LiveCoding, while practicing Scrum and Agile methods like TDD, Mob Programming, Pair Programming, and more. He has been programming for years, and knowledgable in Java, Bukkit API, HTML/CSS, Bootstrap, JQuery, JavaScript, PHP, and more. The videos are always on a strict schedule of daily at 7am. If you would like to watch some of these, please visit yt.therotg.com!<br><br></small></p>
   </div>
 </div>
 
