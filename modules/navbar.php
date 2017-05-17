@@ -5,6 +5,7 @@
     font-family: Avenir;
     margin: 0;
     padding: 0;
+    border-radius: 0;
   }
   .navbar.affix {
     position: fixed;
