@@ -1,4 +1,6 @@
 <style>
+#navbar{background-color:rgb(152,18,152)}
+
   .navbar {
     font-family: Avenir;
   }
