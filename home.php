@@ -27,7 +27,7 @@
 
 
 <div class="jumbotron" id="header">
-  <div class="container text-center">
+  <div class="container text-center" id="header-txt">
     <h1>The Realm Of The Geek</h1>
     <p><small>Only a little bit of awesomeness here.<br><a href="http://s.therotg.com/twitter?source=rotgwebsite" target="_blank">Twitter</a> | <a href="http://s.therotg.com/youtube?source=rotgwebsite" target="_blank">YouTube</a> | <a href="http://s.therotg.com/trello?source=rotgwebsite">Trello</a> | <a href="http://s.therotg.com/github?source=rotgwebsite">GitHub</a></small></p>
   </div>
