@@ -4,9 +4,15 @@ function isScrolledIntoView(elem)
     var docViewTop = $(window).scrollTop();
     var docViewBottom = docViewTop + $(window).height();
 
-    if(st => docViewBottom) {
-      return 1;
+    var st = $(window).scrollTop();
+    function isScrolledIntoView(elem)
+    {
+        var docViewTop = $(window).scrollTop();
+        var docViewBottom = docViewTop + $(window).height();
+
+        return st => docViewBottom;
     }
+
 }
 
 
