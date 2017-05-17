@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<?php 
+	<?php
 		$page = basename(__FILE__, ".php");
-		include("../modules/header.php"); 
-	
+		include("../modules/header.php");
+
 	?>
 </head>
-	
+
 <body>
 
 <?php include("../modules/navbar.php"); ?>
-  
+
 <div class="jumbotron" id="header">
-  <div class="container text-center   ">
+  <div class="container text-center">
       <center><h3>Currently at <span id='subs'>Loading..</span> subscribers, <span id='views'>Loading..</span> views and <span id='videos'>Loading..</span> videos</h3></center>
 
     <h1>Latest</h1>

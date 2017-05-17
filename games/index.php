@@ -1,18 +1,18 @@
 <html>
 <head>
-	<?php 
+	<?php
 		$page = basename(__FILE__, ".php");
-		include("../modules/header.php"); 
-	
+		include("../modules/header.php");
+
 	?>
 </head>
-	
+
 <body>
 
 <?php include("../modules/navbar.php"); ?>
 
   <body>
-<div class="container">
+<div class="container" id="roow">
   <h4><a href="../index.html"><span class="glyphicon glyphicon-home"></span> Back to the main site</a></h4>
 
   <h2>Games</h2>
@@ -48,7 +48,7 @@
 
 	  <?php include("../modules/footer.php"); ?>
 
-	  
+
 </body>
 
 </html>

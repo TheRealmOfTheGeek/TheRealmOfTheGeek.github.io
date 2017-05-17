@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<?php 
+	<?php
 		$page = basename(__FILE__, ".php");
-		include("../modules/header.php"); 
-	
+		include("../modules/header.php");
+
 	?>
 </head>
-	
+
 <body>
 
 <?php include("../modules/navbar.php"); ?>
