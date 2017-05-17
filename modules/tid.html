@@ -1,0 +1,59 @@
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+  <style>
+  #container {
+    max-width: 10000px;
+    width: 100%;
+    text-align: center;
+
+  }
+    #website {
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      font-family: Avenir;
+
+      margin: 10px;
+      margin-top: 0;
+      background-color: #00870b;
+      width: 255px;
+      height: 275px;
+    }
+    #website h2 {
+      text-align: center;
+      background-color: #370059;
+      width: 100%;
+      font-size: 28px;
+      color: white;
+      padding: 0;
+      margin: 0;
+      left: 0;
+    }
+    #website a {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      font-size: 24px;
+      color: black;
+      text-decoration: none;
+      width: 100%;
+      background-color: #5d1ba0;
+    }
+  </style>
+</head>
+
+  <div ng-app="" ng-init="websites=[
+  {name:'KentonVizdos.com',desc:'My personal portfolio website',link:'https://kentonvizdos.com'},
+  {name:'TheROTG.com',desc:'This is the site you are on, its for all of my YouTube stuff.',link:'https://therotg.com'},
+  {name:'Frosted Spinner',desc:'This is a Community Project for Frosted Fricks who does channel reviews. He requested I make a new spinner, so I decided I would.',link:'https://therotg.com/spinner/'}]">
+  <div id="container">
+    <div class="col-sm-3" id="website" ng-repeat="x in websites">
+        <h2>{{ x.name }}</h2>
+        <p>{{ x.desc }}</p>
+        <a href="{{ x.link }}">Visit</a>
+    </div>
+  </div>
+  </div>
+</html>
