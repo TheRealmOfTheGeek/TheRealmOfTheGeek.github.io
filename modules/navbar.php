@@ -1,3 +1,14 @@
+<style>
+  .navbar {
+    font-family: Avenir;
+  }
+  .navbar.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
+}
+</style>
 <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="645">
   <ul class="nav navbar-nav">
     <li><a href="../home.php#about">About</a></li>
