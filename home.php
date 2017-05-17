@@ -6,6 +6,21 @@
 		include("modules/header.php");
 
 	?>
+	<style>
+	#header {
+		/* The image used */
+    background-image: url('banner.jpg');
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	}
+	</style>
 </head>
 
 <body>
@@ -13,10 +28,13 @@
 <?php include("modules/navbar.php"); ?>
 
 <div class="jumbotron" id="header">
+
+	<!---
   <div class="container text-center">
     <h1>The Realm Of The Geek</h1>
     <p><small>Only a little bit of awesomeness here.<br><a href="http://s.therotg.com/twitter?source=rotgwebsite" target="_blank">Twitter</a> | <a href="http://s.therotg.com/youtube?source=rotgwebsite" target="_blank">YouTube</a> | <a href="http://s.therotg.com/trello?source=rotgwebsite">Trello</a> | <a href="http://s.therotg.com/github?source=rotgwebsite">GitHub</a></small></p>
   </div>
+-->
 </div>
 <div class="jumbotron" id="about">
   <div class="container text-left">
