@@ -3,6 +3,8 @@
 
   .navbar {
     font-family: Avenir;
+    margin: 0;
+    padding: 0;
   }
   .navbar.affix {
     position: fixed;
