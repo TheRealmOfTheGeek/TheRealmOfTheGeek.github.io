@@ -1,5 +1,5 @@
 <script src="../static/navbar.js"></script>
-<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="192">
+<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header navbar">
 
