@@ -56,8 +56,6 @@
         <li><a href="../home.php#plugins">Projects</a></li>
         <li><a href="../home.php#gig">Hire Me</a></li>
         <li><a href="../home.php#gig">Contact</a></li>
-        <li><a href="../calendar">Calendar</a></li>
-        <li><a href="../videos">Learn To Code</a></li>
         <li><a href="../games">Fun Games</a></li>
       </ul>
 
