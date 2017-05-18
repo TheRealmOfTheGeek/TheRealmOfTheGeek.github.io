@@ -6,15 +6,13 @@
 		include("modules/header.php");
 
 	?>
+
 	<style>
 	#header {
-		/* The image used */
     background-image: url('banner.jpg');
 
-    /* Full height */
     height: 745px;
 
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: 54%, 0%;
     background-repeat: no-repeat;
@@ -52,14 +50,14 @@
 <div class="roow" id="hire">
   <div class="container text-left">
     <h1>FREELANCE / Hire Me</h1>
-      <p>So, you want a Spigot / Bukkit plugin, right? Well, you've come to the right place. I can create anything* for $10 flat, cheaper than any other creator here, AND IN TWO DAYS**!. Other than doing three packages, I have decided to just do $10 for anything* you can possibly imagine. The reason these are so cheap is because everyone else is overpriced</p>
-      <a href="http://s.therotg.com/fiverr?source=rotgwebsite"><button class="button btn-lg orange">Get in touch</button></a><br><br>
+      <p>I do both Web design and Plugin creation on Fiverr! If you would like to learn more, please click the link below.</p>
+      <a href="https://www.fiverr.com/realmofgeek"><button class="button btn-lg orange">Learn More</button></a><br><br>
   </div>
 </div>
 
 <div class="roow" id="contact">
   <div class="container text-left">
-    <h1>Contact Kento</h1>
+    <h1>Contact Me</h1>
     <p>You Can Get In Touch With Me In Multiple Ways:<br><small>email: contact@therotg.com<br>DM me on Twitter: <a href="http://s.therotg.com/twitter?source=rotgwebsite">@kvizdos</a></small></p>
   </div>
 </div>
