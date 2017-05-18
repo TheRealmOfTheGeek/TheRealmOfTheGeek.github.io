@@ -27,7 +27,7 @@
 <div class="jumbotron" id="header">
   <div class="container text-center" id="header-txt">
     <h1>The Realm Of The Geek</h1>
-    <p style="color:#ff6e00; font-family:'hacks';"><small>Only a little bit of awesomeness here.</p><br><a href="http://s.therotg.com/twitter?source=rotgwebsite" target="_blank">Twitter</a> | <a href="http://s.therotg.com/youtube?source=rotgwebsite" target="_blank">YouTube</a> | <a href="http://s.therotg.com/trello?source=rotgwebsite">Trello</a> | <a href="http://s.therotg.com/github?source=rotgwebsite">GitHub</a></small>
+    <p style="color:#00b72d; font-family:'hacks';"><small>Only a little bit of awesomeness here.</p><br><a href="http://s.therotg.com/twitter?source=rotgwebsite" target="_blank">Twitter</a> | <a href="http://s.therotg.com/youtube?source=rotgwebsite" target="_blank">YouTube</a> | <a href="http://s.therotg.com/trello?source=rotgwebsite">Trello</a> | <a href="http://s.therotg.com/github?source=rotgwebsite">GitHub</a></small>
   </div>
 </div>
 <?php include("modules/navbar.php"); ?>
@@ -51,14 +51,14 @@
   <div class="container text-left">
     <h1>FREELANCE / Hire Me</h1>
       <p>I do both Web design and Plugin creation on Fiverr! If you would like to learn more, please click the link below.</p>
-      <a href="https://www.fiverr.com/realmofgeek"><button class="button btn-lg orange">Learn More</button></a><br><br>
+      <a href="https://www.fiverr.com/realmofgeek"><button class="button btn-lg green">Learn More</button></a><br><br>
   </div>
 </div>
 
 <div class="roow" id="contact">
   <div class="container text-left">
     <h1>Contact Me</h1>
-    <p>You Can Get In Touch With Me In Multiple Ways:<br><small>email: contact@therotg.com<br>DM me on Twitter: <a href="http://s.therotg.com/twitter?source=rotgwebsite">@kvizdos</a></small></p>
+    <p>You Can Get In Touch With Me In Multiple Ways:<br><small>email: <a href="mailto:contact@therotg.com">contact@therotg.com</a><br>DM me on Twitter: <a href="http://s.therotg.com/twitter?source=rotgwebsite">@kvizdos</a></small></p>
   </div>
 </div>
 
