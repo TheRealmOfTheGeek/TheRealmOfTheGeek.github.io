@@ -59,7 +59,7 @@
 <div class="roow" id="donate">
 	<div class="container text-left">
 		<h1>Support me</h1>
-		<p>First off, I almost never ask for donations, but, my current PC is not currently working (near dead). Because of this, I am having major issues recording high quality videos, so I am looking toward the community to possibly help me raise the little bit of cash more that I need. In return, I will upload as much as possible during this summer. Thank you, and DO NOT feel obligated to donate, only do so if you can afford it.</p>
+		<p>First off, I almost never ask for donations, but, my current PC is not currently working (near dead). Because of this, I am having major issues recording high quality videos, so I am looking toward the community to possibly help me raise the little bit of cash more that I need. In return, I will upload as much as possible during this summer. Thank you, and DO NOT feel obligated to donate, only do so if you can afford it. After I recieve the payment, I will be getting in touch to you through the PayPal email address you used to get your Discord username, as well as 1 social media account to link in *all* of my videos that come out during the summer time to show my appreciation to you.</p>
 
 		<?php include("modules/donate.html"); ?>
 </div>
