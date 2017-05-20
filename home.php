@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
 	<?php
 		$page = basename(__FILE__, ".php");
 		include("modules/header.php");
@@ -20,7 +22,6 @@
 	}
 	</style>
 </head>
-
 <body>
 
 
@@ -42,17 +43,26 @@
 
 
 <div class="roow" id="projects">
-<div class="container-fluid bg-3 text-center" id="main">
-	<?php include("modules/tid.html"); ?>
-</div>
+	<div class="container-fluid bg-3 text-center" id="main">
+		<?php include("modules/tid.html"); ?>
+	</div>
 </div>
 
 <div class="roow" id="hire">
   <div class="container text-left">
     <h1>FREELANCE / Hire Me</h1>
-      <p>I do both Web design and Plugin creation on Fiverr! If you would like to learn more, please click the link below.</p>
-      <a href="https://www.fiverr.com/realmofgeek"><button class="button btn-lg green">Learn More</button></a><br><br>
+      <p>I do website development, for a low cost, The price varies, but it is usaully around ~$30 a website, but this price is 100% goig to change after I know what you want in it, because everyone is different. To find your price, please contact me using the "Contact Me" button right under this text (It opens a mailto: link, so if you don't like that, just contact me, contact@therotg.com).</p>
+      <a href="mailto:contact@therotg.com"><button class="button btn-lg green">Contact Me</button></a><br><br>
   </div>
+</div>
+
+<div class="roow" id="donate">
+	<div class="container text-left">
+		<h1>Support me</h1>
+		<p>First off, I almost never ask for donations, but, my current PC is not currently working (near dead). Because of this, I am having major issues recording high quality videos, so I am looking toward the community to possibly help me raise the little bit of cash more that I need. In return, I will upload as much as possible during this summer. Thank you, and DO NOT feel obligated to donate, only do so if you can afford it.</p>
+
+		<?php include("modules/donate.html"); ?>
+</div>
 </div>
 
 <div class="roow" id="contact">
