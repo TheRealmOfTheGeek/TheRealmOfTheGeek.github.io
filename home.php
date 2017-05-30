@@ -74,8 +74,5 @@
 
 <?php include("modules/footer.php"); ?>
 
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 </body>
 </html>
