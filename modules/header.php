@@ -39,6 +39,4 @@
        data-ad-client="ca-pub-4499070912220787"
        data-ad-slot="6092543559"
        data-ad-format="auto"></ins>
-  <script>
-  (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
+  
