@@ -20,21 +20,16 @@ window.onload = function () {
 		        includeZero: false
 		      },
 
-		pointStyle: 'line',
+		pointStyle: 'spline',
 		data: [
 		{
-			type: "line",
+			type: "spline",
 			dataPoints: [{
 
     }]
 		}
 		],
 		options: {
-				elements: {
-						line: {
-								tension: 0, // disables bezier curves
-						}
-				},
 				layout: {
             padding: {
                 left: 0,
@@ -79,21 +74,16 @@ function resetCanvas() {
 						includeZero: false
 					},
 
-		pointStyle: 'line',
+		pointStyle: 'spline',
 		data: [
 		{
-			type: "line",
+			type: "spline",
 			dataPoints: [{
 
 		}]
 		}
 		],
 		options: {
-				elements: {
-						line: {
-								tension: 0, // disables bezier curves
-						}
-				},
 				layout: {
 						padding: {
 								left: 0,

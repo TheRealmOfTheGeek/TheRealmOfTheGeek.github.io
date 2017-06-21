@@ -91,16 +91,16 @@ var xmlHttp = new XMLHttpRequest();
 		<h1 id="sumname">Loading..</h1>
 		<h3 id="price">Current:<br><span id="pri">Loading..</span></h3>
 		<h3 id="afs">Available Funds: <br><span id="af">Loading..</span></h3>
-
 		<form onsubmit="searchSym()" action="#">
 			<input id="sym-search" placeholder="Search Symbols">
 			<input id="sym-enter" type="submit">
 		</form>
-
 		<form onsubmit="addFunds()" action="#">
 			<input id="add-funds" placeholder="Add Funds ($)">
 			<input id="add-enter" type="submit">
 		</form>
+		<a href="https://finance.yahoo.com/currencies" target="_blank">Wanting to compare currencies? Check here for the names!</a>
+
 	</div>
 
 
@@ -114,7 +114,7 @@ var xmlHttp = new XMLHttpRequest();
 </head>
 <body>
 
-<div id="chartContainer" style="width:99%; height:50vh"></div>
+<div id="chartContainer" style="width:99%; height:60vh"></div>
 
 <div id="lower-container">
 	<div id="bid">
