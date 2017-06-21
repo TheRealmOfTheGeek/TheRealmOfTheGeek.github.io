@@ -121,8 +121,6 @@ var xmlHttp = new XMLHttpRequest();
 <div id="lower-container">
 	<div id="bid">
 		<select name="turbo-bid" id="turbo-bid">
-			<option value="3">1 Seconds - TURBO</option>
-
 		  <option value="30">30 Seconds - TURBO</option>
 		  <option value="45">45 Seconds - TURBO</option>
 		  <option value="60">60 Seconds - TURBO</option>
