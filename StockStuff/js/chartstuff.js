@@ -11,32 +11,57 @@ window.onload = function () {
 
 }
 
-	chart = new CanvasJS.Chart("chartContainer", {
-		zoomEnabled: true,
+var dps = []; // dataPoints
+
+var chart = new CanvasJS.Chart("chartContainer",{
+  zoomEnabled: true,
+
 		axisY:{
-		        includeZero: false
-		      },
 
-		pointStyle: 'spline',
-		data: [
-		{
-			type: "spline",
-			dataPoints: [{
+						includeZero: false
 
-    }]
-		}
-		],
-	});
-	chart.render();
+					},
+  title :{
+    text: "Live Random Data"
+  },
+  data: [{
+    type: "line",
+    dataPoints: dps
+  }]
+});
 
+var xVal = 0;
+var yVal = 100;
+var updateInterval = 100;
+var dataLength = 500; // number of dataPoints visible at any point
 
-  var setDP = setInterval(function(){
-		console.log({y: price});
-		chart.options.data[0].dataPoints.push({y: price * 1});
-		chart.render();
-	}, 1000);
+var updateChart = function (count) {
+  count = count || 1;
+  			// count is number of times loop runs to generate random dataPoints.
 
+  			for (var j = 0; j < count; j++) {
+  				yVal = yVal +  Math.round(5 + Math.random() *(-5-5));
+  				dps.push({
+  					x: xVal,
+  					y: price * 1
+  				});
+  				xVal++;
+  			};
 
+  if (dps.length > dataLength)
+  {
+    dps.shift();
+  }
+
+  chart.render();
+
+};
+
+// generates first set of dataPoints
+updateChart(dataLength);
+
+// update chart after specified time.
+setInterval(function(){updateChart()}, updateInterval);
 
 }
 
