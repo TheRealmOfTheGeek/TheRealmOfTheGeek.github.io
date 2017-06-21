@@ -94,6 +94,7 @@ setInterval(function(){
         var cell3z = rowz.insertCell(3);
         var cell4z = rowz.insertCell(4);
         var cell5z = rowz.insertCell(5);
+        var cell6z = rowz.insertCell(6);
 
         rowz.className = row.className;
         cell0z.innerHTML = row.cells[0].textContent;
@@ -116,7 +117,6 @@ setInterval(function(){
             url: 'ss.php',
             method: 'POST', // or GET
             success: function(msg) {
-
             }
         });
       }
