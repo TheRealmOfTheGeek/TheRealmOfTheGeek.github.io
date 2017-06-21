@@ -5,6 +5,7 @@ var amnt;
 var table;
 var placedAt;
 var curPrice;
+var type = document.getElementById('sumname').textContent.split(" | ");
 
 setInterval(function(){
   curPrice = document.getElementById('pri').textContent;
@@ -55,6 +56,7 @@ setInterval(function(){
         var cell3z = rowz.insertCell(3);
         var cell4z = rowz.insertCell(4);
         var cell5z = rowz.insertCell(5);
+        var cell6z = rowz.insertCell(6);
 
         rowz.className = row.className;
         cell0z.innerHTML = row.cells[0].textContent;
@@ -63,9 +65,23 @@ setInterval(function(){
         cell3z.innerHTML = row.cells[3].textContent;
         cell4z.innerHTML = row.cells[4].textContent;
         cell5z.innerHTML = row.cells[5].textContent;
+        cell6z.innerHTML = row.cells[6].textContent;
 
         table.deleteRow(i);
         saveScore();
+
+        $.ajax({
+            data: {
+              symbol: row.cells[6].textContent + "",
+              pro: row.cells[4].textContent + "",
+              lw: 1
+            },
+            url: 'ss.php',
+            method: 'POST', // or GET
+            success: function(msg) {
+
+            }
+        });
 
       }
 
@@ -90,6 +106,18 @@ setInterval(function(){
         table.deleteRow(i);
         saveScore();
 
+        $.ajax({
+            data: {
+              symbol: row.cells[6].textContent + "",
+              pro: row.cells[4].textContent + "",
+              lw: 0
+            },
+            url: 'ss.php',
+            method: 'POST', // or GET
+            success: function(msg) {
+
+            }
+        });
       }
     }
 
@@ -106,6 +134,7 @@ function addToTable(variable) {
     var cell3 = row.insertCell(3);
     var cell4 = row.insertCell(4);
     var cell5 = row.insertCell(5);
+    var cell6 = row.insertCell(6);
 
     row.className = "tl " + table.rows.length;
     cell0.innerHTML = placedAt;
@@ -114,6 +143,8 @@ function addToTable(variable) {
     cell3.innerHTML = "$" + amnt;
     cell4.innerHTML = parseInt(amnt * 1.5) + ""; // PUT NEW MATH HERE TO FIGURE OUT HOW MUCH THE PERSON GETS BACK!!!!!
     cell5.innerHTML = variable;
+    cell6.innerHTML = ss;
+
 }
 
 $("#up" ).click(function() {

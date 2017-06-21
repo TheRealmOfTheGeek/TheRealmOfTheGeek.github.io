@@ -62,13 +62,13 @@
 	background-color: red;
 }
 </style>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="jquery.canvasjs.min.js"></script>
 <script type="text/javascript" src="canvasjs.min.js"></script>
-
-
+<script type="text/javascript" src="jquery.redirect.js"></script>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -121,6 +121,8 @@ var xmlHttp = new XMLHttpRequest();
 <div id="lower-container">
 	<div id="bid">
 		<select name="turbo-bid" id="turbo-bid">
+			<option value="3">1 Seconds - TURBO</option>
+
 		  <option value="30">30 Seconds - TURBO</option>
 		  <option value="45">45 Seconds - TURBO</option>
 		  <option value="60">60 Seconds - TURBO</option>
@@ -164,6 +166,7 @@ var xmlHttp = new XMLHttpRequest();
 	        <th>Amount</th>
 					<th>Back</th>
 					<th>Up/Down</th>
+					<th>Type</th>
 
 	      </tr>
 	    </thead>
@@ -182,6 +185,7 @@ var xmlHttp = new XMLHttpRequest();
 	        <th>Amount</th>
 					<th>Back</th>
 					<th>Up/Down</th>
+					<th>Type</th>
 
 	      </tr>
 	    </thead>
