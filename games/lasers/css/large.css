@@ -15,7 +15,7 @@ margin: 0;
   height: 100%;
   max-width: 1000000px;
 
-  background-image: url("file:///Users/kento/Documents/rotg/games/lasers/assets/bg.png");
+  background-image: url("/assets/bg.png");
 
   background-color: rgb(191, 188, 205);
 /*  border: 5px solid black;
@@ -26,7 +26,7 @@ padding: 5px;
 #player-container {
   position: absolute;
   left: 50%;
-  background-image: url("file:///Users/kento/Documents/rotg/games/lasers/assets/character.png");
+  background-image: url("/assets/character.png");
   background-size: 99%, 99%;
   background-repeat: no-repeat;
   width: 75px;
@@ -59,7 +59,7 @@ padding: 5px;
   z-index: 1;
   width: 125px;
 
-  background-image: url("file:///Users/kento/Documents/rotg/games/lasers/assets/shooter.png");
+  background-image: url("/assets/shooter.png");
 
   /*background-color: rgb(198, 136, 0);*/
   left: -1px;
@@ -75,7 +75,7 @@ padding: 5px;
   z-index: -10;
   width: 100vw;
 
-  background-image: url("file:///Users/kento/Documents/rotg/games/lasers/assets/death-laser.png");
+  background-image: url("/assets/death-laser.png");
   background-size: 30px, 100%;
 
   height: 10px;
@@ -89,7 +89,7 @@ padding: 5px;
 
   width: 100vw;
 
-  background-image: url("file:///Users/kento/Documents/rotg/games/lasers/assets/warn-laser.png");
+  background-image: url("/assets/warn-laser.png");
   background-size: 30px, 100%;
 
   height: 10px;
@@ -133,7 +133,7 @@ padding: 5px;
   border-radius: 15px;
   border: 2px solid black;
   color: white;
-  background-image: url("file:///Users/kento/Documents/rotg/games/lasers/assets/start-bg.jpg");
+  background-image: url("/assets/start-bg.jpg");
 
 }
 
@@ -144,7 +144,7 @@ padding: 5px;
 .end {
   display: none;
 
-  background-image: url("file:///Users/kento/Documents/rotg/games/lasers/assets/death-bg.jpg");
+  background-image: url("/assets/death-bg.jpg");
 
   color: white;
 }
@@ -155,7 +155,7 @@ padding: 5px;
     left: 50%;
     transform: translate(-50%, -50%);
 
-    background-image: url("file:///Users/kento/Documents/rotg/games/lasers/assets/score.jpg");
+    background-image: url("/assets/score.jpg");
     background-repeat: no-repeat;
   width: 250px;
   font-size: 24px;
