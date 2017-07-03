@@ -5,51 +5,50 @@ window.onload = function () {
     funds = localStorage.getItem("score");
   }
 
-  var c = document.createComment("The backend of this site is created by Kenton Vizdos.\nThe site uses Yahoo Finance and Chart.JS mainly for all of the data. \nYou can find me at TheROTG.com, KentonVizdos.com, or on Twitter, @kvizdos. \n\nNOTE: THIS SITE, A STOCK SITE, IS MENT TO BE 100% FREE. IF YOU SEE ANYTHING BEING SOLD, OR IF MONEY COSTS REAL MONEY, PLEASE REPORT IT TO ME VIA EMAIL: admin@therotg.com. ");
-  document.body.appendChild(c);
-
 	if(window.location.hash) {
 		ss = window.location.hash = ss;
 } else {
-  // Fragment doesn't exist
+
 }
 
-	chart = new CanvasJS.Chart("chartContainer", {
-		zoomEnabled: true,
+    var dps = [{y: price * 1}];   //dataPoints.
+
+    var chart = new CanvasJS.Chart("chartContainer",{
+      zoomEnabled: true,
 		axisY:{
 		        includeZero: false
 		      },
 
-		pointStyle: 'spline',
-		data: [
-		{
-			type: "spline",
-			dataPoints: [{
+      data: [{
+        type: "spline",
+        dataPoints : dps
+      }]
+    });
 
-    }]
-		}
-		],
-		options: {
-				layout: {
-            padding: {
-                left: 0,
-                right: 0,
-                top: 100,
-                bottom: 0
-            }
-        }
-		},
-	});
-	chart.render();
+    chart.render();
+    var xVal = dps.length + 1;
+    var yVal = 15;
+    var updateInterval = 1000;
+
+    var updateChart = function () {
 
 
-  var setDP = setInterval(function(){
-		console.log({y: price});
-		chart.options.data[0].dataPoints.push({y: price * 1});
-		chart.render();
-	}, 1000);
+      yVal = yVal +  Math.round(5 + Math.random() *(-5-5));
+      dps.push({y: price * 1, x: xVal});
 
+      xVal++;
+      if (dps.length >  60 )
+      {
+        dps.shift();
+      }
 
+      chart.render();
+
+// update chart after specified time.
+
+};
+
+setInterval(function(){updateChart()}, updateInterval);
 
 }
 
