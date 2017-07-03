@@ -5,6 +5,9 @@ margin: 0;
 
 }
 
+#footer-score {
+  display: none;
+}
 
 #game-container {
   overflow: hidden;
