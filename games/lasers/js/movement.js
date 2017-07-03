@@ -92,7 +92,6 @@ function startGame() {
 }
 
 function died() {
-  document.getElementById('tweets').style.display = "none";
   var url_loc = window.location + '';
   var ifdead = url_loc.split("?");
   if(ifdead.length > 1) {
@@ -103,7 +102,6 @@ function died() {
 }
 var gameOver = 0;
 function endGame() {
-  document.getElementById('tweets').style.display = "block";
   var hs = localStorage.getItem("highscore");
   document.getElementById('hs_death').innerHTML = "Your highscore is " + hs;
 

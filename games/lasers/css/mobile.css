@@ -1,6 +1,8 @@
 * {
   user-select: none;
--moz-user-select: none;
+-moz-user-select: none;margin: 0;
+
+
 }
 
 div#footer a {
@@ -8,13 +10,11 @@ div#footer a {
 }
 
 #game-container {
-  width: 98.5%;
-  max-width: 100000px;
-  padding: 5px;
-  background-color: rgb(191, 188, 205);
-  border: 5px solid black;
-  padding: 1px;
   overflow: hidden;
+  width: 100%;
+  height: 100%;
+  max-width: 1000000px;
+  background-color: rgb(191, 188, 205);
 }
 
 #player-container {
