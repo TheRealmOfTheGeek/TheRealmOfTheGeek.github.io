@@ -14,6 +14,9 @@ margin: 0;
   width: 100%;
   height: 100%;
   max-width: 1000000px;
+
+  background-image: url("file:///Users/kento/Documents/rotg/games/lasers/assets/bg.png");
+
   background-color: rgb(191, 188, 205);
 /*  border: 5px solid black;
 padding: 5px;
@@ -23,7 +26,9 @@ padding: 5px;
 #player-container {
   position: absolute;
   left: 50%;
-  background-color: red;
+  background-image: url("file:///Users/kento/Documents/rotg/games/lasers/assets/character.png");
+  background-size: 99%, 99%;
+  background-repeat: no-repeat;
   width: 75px;
   height: 14%;
 
@@ -35,9 +40,12 @@ padding: 5px;
 
 .laser-shooter {
   position: relative;
-  z-index: 0;
+  z-index: 1;
   width: 125px;
-  background-color: rgb(198, 136, 0);
+
+  /*background-image: url("file:///Users/kento/Documents/rotg/games/lasers/assets/shooter.png");*/
+
+  /*background-color: rgb(198, 136, 0);*/
   left: -1px;
   top: -3%;
   margin-top: 5%;
@@ -46,11 +54,29 @@ padding: 5px;
   overflow: none;
 }
 
+#laser-shooter-thingy {
+  position: relative;
+  z-index: 1;
+  width: 125px;
+
+  background-image: url("file:///Users/kento/Documents/rotg/games/lasers/assets/shooter.png");
+
+  /*background-color: rgb(198, 136, 0);*/
+  left: -1px;
+  top: -3%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  height: 50px;
+  overflow: none;
+}
 #laserbeam {
   position: absolute;
-  z-index: 5;
+  z-index: -10;
   width: 100vw;
-  background-color: #E90022;
+
+  background-image: url("file:///Users/kento/Documents/rotg/games/lasers/assets/death-laser.png");
+  background-size: 30px, 100%;
+
   height: 10px;
   top: 20px;
   display: none;
@@ -58,10 +84,13 @@ padding: 5px;
 
 #prelaserbeam {
   position: absolute;
-  z-index: 0;
+  z-index: -11;
 
   width: 100vw;
-  background-color: #fcc920;
+
+  background-image: url("file:///Users/kento/Documents/rotg/games/lasers/assets/warn-laser.png");
+  background-size: 30px, 100%;
+
   height: 10px;
   top: 20px;
   display: none;
@@ -69,6 +98,8 @@ padding: 5px;
 
 .laser {
   display: none;
+
+
 }
 
 
@@ -90,7 +121,7 @@ padding: 5px;
 
 .overlay {
   margin: 15px;
-  background-color: white;
+
   width: 45%;
   text-align: center;
   z-index: 10;
@@ -100,6 +131,9 @@ padding: 5px;
   left: 28%;
   border-radius: 15px;
   border: 2px solid black;
+  color: white;
+  background-image: url("file:///Users/kento/Documents/rotg/games/lasers/assets/start-bg.jpg");
+
 }
 
 .overlay-btn {
@@ -108,7 +142,9 @@ padding: 5px;
 
 .end {
   display: none;
-  background-color: rgb(213, 51, 51);
+
+  background-image: url("file:///Users/kento/Documents/rotg/games/lasers/assets/death-bg.jpg");
+
   color: white;
 }
 
@@ -117,12 +153,14 @@ padding: 5px;
     top: 25px;
     left: 50%;
     transform: translate(-50%, -50%);
-  background-color: rgb(215, 215, 215);
+
+    background-image: url("file:///Users/kento/Documents/rotg/games/lasers/assets/score.jpg");
+    background-repeat: no-repeat;
   width: 250px;
   font-size: 24px;
   padding: 5px;
   padding-right: 25px;
-  border: 2px solid black;
+  color: gray;
 }
 
 .overlay-btn {
