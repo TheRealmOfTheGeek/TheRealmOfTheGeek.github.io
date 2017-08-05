@@ -74,4 +74,14 @@
 <?php include("modules/footer.php"); ?>
 
 </body>
+
+<script type="text/javascript">
+    amzn_assoc_ad_type = "link_enhancement_widget";
+    amzn_assoc_tracking_id = "kvizdos-20";
+    amzn_assoc_linkid = "73d5627827ba2a986bc0cec78ac7c6da";
+    amzn_assoc_placement = "";
+    amzn_assoc_marketplace = "amazon";
+    amzn_assoc_region = "US";
+</script>
+<script src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1&MarketPlace=US"></script>
 </html>
