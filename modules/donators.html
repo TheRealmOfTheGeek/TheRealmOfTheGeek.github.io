@@ -43,12 +43,16 @@
       background-color: #00c631;
       color: white;
       border: 0;
-      font-size: 12pt;
+      font-size: 16pt;
+    }
+    #donate a {
+      color: white;
+      text-decoration: none;
     }
 
   </style>
 
-  <div ng-app="" ng-model="tid" ng-init="
+  <div ng-app="" ng-model="donors" ng-init="
   donators=[
   {name:'Onvityra', date:'May 19, 2017'}
   ];">
@@ -59,6 +63,6 @@
         <p>{{ donors.date }}</p>
     </div>
     <br>
-    <button id="donate">Support Me</button>
+    <button id="donate"><a href="paypal.me/kvizdos">Support Me</a></button>
   </div>
   </div>
