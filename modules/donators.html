@@ -35,6 +35,12 @@
       margin: 0;
       left: 0;
     }
+    #module p {
+      margin-top: -5px;
+      background-color: #00c631;
+      color: white;
+      padding-bottom: 8px;
+    }
     #donate {
       background-color: #00c631;
       color: white;
@@ -46,12 +52,13 @@
 </head>
   <div ng-app="" ng-model="tid" ng-init="
   donators=[
-  {name:'Onvityra'}
+  {name:'Onvityra', date:'May 19, 2017'}
   ];">
   <div id="container" ng-app="donors">
     <h1>Supporters</h1><br><br>
     <div id="module" ng-repeat="donors in donators">
         <h2>{{ donors.name }}</h2>
+        <p>{{ donors.date }}</p>
     </div>
     <br>
     <button id="donate">Support Me</button>
