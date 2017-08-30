@@ -1,0 +1,59 @@
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+  <style>
+
+  #container {
+    max-width: 10000px;
+    width: 100%;
+    text-align: center;
+    font-family: terminus;
+
+  }
+  #container h1 {
+    text-align: center;
+    color: white;
+  }
+    #module {
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      font-family: terminus;
+      margin: 10px;
+      margin-top: 0;
+      margin-bottom: 18px;
+      width: 265px;
+    }
+    #module h2 {
+      text-align: center;
+      background-color: #00c631;
+      width: 100%;
+      font-size: 28px;
+      color: white;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin: 0;
+      left: 0;
+    }
+    #donate {
+      background-color: #00c631;
+      color: white;
+      border: 0;
+      font-size: 12pt;
+    }
+
+  </style>
+</head>
+  <div ng-app="" ng-model="tid" ng-init="
+  donators=[
+  {name:'Onvityra'}
+  ];">
+  <div id="container" ng-app="donors">
+    <h1>Supporters</h1><br><br>
+    <div id="module" ng-repeat="donors in donators">
+        <h2>{{ donors.name }}</h2>
+    </div>
+    <br>
+    <button id="donate">Support Me</button>
+  </div>
+  </div>

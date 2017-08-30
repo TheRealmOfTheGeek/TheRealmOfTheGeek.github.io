@@ -67,6 +67,13 @@
   </div>
 </div>
 
+<div class="roow" id="supporters">
+  <div class="container text-left">
+		<?php include("modules/donators.html"); ?>
+	</div>
+</div>
+
+
 <div class="roow" id="contact">
   <div class="container text-left">
     <h1>Contact Me</h1>
