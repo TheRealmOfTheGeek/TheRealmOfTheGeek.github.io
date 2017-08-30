@@ -1,5 +1,3 @@
-<head>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 
   <style>
 
@@ -14,7 +12,7 @@
     text-align: center;
     color: white;
   }
-    #module {
+    #supportModule {
       display: inline-block;
       vertical-align: top;
       position: relative;
@@ -24,7 +22,7 @@
       margin-bottom: 18px;
       width: 265px;
     }
-    #module h2 {
+    #supportModule h2 {
       text-align: center;
       background-color: #00c631;
       width: 100%;
@@ -35,7 +33,7 @@
       margin: 0;
       left: 0;
     }
-    #module p {
+    #supportModule p {
       margin-top: -5px;
       background-color: #00c631;
       color: white;
@@ -49,14 +47,14 @@
     }
 
   </style>
-</head>
+
   <div ng-app="" ng-model="tid" ng-init="
   donators=[
   {name:'Onvityra', date:'May 19, 2017'}
   ];">
   <div id="container" ng-app="donors">
     <h1>Supporters</h1><br><br>
-    <div id="module" ng-repeat="donors in donators">
+    <div id="supportModule" ng-repeat="donors in donators">
         <h2>{{ donors.name }}</h2>
         <p>{{ donors.date }}</p>
     </div>
