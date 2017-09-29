@@ -3,7 +3,7 @@
 <head>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-
+	<script src="https://apis.google.com/js/platform.js"></script>
 	<?php
 		$page = basename(__FILE__, ".php");
 		include("modules/header.php");
@@ -38,7 +38,9 @@
 <div class="jumbotron" id="header">
   <div class="container text-center" id="header-txt">
     <h1>The Realm Of The Geek</h1>
-    <p style="color:#00b72d; font-family:'hacks';"><small>Only a little bit of awesomeness here.</p><br><a href="http://s.therotg.com/twitter?source=rotgwebsite" target="_blank">Twitter</a> | <a href="http://s.therotg.com/youtube?source=rotgwebsite" target="_blank">YouTube</a> | <a href="http://s.therotg.com/trello?source=rotgwebsite">Trello</a> | <a href="http://s.therotg.com/github?source=rotgwebsite">GitHub</a></small>
+    <p style="color:#00b72d; font-family:'hacks';"><small>Only a little bit of awesomeness here.</p><br><a href="http://sm.therotg.com/twitter" target="_blank">Twitter</a> | <a href="http://sm.therotg.com/yt" target="_blank">YouTube</a> | <a href="http://sm.therotg.com/github">GitHub</a></small>
+    <br><br>
+    <div class="g-ytsubscribe" data-channel="TheRealmOfTheGeek" data-layout="default" data-theme="dark" data-count="hidden"></div>
   </div>
 </div>
 <?php include("modules/navbar.php"); ?>
