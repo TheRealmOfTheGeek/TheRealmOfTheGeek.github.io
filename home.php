@@ -81,6 +81,11 @@
 
 </body>
 
-<script>setAds();</script>
+<script>
+$(document).ready(function() {
+setAds();
+
+});
+</script>
 
 </html>
