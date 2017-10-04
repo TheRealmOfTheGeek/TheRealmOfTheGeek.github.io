@@ -52,17 +52,22 @@
 
   </style>
 
-  <div ng-app="" ng-model="donors" ng-init="
-  donators=[
-  {name:'Onvityra', date:'May 19, 2017'}
-  ];">
-  <div id="container" ng-app="donors">
-    <h1>Supporters</h1><br><br>
-    <div id="supportModule" ng-repeat="donors in donators">
+  <div id="donatorContainer" ng-app="donatorApp">
+    <div id="container" ng-init="donators=[{name:'Onvityra', date:'May 19, 2017'}]">
+      <h1>Supporters</h1><br><br>
+      <div id="supportModule" ng-repeat="donors in donators">
         <h2>{{ donors.name }}</h2>
         <p>{{ donors.date }}</p>
+      </div>
+      <br>
+      <button id="donate"><a href="paypal.me/kvizdos">Support Me</a></button>
     </div>
-    <br>
-    <button id="donate"><a href="paypal.me/kvizdos">Support Me</a></button>
+
+    <script>
+      // Since we have 2 apps on the same page, need to bootstrap this one
+      var donatorsModule = angular.module("donatorApp", [])
+      angular.bootstrap(document.getElementById("donatorContainer"), ['donatorApp']);
+    </script>
   </div>
-  </div>
+
+
