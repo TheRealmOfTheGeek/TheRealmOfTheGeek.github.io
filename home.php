@@ -5,7 +5,6 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 	<script src="https://apis.google.com/js/platform.js"></script>
-		<script src="https://adsby.therotg.com/public/AdsByROTG.js></script>
 
 	<?php
 		$page = basename(__FILE__, ".php");
@@ -25,6 +24,9 @@
     background-size: cover;
 	}
 	</style>
+	
+		<script src="https://adsby.therotg.com/public/AdsByROTG.js></script>
+
 </head>
 <body>
 
