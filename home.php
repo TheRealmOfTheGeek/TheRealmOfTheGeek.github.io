@@ -21,6 +21,14 @@
     background-repeat: no-repeat;
     background-size: cover;
 	}
+		
+		.adBanner img {
+			width: 100%;
+		}
+		
+		#supporters {
+			padding-bottom: 10px;
+		}
 	</style>
 	
 		<script src="https://adsby.therotg.com/public/AdsByROTG.js"></script>
