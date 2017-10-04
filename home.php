@@ -23,7 +23,7 @@
 	}
 	</style>
 	
-		<script src="https://adsby.therotg.com/public/AdsByROTG.js></script>
+		<script src="https://adsby.therotg.com/public/AdsByROTG.js"></script>
 
 </head>
 <body>
