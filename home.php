@@ -4,6 +4,8 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 	<script src="https://apis.google.com/js/platform.js"></script>
+		<script src="https://adsby.therotg.com/public/AdsByROTG.js></script>
+
 	<?php
 		$page = basename(__FILE__, ".php");
 		include("modules/header.php");
@@ -24,15 +26,6 @@
 	</style>
 </head>
 <body>
-<script type="text/javascript">
-    amzn_assoc_ad_type = "link_enhancement_widget";
-    amzn_assoc_tracking_id = "kvizdos-20";
-    amzn_assoc_linkid = "73d5627827ba2a986bc0cec78ac7c6da";
-    amzn_assoc_placement = "";
-    amzn_assoc_marketplace = "amazon";
-    amzn_assoc_region = "US";
-</script>
-<script src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1&MarketPlace=US"></script>
 
 
 <div class="jumbotron" id="header">
@@ -49,8 +42,8 @@
   <div class="container text-left">
     <h1>About me</h1>
     <p>I am Kenton, Also Known As Kento. I am a teenaged YouTube programmer that mainly focuses on creating helpful, inspiring coding tutorials. I also do LiveCoding, while practicing Scrum and Agile methods like TDD, Mob Programming, Pair Programming, and more. I have been programming for years, and knowledgeable in Java, Bukkit API, HTML/CSS, Bootstrap, JQuery, JavaScript, PHP, and more. The videos are always on a strict schedule of daily at 7am. If you would like to watch some of these, please visit https://yt.therotg.com!<br><br></p>
-    <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=2710c041-cd8a-4fc1-9206-8aede4fdd6b2"></script>
-  </div>
+	  <div class="AdBanner"></div>
+</div>
 </div>
 
 
@@ -86,5 +79,7 @@
 <?php include("modules/footer.php"); ?>
 
 </body>
+
+<script>setAds();</script>
 
 </html>
