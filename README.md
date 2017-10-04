@@ -6,5 +6,5 @@ The Realm of The Geek, Also Known As Kento, is a teenaged YouTube programmer tha
 - [Lasers!](http://s.therotg.com/lasers?source=githubreadme) - a basic, fun, JS game.
 - [JSSnake](http://s.therotg.com/snake?source=githubreadme) - The simplesticist snake game
 
--[Lazers Game](https://therotg.com/games/lasers/)
-	>![Lazers Game](/images/lazer_game.png)
+*[Lazers Game](https://therotg.com/games/lasers/)
+	*![Lazers Game](/images/lazer_game.png)
