@@ -31,12 +31,4 @@
          ga("create", "UA-47286500-3", "auto");		
          ga("send", "pageview");		
    </script>		
-  		  
-   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>		
-   <!-- ROTGMain -->		
-   <ins class="adsbygoogle"		
-        style="display:block"		
-        data-ad-client="ca-pub-4499070912220787"		
-        data-ad-slot="6092543559"		
-        data-ad-format="auto"></ins>
-
+  
