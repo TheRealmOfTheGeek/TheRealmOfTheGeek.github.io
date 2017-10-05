@@ -1,7 +1,6 @@
 $(document).ready(function(){
   $("a").on('click', function(event) {
     if (this.hash !== "") {
-        console.log($(event.target).text());
         event.preventDefault();
         var hash = this.hash;
 
@@ -9,7 +8,7 @@ $(document).ready(function(){
         history.pushState(null, null, this.hash);
 
         $('html, body').animate({
-          scrollTop: $(hash).offset().top - $(".navbar").height()
+          scrollTop: $(hash).offset().top
         }, 800);
     }
   });
