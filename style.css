@@ -57,5 +57,14 @@ a:hover {color: #00d835; text-decoration: none}
   color: black;
 }
 
+.floating-anchor {
+  display: block;
+  width: 0;
+  height: 0;
+  z-index: -1;
+  padding-top: 50px; 
+  margin-top: -50px;
+}
+
 
   @media screen and (max-width:480px){.col-sm-3{width:100%}}
