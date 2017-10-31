@@ -35,6 +35,7 @@ if ($url == '/') {
   <head>
     <title ng-bind="title"></title>
     <link rel="stylesheet" type="text/css" href="/forum/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
   </head>
   <body>
