@@ -32,7 +32,7 @@ if (isset($_GET['id'])) {
   <head>
     <title>Coding Forums</title>
     <link rel="stylesheet" type="text/css" href="/forum/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
   </head>
   <body ng-app="" ng-init="title='Coding Forum'">
     <?php echo showheader(); ?>
