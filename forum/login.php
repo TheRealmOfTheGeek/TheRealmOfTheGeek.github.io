@@ -61,6 +61,7 @@ function showsignin() {
 	    <title>Coding Forums</title>
 	    <link rel="stylesheet" type="text/css" href="/forum/style.css">
 			<meta name="google-signin-client_id" content="' . $secret['id'] . '.apps.googleusercontent.com">
+			<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 	  </head>
 	  <body ng-app="" ng-init="title=\'Coding Forum\'">
