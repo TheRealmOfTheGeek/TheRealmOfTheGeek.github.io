@@ -2,16 +2,18 @@
 
 I'm Kenton, a teenaged YouTube programmer that mainly focuses on creating helpful, inspiring coding tutorials. I also do LiveCoding, while practicing Scrum and Agile methods like TDD, Mob Programming, Pair Programming, and more. I have been programming for years, and am knowledgable in Java, Bukkit API, HTML/CSS, Bootstrap, JQuery, JavaScript, PHP, and more. I post some coding videos and do "LiveCodes" @ [TheRealmOfTheGeek's YouTube Channel](https://www.youtube.com/user/TheRealmOfTheGeek)!
 
-# Mobile Games
+# What I've Done (In chronological order)
+## Mobile Games
 - [Lasers Game](http://lasersgame.com) - "Lasers Game" Web app ported to a mobile app with better features, optimization and play modes!
 
-# Web Games
-- [Lasers Game](https://therotg.com/games/lasers/) - If the terminator was the creator of flappy birds, he probably would have made this game.
+## Web Games / Websites
+- [Site: Bracketify](https://bracketify.com) - Ever wanted to host a tournament and have an amazing bracket to go with it? Bracketify is the best free option for hosting tournament brackets
+- [Game: Lasers Game](https://therotg.com/games/lasers/) - If the terminator was the creator of flappy birds, he probably would have made this game.
 	![Lasers Game](/images/lazer_game.png)
-- [JSSnake](https://therotg.com/games/snake/) - a clone of the classic snake game, completely simple but ultra addictive.
+- [Game: JSSnake](https://therotg.com/games/snake/) - a clone of the classic snake game, completely simple but ultra addictive.
 	![JSSnake](/images/snake_demo.png)
 
-# Plugins
+## Plugins
 ![EULA](/images/eulaComp.png)
 - [EULA Compliant Ranks](https://www.spigotmc.org/resources/eula-compliant-perks.35134/) - EULA Compliant Ranks is an open source plugin that allows you to give your donators 10+ more permissions (listed below) So, why is it so great? It allows for actually useful commands and permissions!!! 10+ Hours have gone into creating this plugin.
 ![Simple Polls](/images/simplePolls.png)
