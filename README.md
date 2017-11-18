@@ -1,16 +1,19 @@
 # The Realm of the Geek
 
-The Realm of The Geek, Also Known As Kento, is a teenaged YouTube programmer that mainly focuses on creating helpful, inspiring coding tutorials. He also does LiveCoding, while practicing Scrum and Agile methods like TDD, Mob Programming, Pair Programming, and more. He has been programming for years, and knowledgable in Java, Bukkit API, HTML/CSS, Bootstrap, JQuery, JavaScript, PHP, and more. The videos are always on a not-so-strict schedule of daily at 7am. If you would like to watch some of these, please visit [My YouTube Channel](https://www.youtube.com/user/TheRealmOfTheGeek)!
+I'm Kenton, a teenaged YouTube programmer that mainly focuses on creating helpful, inspiring coding tutorials. I also do LiveCoding, while practicing Scrum and Agile methods like TDD, Mob Programming, Pair Programming, and more. I have been programming for years, and am knowledgable in Java, Bukkit API, HTML/CSS, Bootstrap, JQuery, JavaScript, PHP, and more. I post some coding videos and do "LiveCodes" @ [TheRealmOfTheGeek's YouTube Channel](https://www.youtube.com/user/TheRealmOfTheGeek)!
 
-# Games
-- [Lazers Game](https://therotg.com/games/lasers/) - If the terminator was the creator of flappy birds, he probably would have made this game.
-	![Lazers Game](/images/lazer_game.png)
+# Mobile Games
+- [Lasers Game](http://lasersgame.com) - "Lasers Game" Web app ported to a mobile app with better features, optimization and play modes!
+
+# Web Games
+- [Lasers Game](https://therotg.com/games/lasers/) - If the terminator was the creator of flappy birds, he probably would have made this game.
+	![Lasers Game](/images/lazer_game.png)
 - [JSSnake](https://therotg.com/games/snake/) - a clone of the classic snake game, completely simple but ultra addictive.
 	![JSSnake](/images/snake_demo.png)
 
 # Plugins
 ![EULA](/images/eulaComp.png)
-- [EULA Compliant Ranks](https://www.spigotmc.org/resources/eula-compliant-perks.35134/) - EULA Compliant Ranks is an open source plugin that allows you to give your donators 10+ more permissions (listed below) So, why is it so great? It allows for actually useful commands and permissions!!! 10+ Hours have gone into creating this plugin, and this is my current main project, so it will be constantly updating, so make sure to follow!
+- [EULA Compliant Ranks](https://www.spigotmc.org/resources/eula-compliant-perks.35134/) - EULA Compliant Ranks is an open source plugin that allows you to give your donators 10+ more permissions (listed below) So, why is it so great? It allows for actually useful commands and permissions!!! 10+ Hours have gone into creating this plugin.
 ![Simple Polls](/images/simplePolls.png)
 - [Simple Polls](https://www.spigotmc.org/resources/simple-polls.29441/) - Ever want a SUPER easy poll plugin? Well here you go! Simple Polls only has 3 commands, start, vote, and end. Automated Win detection (Yes won, or no won for the votes). Test Driven Development was used in the process of this plugin. The Simple Polls plugin development was livestreamed on live.kentonvizdos.com and youtube.com/TheRealmOfTheGeek/Live, where all of my plugins are streamed!
 ![You Legit?](/images/youLegit.png)
